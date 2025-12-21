@@ -1,0 +1,21 @@
+# Environments
+venv/
+.env
+
+# IDEs
+.spyproject/
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# Data
+local_data/
+downloads/
+data/
+output/
+*.zip
+*.xls
+*.xlsx

@@ -1,0 +1,8 @@
+psycopg2-binary
+pandas
+python-dotenv
+google-cloud-storage
+fastapi
+uvicorn
+openpyxl
+requests
