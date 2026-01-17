@@ -1,0 +1,39 @@
+[2026-01-17T22:44:32.495+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-17T22:44:32.528+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: esios_liquicomun_pipeline.download_bronze scheduled__2026-01-16T08:00:00+00:00 [queued]>
+[2026-01-17T22:44:32.537+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: esios_liquicomun_pipeline.download_bronze scheduled__2026-01-16T08:00:00+00:00 [queued]>
+[2026-01-17T22:44:32.538+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-17T22:44:32.550+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_bronze> on 2026-01-16 08:00:00+00:00
+[2026-01-17T22:44:32.555+0000] {standard_task_runner.py:63} INFO - Started process 196 to run task
+[2026-01-17T22:44:32.560+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'esios_liquicomun_pipeline', 'download_bronze', 'scheduled__2026-01-16T08:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/esios_dag.py', '--cfg-path', '/tmp/tmpx9buxzxn']
+[2026-01-17T22:44:32.563+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask download_bronze
+[2026-01-17T22:44:32.662+0000] {task_command.py:426} INFO - Running <TaskInstance: esios_liquicomun_pipeline.download_bronze scheduled__2026-01-16T08:00:00+00:00 [running]> on host d1a9e72e2525
+[2026-01-17T22:44:32.789+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='esios_liquicomun_pipeline' AIRFLOW_CTX_TASK_ID='download_bronze' AIRFLOW_CTX_EXECUTION_DATE='2026-01-16T08:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-16T08:00:00+00:00'
+[2026-01-17T22:44:32.790+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-17T22:44:32.823+0000] {logging_mixin.py:188} INFO - Downloading from 2026-01-16 08:00:00+00:00 to 2026-01-16 08:00:00+00:00
+[2026-01-17T22:44:32.824+0000] {liquicomun.py:36} INFO - Checking/Downloading Liquicomun ID 2 for 2026-01-16...
+[2026-01-17T22:44:33.077+0000] {client.py:62} INFO - Archive 2 for 2026-01-16 08:00:00+00:00 seems empty (50 bytes).
+[2026-01-17T22:44:33.079+0000] {liquicomun.py:36} INFO - Checking/Downloading Liquicomun ID 3 for 2026-01-16...
+[2026-01-17T22:44:33.519+0000] {filesystem.py:30} INFO - Saved file to /opt/***/local_data/bronze/liquicomun/2026/01/esios_3_20260116.zip
+[2026-01-17T22:44:33.520+0000] {liquicomun.py:51} INFO - Stored: bronze/liquicomun/2026/01/esios_3_20260116.zip
+[2026-01-17T22:44:33.523+0000] {liquicomun.py:36} INFO - Checking/Downloading Liquicomun ID 4 for 2026-01-16...
+[2026-01-17T22:44:33.748+0000] {client.py:62} INFO - Archive 4 for 2026-01-16 08:00:00+00:00 seems empty (50 bytes).
+[2026-01-17T22:44:33.755+0000] {liquicomun.py:36} INFO - Checking/Downloading Liquicomun ID 5 for 2026-01-16...
+[2026-01-17T22:44:34.015+0000] {client.py:62} INFO - Archive 5 for 2026-01-16 08:00:00+00:00 seems empty (50 bytes).
+[2026-01-17T22:44:34.021+0000] {liquicomun.py:36} INFO - Checking/Downloading Liquicomun ID 6 for 2026-01-16...
+[2026-01-17T22:44:34.255+0000] {client.py:62} INFO - Archive 6 for 2026-01-16 08:00:00+00:00 seems empty (50 bytes).
+[2026-01-17T22:44:34.263+0000] {liquicomun.py:36} INFO - Checking/Downloading Liquicomun ID 7 for 2026-01-16...
+[2026-01-17T22:44:34.501+0000] {client.py:62} INFO - Archive 7 for 2026-01-16 08:00:00+00:00 seems empty (50 bytes).
+[2026-01-17T22:44:34.507+0000] {liquicomun.py:36} INFO - Checking/Downloading Liquicomun ID 8 for 2026-01-16...
+[2026-01-17T22:44:34.800+0000] {client.py:62} INFO - Archive 8 for 2026-01-16 08:00:00+00:00 seems empty (50 bytes).
+[2026-01-17T22:44:34.806+0000] {liquicomun.py:36} INFO - Checking/Downloading Liquicomun ID 9 for 2026-01-16...
+[2026-01-17T22:44:35.034+0000] {client.py:62} INFO - Archive 9 for 2026-01-16 08:00:00+00:00 seems empty (50 bytes).
+[2026-01-17T22:44:35.042+0000] {liquicomun.py:36} INFO - Checking/Downloading Liquicomun ID 10 for 2026-01-16...
+[2026-01-17T22:44:35.267+0000] {client.py:62} INFO - Archive 10 for 2026-01-16 08:00:00+00:00 seems empty (50 bytes).
+[2026-01-17T22:44:35.273+0000] {liquicomun.py:36} INFO - Checking/Downloading Liquicomun ID 11 for 2026-01-16...
+[2026-01-17T22:44:35.518+0000] {client.py:62} INFO - Archive 11 for 2026-01-16 08:00:00+00:00 seems empty (50 bytes).
+[2026-01-17T22:44:35.525+0000] {python.py:237} INFO - Done. Returned value was: {'start': '2026-01-16', 'end': '2026-01-16'}
+[2026-01-17T22:44:35.525+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-17T22:44:35.549+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=esios_liquicomun_pipeline, task_id=download_bronze, run_id=scheduled__2026-01-16T08:00:00+00:00, execution_date=20260116T080000, start_date=20260117T224432, end_date=20260117T224435
+[2026-01-17T22:44:35.593+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-17T22:44:35.614+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-17T22:44:35.618+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

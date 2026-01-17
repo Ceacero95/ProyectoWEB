@@ -1,0 +1,21 @@
+[2026-01-17T22:50:59.353+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-17T22:50:59.396+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: omie_pipeline.download_pdvd scheduled__2026-01-16T08:30:00+00:00 [queued]>
+[2026-01-17T22:50:59.408+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: omie_pipeline.download_pdvd scheduled__2026-01-16T08:30:00+00:00 [queued]>
+[2026-01-17T22:50:59.409+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-17T22:50:59.426+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_pdvd> on 2026-01-16 08:30:00+00:00
+[2026-01-17T22:50:59.440+0000] {standard_task_runner.py:63} INFO - Started process 327 to run task
+[2026-01-17T22:50:59.447+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'omie_pipeline', 'download_pdvd', 'scheduled__2026-01-16T08:30:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/omie_dag.py', '--cfg-path', '/tmp/tmpaqypn9si']
+[2026-01-17T22:50:59.452+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask download_pdvd
+[2026-01-17T22:50:59.565+0000] {task_command.py:426} INFO - Running <TaskInstance: omie_pipeline.download_pdvd scheduled__2026-01-16T08:30:00+00:00 [running]> on host d1a9e72e2525
+[2026-01-17T22:50:59.691+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='omie_pipeline' AIRFLOW_CTX_TASK_ID='download_pdvd' AIRFLOW_CTX_EXECUTION_DATE='2026-01-16T08:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-16T08:30:00+00:00'
+[2026-01-17T22:50:59.692+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-17T22:50:59.709+0000] {logging_mixin.py:188} INFO - Downloading download_pdvd from 2026-01-16 08:30:00+00:00 to 2026-01-16 08:30:00+00:00
+[2026-01-17T22:50:59.711+0000] {omie_client.py:44} INFO - Downloading pdvd_202601.zip from OMIE...
+[2026-01-17T22:51:00.236+0000] {omie_client.py:48} INFO - File pdvd_202601.zip not found (404).
+[2026-01-17T22:51:00.238+0000] {pdvd.py:37} WARNING - Failed to download pdvd_202601.zip
+[2026-01-17T22:51:00.240+0000] {python.py:237} INFO - Done. Returned value was: {'start': '2026-01-16', 'end': '2026-01-16'}
+[2026-01-17T22:51:00.242+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-17T22:51:00.276+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=omie_pipeline, task_id=download_pdvd, run_id=scheduled__2026-01-16T08:30:00+00:00, execution_date=20260116T083000, start_date=20260117T225059, end_date=20260117T225100
+[2026-01-17T22:51:00.347+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-17T22:51:00.377+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-17T22:51:00.379+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ../
+      dockerfile: deploy/Dockerfile
+    volumes:
+      - ../data:/app/data
+      - ../local_data:/app/local_data
+    environment:
+      - DB_HOST=db
+      - DB_NAME=esios_db
+      - DB_USER=user
+      - DB_PASSWORD=password
+      - STORAGE_TYPE=local
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: esios_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:

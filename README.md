@@ -1,77 +1,136 @@
-# ProyectoWEB - ESIOS Data Manager
 
-Este proyecto es una herramienta integral para la descarga, procesamiento y almacenamiento de datos del mercado eléctrico español (ESIOS). Está diseñado para automatizar la obtención de indicadores clave como precios de desvíos, participación de tecnologías, y ficheros de liquidación (Liquicomun).
+# Proyecto Energy Data Pipeline ⚡
 
-## Estructura del Proyecto
+Welcome to the **Energy Data Ecosystem**. This project implements a robust **Lakehouse Architecture** (Bronze/Silver/Gold) to ingest, process, and analyze Spanish Energy Market data from **ESIOS** (Red Eléctrica) and **OMIE**.
 
-El proyecto sigue una arquitectura modular y limpia, separando responsabilidades claramente:
+It is fully automated using **Apache Airflow** on **Docker**, ensuring production-grade reliability and cloud readiness (Google Cloud Platform compatible).
 
+---
+
+## 🏗️ Architecture
+
+The system follows a 3-layer data flow:
+
+```mermaid
+graph LR
+    A[External APIs] -->|Download| B(Bronze Layer)
+    B -->|Ingest/Trans| C(Silver Layer)
+    C -->|Load/Index| D(Gold Layer)
+    
+    subgraph Bronze [Bronze: Raw Data]
+        B1[(ZIP Archives)]
+    end
+    
+    subgraph Silver [Silver: Cleaned]
+        C1[(Parquet Files)]
+    end
+    
+    subgraph Gold [Gold: Analytics]
+        D1[(PostgreSQL / BigQuery)]
+    end
+    
+    A --> B1
+    B1 --> C1
+    C1 --> D1
 ```
+
+### 1. Bronze Layer (Raw)
+- **Source**: ESIOS API & OMIE Website.
+- **Format**: Original `.zip` archives organized by `Year/Month`.
+- **Retention**: Permanent (Source of Truth).
+
+### 2. Silver Layer (Processed)
+- **Format**: Optimized `.parquet` files.
+- **Transformations**:
+    - Encoding fixes (Latin-1 to UTF-8).
+    - CSV Header/Footer resizing.
+    - Type casting (String -> Float/Date).
+    - Basic Validation.
+
+### 3. Gold Layer (Database)
+- **Technology**: PostgreSQL (Local/Container) or Google BigQuery.
+- **Schema**:
+    - `liquicomun`: Settlement data (LiquiComun).
+    - `omie`: Market results (Marginal Prices, PDBF, PDVD).
+- **Features**: Idempotent inserts (deduplication on PK), Optimized Indexes.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- **Docker Desktop** (must be running).
+- **Git**.
+
+### Installation & Run
+The entire system is containerized. You do not need Python installed on your host machine.
+
+1. **Clone & Setup**:
+   ```bash
+   git clone <repo-url>
+   cd ProyectoWEB
+   ```
+
+2. **Launch Airflow**:
+   ```bash
+   docker-compose up -d --build
+   ```
+   *This commands builds the image and starts Airflow Scheduler, Webserver, and Postgres.*
+
+3. **Access Control Panel**:
+   - Open **[http://localhost:8080](http://localhost:8080)**
+   - **User**: `admin`
+   - **Password**: `admin`
+
+4. **Activate Pipelines**:
+   - Toggle **ON** the DAGs `esios_liquicomun_pipeline` and `omie_pipeline`.
+
+---
+
+## ⚙️ Automation (Airflow DAGs)
+
+### `esios_liquicomun_pipeline` (Daily @ 08:00)
+1. **Source**: ESIOS
+2. **Tasks**:
+   - `download_bronze`: Fetches `liq_prdvdatos`, `liq_enRRqh`, etc.
+   - `ingest_silver`: Extracts & converts to Parquet.
+   - `process_gold`: Loads into DB `liquicomun` schema.
+
+### `omie_pipeline` (Daily @ 08:30)
+1. **Source**: OMIE
+2. **Tasks**: Parallel execution for:
+   - `pdbc` (Programa Diario Base Casación)
+   - `pdbf` (Programa Diario Base Funcionamiento)
+   - `pdvd` (Programa Diario Viabilidad)
+   - `marginalpdbc` / `marginalpibc` (Precios Marginales)
+
+---
+
+## 📂 Project Structure
+
+```text
 ProyectoWEB/
-├── manage.py           # Punto de entrada principal (CLI) para gestionar el proyecto.
-├── .env                # Variables de entorno (Token ESIOS, credenciales DB).
-├── requirements.txt    # Dependencias del proyecto.
-├── local_data/         # (Ignorado) Almacenamiento local de ficheros descargados.
-├── src/                # Código fuente principal.
-│   ├── api/            # Servidor API (FastAPI) para exponer datos.
-│   ├── config/         # Gestión de configuración y settings globales.
-│   ├── db/             # Conexión y utilidades de base de datos.
-│   ├── esios/          # Módulos de conexión con ESIOS API y lógica de descarga.
-│   │   ├── client.py     # Cliente HTTP para la API de ESIOS.
-│   │   └── downloader.py # Orquestador de descargas (Sync/Backfill).
-│   ├── processors/     # Lógica de negocio para procesar ficheros específicos (ej. I90).
-│   └── storage/        # Capa de persistencia (Sistema de ficheros local / GCS).
+├── dags/                   # Airflow Automation Workflows
+│   ├── esios_dag.py
+│   └── omie_dag.py
+├── src/                    # Core Logic
+│   ├── bronze/             # Downloaders (Requests/Client)
+│   ├── silver/             # Parsers & Parquet Converters
+│   ├── common/             # Utils (DB Manager, FileSystem)
+│   └── config/             # Settings (URLs, Schemas)
+├── Dockerfile              # Python Environment Definition
+├── docker-compose.yaml     # Service Orchestration
+└── requirements.txt        # Python Dependencies
 ```
 
-## Funcionalidades Principales
+---
 
-El sistema se gestiona principalmente a través de `manage.py`, que ofrece varios comandos:
+## ☁️ Cloud Roadmap (GCP)
+This project is designed for **Google Cloud Platform**:
+- **Compute**: Airflow on Docker can be deployed to **Cloud Run** or formatted for **Cloud Composer**.
+- **Storage**: `local_data/` volume can be mounted to **GCS (Google Cloud Storage)** buckets.
+- **Database**: `DatabaseManager` is ready to switch connection string to **BigQuery** or **Cloud SQL**.
 
-1.  **Sincronización Diaria (`sync`)**:
-    Descarga los ficheros configurados (I3, Liquicomun, I90) para el día en curso o un rango de fechas. Gestiona automáticamente la lógica de frecuencias (ej. algunos ficheros solo se bajan mensualmente).
-    ```bash
-    python manage.py sync
-    ```
+---
 
-2.  **Backfill de Datos (`backfill`)**:
-    Permite descargar datos históricos de un indicador o tipo de archivo específico.
-    ```bash
-    python manage.py backfill --archive-id <ID> --name <NOMBRE> --start-date YYYY-MM-DD
-    ```
-
-3.  **Servidor API (`server`)**:
-    Levanta un servidor web para consultas en tiempo real (si aplica).
-    ```bash
-    python manage.py server
-    ```
-
-## Configuración
-
-1.  **Entorno Virtual**:
-    Asegúrate de tener un entorno virtual activo:
-    ```bash
-    python -m venv venv
-    venv\Scripts\activate   # En Windows
-    pip install -r requirements.txt
-    ```
-
-2.  **Variables de Entorno (`.env`)**:
-    Crea un archivo `.env` en la raíz con las siguientes claves:
-    ```ini
-    ESIOS_TOKEN=tu_token_aqui
-    DB_HOST=localhost
-    DB_NAME=esios_db
-    DB_USER=usuario
-    DB_PASSWORD=password
-    LOCAL_STORAGE_PATH=./local_data
-    ```
-
-## Flujo de Datos
-
-1.  **Descarga**: El módulo `esios.downloader` consulta la API de ESIOS.
-2.  **Almacenamiento**: Los ficheros crudos (ZIP, XML, JSON) se guardan organizadamente en `local_data` (o bucket configurado) mediante `src.storage`.
-3.  **Procesamiento**: Módulos en `src.processors` leen los ficheros descargados para extraer información relevante.
-4.  **Base de Datos**: La información procesada se inserta en la base de datos PostgreSQL mediante `src.db`.
-
-## Notas Legales
-Los datos descargados pertenecen a ESIOS/REE. Asegúrate de cumplir con sus términos de uso.
+*Verified by Data Architect - Jan 2026*
