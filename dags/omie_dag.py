@@ -125,6 +125,12 @@ with DAG(
     )
     t_down_mar_pdbc >> t_proc_mar_pdbc
 
+# ... (Imports preserved implicitly by multi_replace if structured well, but simple replace here)
+from src.bronze.omie.trades import download_trades
+from src.silver.omie.trades import process_trades
+
+# ... (Existing DAG definition)
+
     # --- Marginal PIBC ---
     t_down_mar_pibc = PythonOperator(
         task_id='download_marginal_pibc',
@@ -139,3 +145,19 @@ with DAG(
         provide_context=True
     )
     t_down_mar_pibc >> t_proc_mar_pibc
+
+    # --- Trades ---
+    t_down_trades = PythonOperator(
+        task_id='download_trades',
+        python_callable=_download_task,
+        op_kwargs={'download_func': download_trades},
+        provide_context=True
+    )
+    t_proc_trades = PythonOperator(
+        task_id='process_trades',
+        python_callable=_process_task,
+        op_kwargs={'process_func': process_trades, 'parent_task_id': 'download_trades'},
+        provide_context=True
+    )
+    t_down_trades >> t_proc_trades
+

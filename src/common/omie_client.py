@@ -33,6 +33,8 @@ class OmieClient:
             parents = "pdbf"
         elif "pdvd" in filename:
             parents = "pdvd"
+        elif "trades" in filename:
+            parents = "trades"
             
         params = {
             "parents": parents,
