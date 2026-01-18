@@ -1,4 +1,22 @@
 
+"""
+data_ingestion/bronze/omie/trades.py
+
+OBJECTIVE:
+    Handles the downloading of 'Trades' data from OMIE.
+    These files represent the actual energy trades matched in the market.
+    Files are published Monthly as ZIP archives containing daily files.
+
+FILE FORMAT:
+    - Input: trades_YYYYMM.zip (e.g., trades_202501.zip)
+    - Source: OMIE Public Website
+    - Destination: bronze/omie/trades/YYYY/trades_YYYYMM.zip
+
+LOGIC:
+    - Iterates through requested dates by month.
+    - Checks if the monthly ZIP already exists locally to avoid re-downloading.
+    - Uses OmieClient with 'parents=trades'.
+"""
 import logging
 from datetime import datetime
 from src.common.filesystem import StorageManager
@@ -8,8 +26,11 @@ logger = logging.getLogger(__name__)
 
 def download_trades(start_date: datetime, end_date: datetime):
     """
-    Downloads OMIE trades files (Monthly ZIPs).
-    Format: trades_YYYYMM.zip
+    Downloads OMIE trades files (Monthly ZIPs) covering the specified date range.
+    
+    Args:
+        start_date (datetime): Start of the period (only Month/Year is used).
+        end_date (datetime): End of the period.
     """
     storage = StorageManager()
     client = OmieClient()

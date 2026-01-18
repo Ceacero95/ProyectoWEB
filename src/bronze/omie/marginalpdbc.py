@@ -1,3 +1,18 @@
+"""
+data_ingestion/bronze/omie/marginalpdbc.py
+
+OBJECTIVE:
+    Manages the download of Marginal Price files (PDBC) from OMIE.
+    These files contain the marginal price of the energy in the Portuguese Daily Base Market.
+    
+FILE FORMAT change in 2023:
+    - Before 2023: Annual ZIP files (marginalpdbc_YYYY.zip).
+    - After 2023: Daily text files (marginalpdbc_YYYYMMDD.1).
+
+LOGIC:
+    - Automatically detects year to choose between Annual or Daily download strategy.
+    - Saves files in structured directories: bronze/omie/marginalpdbc/YYYY/
+"""
 import logging
 from datetime import datetime, timedelta
 import os

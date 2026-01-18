@@ -1,3 +1,20 @@
+"""
+database.py
+
+OBJECTIVE:
+    Centralizes all database interactions using SQLAlchemy.
+    Provides a Singleton-like access to the Database Engine and helper methods
+    for table management (DDL) and high-performance bulk data insertion.
+
+KEY FEATURES:
+    - Singleton Engine: Ensures valid connection pooling.
+    - Bulk Insert: Uses PostgreSQL 'COPY' command for maximum speed (via `bulk_insert_df`).
+    - Schema Management: creating tables, dropping tables, and managing indexes.
+
+USAGE:
+    db = DatabaseManager()
+    db.bulk_insert_df(df, "my_table", schema="bronze")
+"""
 import pandas as pd
 from sqlalchemy import text, create_engine
 import logging
@@ -6,10 +23,13 @@ from src.config.settings import DATABASE_URL
 
 logger = logging.getLogger(__name__)
 
-# Global engine instance
+# Global engine instance to share connection pool
 _engine = None
 
 def get_engine():
+    """
+    Returns the global database engine, creating it if necessary.
+    """
     global _engine
     if _engine is None:
         _engine = create_engine(DATABASE_URL, pool_pre_ping=True)

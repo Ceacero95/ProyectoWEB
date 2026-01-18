@@ -1,3 +1,21 @@
+"""
+filesystem.py
+
+OBJECTIVE:
+    Manages local file system interactions for the Bronze Layer.
+    Acts as an abstraction layer for saving and checking the existence of raw files (ZIPs, JSONs)
+    before they are processed by the Silver Layer.
+
+DESIGN PATTERN:
+    - This class is designed to be easily extensible for Cloud Storage (GCS/S3) by replacing
+      internal method logic without changing the public API used by downloaders.
+
+USAGE:
+    storage = StorageManager()
+    storage.save("bronze/omie/file.zip", content_bytes)
+    if storage.exists("bronze/omie/file.zip"): ...
+
+"""
 import os
 import shutil
 import logging

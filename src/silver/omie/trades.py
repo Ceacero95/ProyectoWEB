@@ -1,9 +1,25 @@
 
+"""
+data_processing/silver/omie/trades.py
+
+OBJECTIVE:
+    Parses and processes key 'Trades' files from OMIE.
+    This module transforms raw CSV content (from ZIPs) into a structured format
+    ready for database ingestion.
+
+KEY FEATURES:
+    - **Parsing**: Handles latin-1 encoding and skips metadata rows.
+    - **Normalization**: Uses Regex to standardise column names (handling tabs/spaces).
+    - **Idempotency**: Deletes existing records for the specific date before inserting to prevent duplicates.
+    - **Storage**: Saves a copy in Parquet (Silver) and loads into PostgreSQL (Gold/Serving).
+
+"""
 import logging
 import pandas as pd
 from datetime import datetime, timedelta
 import io
 import zipfile
+import re
 from sqlalchemy import text
 from src.common.filesystem import StorageManager
 from src.common.database import DatabaseManager, get_engine
@@ -11,32 +27,33 @@ from src.common.database import DatabaseManager, get_engine
 logger = logging.getLogger(__name__)
 
 def parse_trades_content(content: bytes, filename: str) -> pd.DataFrame:
+    """
+    Parses the raw bytes of a single OMIE trades file (CSV-like).
+    
+    Logic:
+    1. Decodes 'latin-1'.
+    2. Skips first 2 lines (Metadata/Empty).
+    3. Normalizes headers: 'Agente compra' -> 'agente_compra'.
+    4. Type casting: decimal commas to dots, dates to objects.
+    
+    Returns:
+        pd.DataFrame: Cleaned data or None if parsing fails.
+    """
     try:
         text_content = content.decode('latin-1', errors='replace')
         lines = text_content.splitlines()
         
         # Skip first 2 metadata lines (L0, L1) and check header at L2
-        # But we must be careful with empty lines.
-        # Based on inspection:
-        # L0: Metadata
-        # L1: Empty
-        # L2: Header
-        
-        # Let's verify if lines exist
         if len(lines) < 3:
             return None
             
-        # Join from line 2 onwards
         csv_content = '\n'.join(lines[2:])
         
         df = pd.read_csv(io.StringIO(csv_content), sep=';', on_bad_lines='skip')
         
-        # Expected columns (based on inspection):
-        # Fecha;Contrato;Agente compra;Unidad compra;Zona compra;Agente venta;Unidad venta;Zona venta;Precio;Cantidad;Momento casación;
-        # Note: Last char is ';' so pandas might see an empty extra column at the end
-        
-        # Normalize columns
-        df.columns = [c.strip().lower().replace(' ', '_') for c in df.columns]
+        # Normalize columns using Regex to handle NBSP or other whitespace
+        # Replace 1 or more whitespace chars with _
+        df.columns = [re.sub(r'\s+', '_', c.strip().lower()) for c in df.columns]
         
         # Check integrity
         required = ['fecha', 'contrato', 'precio', 'cantidad']
@@ -44,24 +61,26 @@ def parse_trades_content(content: bytes, filename: str) -> pd.DataFrame:
             logger.warning(f"Missing columns in {filename}. Found: {df.columns}")
             return None
             
-        df = df.dropna(how='all') # Drop empty rows (like L1 if passed, or trailing)
-        if 'unnamed' in df.columns[-1]: # Drop empty column from trailing ;
-             df = df.iloc[:, :-1]
+        df = df.dropna(how='all') 
+        if 'unnamed' in df.columns[-1] or 'unnamed:_11' in df.columns: 
+             # Drop last column if unnamed (trailing ;)
+             if 'unnamed' in df.columns[-1]:
+                 df = df.iloc[:, :-1]
              
         df['source_file'] = filename
         
         # Types
-        # Floats: precio, cantidad
         for c in ['precio', 'cantidad']:
-            if df[c].dtype == 'object':
-                 df[c] = df[c].astype(str).str.replace(',', '.', regex=False)
-            df[c] = pd.to_numeric(df[c], errors='coerce').fillna(0.0)
+            if c in df.columns:
+                if df[c].dtype == 'object':
+                     df[c] = df[c].astype(str).str.replace(',', '.', regex=False)
+                df[c] = pd.to_numeric(df[c], errors='coerce').fillna(0.0)
 
-        # Dates: fecha (DD/MM/YYYY)
+        # Dates
         df['fecha_str'] = df['fecha']
         df['fecha'] = pd.to_datetime(df['fecha_str'], format='%d/%m/%Y', errors='coerce').dt.date
         
-        # Momento casacion: DD/MM/YYYY HH:MM:SS
+        # Momento casacion
         if 'momento_casación' in df.columns:
             df.rename(columns={'momento_casación': 'momento_casacion'}, inplace=True)
             
@@ -75,6 +94,9 @@ def parse_trades_content(content: bytes, filename: str) -> pd.DataFrame:
                 df[c] = df[c].fillna('').astype(str)
             else:
                 df[c] = ''
+
+        if 'fecha_str' in df.columns:
+            df.drop(columns=['fecha_str'], inplace=True)
 
         return df
 
@@ -103,8 +125,8 @@ def create_table_if_not_exists():
     try:
         engine = get_engine()
         with engine.begin() as conn:
+            conn.execute(text("CREATE SCHEMA IF NOT EXISTS omie"))
             conn.execute(text(ddl))
-            # Optional: Index on contrato for lookups
             conn.execute(text("CREATE INDEX IF NOT EXISTS idx_trades_contrato ON omie.trades (contrato)"))
     except Exception as e:
         logger.error(f"Error creating table: {e}")
@@ -119,9 +141,8 @@ def process_trades(start_date: datetime, end_date: datetime):
     while current_date <= end_date:
         year = current_date.strftime("%Y")
         month = current_date.strftime("%m")
-        date_str = current_date.strftime("%Y%m%d") # for finding inside zip
+        date_str = current_date.strftime("%Y%m%d") 
         
-        # Zip file
         zip_filename = f"trades_{year}{month}.zip"
         zip_path = f"bronze/omie/trades/{year}/{zip_filename}"
         
@@ -129,9 +150,6 @@ def process_trades(start_date: datetime, end_date: datetime):
             try:
                 zip_bytes = storage.read(zip_path)
                 with zipfile.ZipFile(io.BytesIO(zip_bytes)) as z:
-                    # Inside zip, files are trades_YYYYMMDD.1
-                    # We process ALL files matching correct dates?
-                    # Actually usually we want to process THE file for current_date
                     target_file = f"trades_{date_str}.1"
                     
                     found_file = None
@@ -146,21 +164,15 @@ def process_trades(start_date: datetime, end_date: datetime):
                         df = parse_trades_content(content, found_file)
                         
                         if df is not None and not df.empty:
-                            # Save Silver
                             silver_path = f"silver/omie/trades/{year}/{month}/{date_str}.parquet"
                             storage.save(silver_path, df.to_parquet(index=False))
                             
-                            # Deduplicate in DF before insert (if strict duplicates exist)
                             pk = ['fecha', 'contrato', 'agente_compra', 'unidad_compra', 'agente_venta', 'unidad_venta', 'precio', 'cantidad', 'momento_casacion']
-                            
-                            # Filter to valid PK columns present in DF
                             valid_pk = [c for c in pk if c in df.columns]
                             
                             if valid_pk:
                                 df = df.drop_duplicates(subset=valid_pk)
                             
-                            # Load to DB
-                            # Idempotency: Delete by fecha
                             engine = get_engine()
                             with engine.begin() as conn:
                                 conn.execute(text("DELETE FROM omie.trades WHERE fecha = :d"), {"d": current_date.date()})

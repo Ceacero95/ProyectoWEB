@@ -1,3 +1,21 @@
+"""
+omie_client.py
+
+OBJECTIVE:
+    Provides a specialized HTTP client to interact with the OMIE Market Data website.
+    Handles the construction of download URLs, session management (if needed),
+    and basic error handling for file downloads.
+
+KEY FEATURES:
+    - URL Construction: Automatically determines query parameters like 'parents'.
+    - Filename Logic: Maps date ranges to OMIE-specific filenames (e.g., marginalpdbc, trades).
+    - Robustness: Handles HTTP 404s and HTML error responses gracefully.
+
+USAGE:
+    client = OmieClient()
+    response = client.download_file("marginalpdbc_20250101.1")
+    if response: ...
+"""
 import requests
 import logging
 from datetime import datetime
