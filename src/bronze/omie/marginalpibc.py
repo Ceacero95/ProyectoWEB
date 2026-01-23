@@ -59,9 +59,16 @@ def download_marginalpibc(start_date: datetime, end_date: datetime):
             # Bronze path
             target_path = f"bronze/omie/marginalpibc/{year}/{month}/{filename}"
             
-            if storage.exists(target_path):
+            # Check overwrite logic for current month
+            now = datetime.now()
+            force_download = (int(year) == now.year and int(month) == now.month)
+
+            if storage.exists(target_path) and not force_download:
                 logger.info(f"File {target_path} already exists. Skipping.")
                 continue
+            
+            if force_download and storage.exists(target_path):
+                 logger.info(f"Overwriting existing file {target_path} (Current Month).")
                 
             response = client.download_file(filename)
             if response:

@@ -61,9 +61,21 @@ def download_marginalpdbc(start_date: datetime, end_date: datetime):
         else:
             target_path = f"bronze/omie/marginalpdbc/{year}/{month}/{filename}"
             
-        if storage.exists(target_path):
+        # Check overwrite policy:
+        # If it's the current month, we probably want to ensure we have the latest version (e.g. if file changed or was partial)
+        # But marginal files are usually static once published.
+        # However, if user suspects missing data, forcing download for recent days is good.
+        
+        force_download = False
+        now = datetime.now()
+        if int(year) == now.year and int(month) == now.month:
+             force_download = True
+             
+        if storage.exists(target_path) and not force_download:
             logger.info(f"File {target_path} already exists. Skipping download.")
         else:
+            if force_download and storage.exists(target_path):
+                 logger.info(f"File {target_path} exists but is current month. Overwriting.")
             response = client.download_file(filename)
             if response:
                 storage.save(target_path, response.content)
