@@ -25,7 +25,7 @@ with DAG(
     'esios_liquicomun_pipeline',
     default_args=default_args,
     description='Pipeline for ESIOS Liquicomun Data (Bronze -> Silver -> Gold)',
-    schedule_interval='0 8 * * *', # Daily at 08:00
+    schedule=None, # Manual execution
     start_date=days_ago(1),
     catchup=False,
     tags=['esios', 'energy'],

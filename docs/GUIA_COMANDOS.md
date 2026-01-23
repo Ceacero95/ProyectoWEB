@@ -48,6 +48,14 @@ git push
 
 ## Acceso Rápido
 *   **Panel Airflow:** [http://localhost:8080](http://localhost:8080) (`admin` / `admin`)
+*   **Ejecución Manual:** Todos los procesos están configurados como **manuales**. Para lanzar uno:
+    1. Entra en el panel de Airflow.
+    2. Busca el DAG (ej: `omie_pipeline`).
+    3. Haz clic en el botón de "Play" (Trigger DAG) arriba a la derecha.
+    4. Si quieres elegir fechas específicas, selecciona **"Trigger DAG w/ config"** y pasa un JSON:
+       ```json
+       {"start_date": "2025-01-01", "end_date": "2025-01-10"}
+       ```
 *   **Actualizar Código:** Si has descargado cambios de otros: `git pull`
 
 ## Troubleshooting

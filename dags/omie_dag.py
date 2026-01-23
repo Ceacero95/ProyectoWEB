@@ -7,7 +7,7 @@ OBJECTIVE:
     Orchestrates the download and processing of Marginal Prices (PDBC, PIBC) and Final Prices (PDvd, PDBF).
 
 SCHEDULE:
-    - Daily at 08:30 UTC (30 8 * * *).
+    - Manual execution only (schedule=None).
 
 STRUCTURE:
     - Parallel execution branches for different file types.
@@ -51,7 +51,7 @@ with DAG(
     'omie_pipeline',
     default_args=default_args,
     description='Pipeline for OMIE Data (Bronze -> Silver -> Gold)',
-    schedule_interval='30 8 * * *', # Daily at 08:30
+    schedule=None, # Manual execution
     start_date=days_ago(1),
     catchup=False,
     tags=['omie', 'energy'],

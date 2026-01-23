@@ -7,7 +7,7 @@ OBJECTIVE:
     Separated from the main OMIE pipeline to allow independent scheduling and backfilling.
 
 SCHEDULE:
-    - Daily at 10:00 UTC (0 10 * * *).
+    - Manual execution only (schedule=None).
     
 TASKS:
     1. download_trades: Fetches the ZIP for the current month.
@@ -76,7 +76,7 @@ with DAG(
     'trades_pipeline',
     default_args=default_args,
     description='Pipeline for OMIE Trades data',
-    schedule_interval='0 10 * * *', # Daily at 10:00 (Trades usually available later or early next day)
+    schedule=None, # Manual execution
     start_date=datetime(2025, 1, 1),
     catchup=False,
     tags=['omie', 'trades'],
