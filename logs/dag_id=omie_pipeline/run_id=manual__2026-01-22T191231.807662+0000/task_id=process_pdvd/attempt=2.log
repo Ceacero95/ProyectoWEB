@@ -371,3 +371,391 @@ DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 15, 1, ABA1) alread
 CONTEXT:  COPY pdvd, line 1
 
 [2026-01-23T16:47:53.311+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250216.parquet
+[2026-01-23T16:48:24.258+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 16, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:48:24.267+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202502.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 16, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:48:24.773+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250217.parquet
+[2026-01-23T16:48:53.761+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 17, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:48:53.762+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202502.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 17, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:48:54.031+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250218.parquet
+[2026-01-23T16:49:19.706+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 18, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:49:19.708+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202502.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 18, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:49:20.192+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250219.parquet
+[2026-01-23T16:50:01.523+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 19, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:50:01.525+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202502.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 19, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:50:01.847+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250220.parquet
+[2026-01-23T16:50:35.601+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 20, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:50:35.603+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202502.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 20, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:50:36.091+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250221.parquet
+[2026-01-23T16:51:06.102+0000] {database.py:186} INFO - Inserted 57937 rows into 'omie.pdvd'.
+[2026-01-23T16:51:06.104+0000] {pdvd.py:125} INFO - Processed pdvd for 20250221
+[2026-01-23T16:51:06.403+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250222.parquet
+[2026-01-23T16:51:35.907+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 22, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:51:35.909+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202502.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 22, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:51:36.159+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250223.parquet
+[2026-01-23T16:52:22.264+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 23, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:52:22.268+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202502.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 23, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:52:22.655+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250224.parquet
+[2026-01-23T16:53:08.693+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 24, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:53:08.695+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202502.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 24, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:53:09.224+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250225.parquet
+[2026-01-23T16:54:04.854+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 25, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:54:04.855+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202502.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 25, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:54:05.395+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250226.parquet
+[2026-01-23T16:54:58.906+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 26, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:54:58.908+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202502.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 26, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:54:59.356+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250227.parquet
+[2026-01-23T16:55:53.435+0000] {database.py:186} INFO - Inserted 58424 rows into 'omie.pdvd'.
+[2026-01-23T16:55:53.436+0000] {pdvd.py:125} INFO - Processed pdvd for 20250227
+[2026-01-23T16:55:53.728+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250228.parquet
+[2026-01-23T16:57:29.443+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 28, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:57:29.444+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202502.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 2, 28, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:57:29.698+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250301.parquet
+[2026-01-23T16:58:44.922+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 1, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:58:44.923+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 1, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:58:45.396+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250302.parquet
+[2026-01-23T17:00:27.208+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 2, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:00:27.209+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 2, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:00:27.680+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250303.parquet
+[2026-01-23T17:01:11.605+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 3, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:01:11.606+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 3, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:01:12.524+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250304.parquet
+[2026-01-23T17:01:57.629+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 4, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:01:57.630+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 4, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:01:58.038+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250305.parquet
+[2026-01-23T17:03:03.342+0000] {database.py:186} INFO - Inserted 58232 rows into 'omie.pdvd'.
+[2026-01-23T17:03:03.343+0000] {pdvd.py:125} INFO - Processed pdvd for 20250305
+[2026-01-23T17:03:03.633+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250306.parquet
+[2026-01-23T17:04:40.338+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 6, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:04:40.340+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 6, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:04:40.869+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250307.parquet
+[2026-01-23T17:05:54.294+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 7, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:05:54.295+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 7, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:05:54.745+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250308.parquet
+[2026-01-23T17:06:35.037+0000] {database.py:186} INFO - Inserted 57396 rows into 'omie.pdvd'.
+[2026-01-23T17:06:35.039+0000] {pdvd.py:125} INFO - Processed pdvd for 20250308
+[2026-01-23T17:06:35.551+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250309.parquet
+[2026-01-23T17:07:38.604+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 9, 1, ABOUC01) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:07:38.606+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 9, 1, ABOUC01) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:07:39.571+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250310.parquet
+[2026-01-23T17:08:17.474+0000] {database.py:186} INFO - Inserted 58139 rows into 'omie.pdvd'.
+[2026-01-23T17:08:17.475+0000] {pdvd.py:125} INFO - Processed pdvd for 20250310
+[2026-01-23T17:08:17.995+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250311.parquet
+[2026-01-23T17:08:55.144+0000] {database.py:186} INFO - Inserted 58259 rows into 'omie.pdvd'.
+[2026-01-23T17:08:55.146+0000] {pdvd.py:125} INFO - Processed pdvd for 20250311
+[2026-01-23T17:08:55.567+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250312.parquet
+[2026-01-23T17:10:06.412+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 12, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:10:06.413+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 12, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:10:06.812+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250313.parquet
+[2026-01-23T17:10:44.999+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 13, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:10:45.000+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 13, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:10:45.406+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250314.parquet
+[2026-01-23T17:11:32.172+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 14, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:11:32.174+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 14, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:11:32.639+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250315.parquet
+[2026-01-23T17:12:54.947+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 15, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:12:54.949+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 15, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:12:55.454+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250316.parquet
+[2026-01-23T17:13:52.260+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 16, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:13:52.263+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 16, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:13:52.854+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250317.parquet
+[2026-01-23T17:14:25.099+0000] {database.py:186} INFO - Inserted 58679 rows into 'omie.pdvd'.
+[2026-01-23T17:14:25.100+0000] {pdvd.py:125} INFO - Processed pdvd for 20250317
+[2026-01-23T17:14:25.689+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250318.parquet
+[2026-01-23T17:15:39.411+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 18, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:15:39.412+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 18, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:15:40.563+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250319.parquet
+[2026-01-23T17:17:32.379+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 19, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:17:32.389+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 19, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:17:40.575+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250320.parquet
+[2026-01-23T17:19:05.933+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 20, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:19:05.934+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 20, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:19:07.368+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250321.parquet
+[2026-01-23T17:20:19.149+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 21, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:20:19.382+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 21, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:20:24.782+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250322.parquet
+[2026-01-23T17:21:40.744+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 22, 1, ABOUC01) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:21:40.784+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 22, 1, ABOUC01) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:21:48.237+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250323.parquet
+[2026-01-23T17:23:02.662+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 23, 1, ABOUC01) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:23:02.664+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 23, 1, ABOUC01) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:23:03.895+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250324.parquet
+[2026-01-23T17:24:38.216+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 24, 1, ABOUC01) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:24:38.217+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 24, 1, ABOUC01) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:24:38.943+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250325.parquet
+[2026-01-23T17:25:43.969+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 25, 1, ABOUC01) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:25:43.972+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 25, 1, ABOUC01) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:25:45.182+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250326.parquet
+[2026-01-23T17:26:34.106+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 26, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:26:34.108+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 26, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:26:35.285+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250327.parquet
+[2026-01-23T17:27:19.887+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 27, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:27:19.888+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 27, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:27:21.119+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250328.parquet
+[2026-01-23T17:28:24.223+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 28, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:28:24.224+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 28, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:28:25.399+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250329.parquet
+[2026-01-23T17:29:23.346+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 29, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:29:23.349+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 29, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:29:24.997+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250330.parquet
+[2026-01-23T17:30:08.704+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 30, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:30:08.706+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 30, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:30:09.504+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250331.parquet
+[2026-01-23T17:31:08.459+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 31, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:31:08.460+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202503.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 3, 31, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:31:09.335+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250401.parquet
+[2026-01-23T17:32:07.315+0000] {database.py:186} INFO - Inserted 233068 rows into 'omie.pdvd'.
+[2026-01-23T17:32:07.331+0000] {pdvd.py:125} INFO - Processed pdvd for 20250401
+[2026-01-23T17:32:09.169+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250402.parquet
+[2026-01-23T17:33:41.340+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 4, 2, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:33:41.342+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202504.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 4, 2, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:33:43.195+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250403.parquet
+[2026-01-23T17:34:46.886+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 4, 3, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:34:46.887+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202504.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 4, 3, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:34:48.735+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250404.parquet
+[2026-01-23T17:36:02.580+0000] {database.py:186} INFO - Inserted 233844 rows into 'omie.pdvd'.
+[2026-01-23T17:36:02.597+0000] {pdvd.py:125} INFO - Processed pdvd for 20250404
+[2026-01-23T17:36:04.162+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250405.parquet
+[2026-01-23T17:37:41.152+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 4, 5, 1, ABOUC01) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:37:41.154+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202504.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 4, 5, 1, ABOUC01) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T17:37:42.914+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250406.parquet
+[2026-01-23T17:37:59.820+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
