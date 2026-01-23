@@ -1,0 +1,162 @@
+[2026-01-23T16:10:07.689+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-23T16:10:07.866+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: esios_liquicomun_pipeline.process_gold scheduled__2026-01-22T08:00:00+00:00 [queued]>
+[2026-01-23T16:10:07.908+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: esios_liquicomun_pipeline.process_gold scheduled__2026-01-22T08:00:00+00:00 [queued]>
+[2026-01-23T16:10:07.914+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-23T16:10:07.959+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): process_gold> on 2026-01-22 08:00:00+00:00
+[2026-01-23T16:10:07.992+0000] {standard_task_runner.py:63} INFO - Started process 311 to run task
+[2026-01-23T16:10:08.011+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'esios_liquicomun_pipeline', 'process_gold', 'scheduled__2026-01-22T08:00:00+00:00', '--job-id', '187', '--raw', '--subdir', 'DAGS_FOLDER/esios_dag.py', '--cfg-path', '/tmp/tmp7fj309ms']
+[2026-01-23T16:10:08.021+0000] {standard_task_runner.py:91} INFO - Job 187: Subtask process_gold
+[2026-01-23T16:10:08.339+0000] {task_command.py:426} INFO - Running <TaskInstance: esios_liquicomun_pipeline.process_gold scheduled__2026-01-22T08:00:00+00:00 [running]> on host 2aff4151de2d
+[2026-01-23T16:10:08.794+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='esios_liquicomun_pipeline' AIRFLOW_CTX_TASK_ID='process_gold' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T08:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-22T08:00:00+00:00'
+[2026-01-23T16:10:08.824+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-23T16:10:08.948+0000] {logging_mixin.py:188} INFO - Processing Gold for 2026-01-22 00:00:00 - 2026-01-22 00:00:00
+[2026-01-23T16:10:09.005+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A1_enrttrba_20260101_20260131.parquet into liq_enrttrba...
+[2026-01-23T16:10:09.520+0000] {database.py:108} INFO - Table liquicomun."liq_enrttrba" ensured.
+[2026-01-23T16:10:09.525+0000] {database.py:208} INFO - Index 'idx_liq_enrttrba_source_file' checked/created on liquicomun."liq_enrttrba".
+[2026-01-23T16:10:09.587+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:09.600+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:09.602+0000] {liquicomun.py:126} INFO -   Inserting 649 rows into liq_enrttrba
+[2026-01-23T16:10:09.624+0000] {liquicomun.py:166} INFO -   Cleaned existing data for source_file: A1_enrttrba_20260101_20260131
+[2026-01-23T16:10:09.791+0000] {database.py:186} INFO - Inserted 649 rows into 'liquicomun.liq_enrttrba'.
+[2026-01-23T16:10:09.799+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A1_enrttrsu_20260101_20260131.parquet into liq_enrttrsu...
+[2026-01-23T16:10:09.971+0000] {database.py:108} INFO - Table liquicomun."liq_enrttrsu" ensured.
+[2026-01-23T16:10:09.991+0000] {database.py:208} INFO - Index 'idx_liq_enrttrsu_source_file' checked/created on liquicomun."liq_enrttrsu".
+[2026-01-23T16:10:10.019+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:10.023+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:10.044+0000] {liquicomun.py:126} INFO -   Inserting 919 rows into liq_enrttrsu
+[2026-01-23T16:10:10.071+0000] {liquicomun.py:166} INFO -   Cleaned existing data for source_file: A1_enrttrsu_20260101_20260131
+[2026-01-23T16:10:10.227+0000] {database.py:186} INFO - Inserted 919 rows into 'liquicomun.liq_enrttrsu'.
+[2026-01-23T16:10:10.250+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A1_ensecqhba_20260101_20260131.parquet into liq_ensecqhba...
+[2026-01-23T16:10:10.432+0000] {database.py:108} INFO - Table liquicomun."liq_ensecqhba" ensured.
+[2026-01-23T16:10:10.445+0000] {database.py:208} INFO - Index 'idx_liq_ensecqhba_source_file' checked/created on liquicomun."liq_ensecqhba".
+[2026-01-23T16:10:10.458+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:10.471+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:10.477+0000] {liquicomun.py:126} INFO -   Inserting 1221 rows into liq_ensecqhba
+[2026-01-23T16:10:10.512+0000] {liquicomun.py:166} INFO -   Cleaned existing data for source_file: A1_ensecqhba_20260101_20260131
+[2026-01-23T16:10:10.669+0000] {database.py:186} INFO - Inserted 1221 rows into 'liquicomun.liq_ensecqhba'.
+[2026-01-23T16:10:10.672+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A1_ensecqhsu_20260101_20260131.parquet into liq_ensecqhsu...
+[2026-01-23T16:10:10.846+0000] {database.py:108} INFO - Table liquicomun."liq_ensecqhsu" ensured.
+[2026-01-23T16:10:10.853+0000] {database.py:208} INFO - Index 'idx_liq_ensecqhsu_source_file' checked/created on liquicomun."liq_ensecqhsu".
+[2026-01-23T16:10:10.873+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:10.876+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:10.879+0000] {liquicomun.py:126} INFO -   Inserting 1307 rows into liq_ensecqhsu
+[2026-01-23T16:10:10.904+0000] {liquicomun.py:166} INFO -   Cleaned existing data for source_file: A1_ensecqhsu_20260101_20260131
+[2026-01-23T16:10:11.039+0000] {database.py:186} INFO - Inserted 1307 rows into 'liquicomun.liq_ensecqhsu'.
+[2026-01-23T16:10:11.041+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A1_enterqhba_20260101_20260131.parquet into liq_enterqhba...
+[2026-01-23T16:10:11.102+0000] {database.py:108} INFO - Table liquicomun."liq_enterqhba" ensured.
+[2026-01-23T16:10:11.108+0000] {database.py:208} INFO - Index 'idx_liq_enterqhba_source_file' checked/created on liquicomun."liq_enterqhba".
+[2026-01-23T16:10:11.130+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:11.134+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:11.139+0000] {liquicomun.py:126} INFO -   Inserting 1326 rows into liq_enterqhba
+[2026-01-23T16:10:11.174+0000] {liquicomun.py:166} INFO -   Cleaned existing data for source_file: A1_enterqhba_20260101_20260131
+[2026-01-23T16:10:11.273+0000] {database.py:186} INFO - Inserted 1326 rows into 'liquicomun.liq_enterqhba'.
+[2026-01-23T16:10:11.276+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A1_enterqhsu_20260101_20260131.parquet into liq_enterqhsu...
+[2026-01-23T16:10:11.498+0000] {database.py:108} INFO - Table liquicomun."liq_enterqhsu" ensured.
+[2026-01-23T16:10:11.503+0000] {database.py:208} INFO - Index 'idx_liq_enterqhsu_source_file' checked/created on liquicomun."liq_enterqhsu".
+[2026-01-23T16:10:11.518+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:11.542+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:11.544+0000] {liquicomun.py:126} INFO -   Inserting 1373 rows into liq_enterqhsu
+[2026-01-23T16:10:11.620+0000] {liquicomun.py:166} INFO -   Cleaned existing data for source_file: A1_enterqhsu_20260101_20260131
+[2026-01-23T16:10:11.775+0000] {database.py:186} INFO - Inserted 1373 rows into 'liquicomun.liq_enterqhsu'.
+[2026-01-23T16:10:11.777+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A1_prdvbaqh_20260101_20260131.parquet into liq_prdvbaqh...
+[2026-01-23T16:10:11.871+0000] {database.py:108} INFO - Table liquicomun."liq_prdvbaqh" ensured.
+[2026-01-23T16:10:11.883+0000] {database.py:208} INFO - Index 'idx_liq_prdvbaqh_source_file' checked/created on liquicomun."liq_prdvbaqh".
+[2026-01-23T16:10:11.898+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:11.901+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:11.902+0000] {liquicomun.py:126} INFO -   Inserting 1448 rows into liq_prdvbaqh
+[2026-01-23T16:10:11.937+0000] {liquicomun.py:166} INFO -   Cleaned existing data for source_file: A1_prdvbaqh_20260101_20260131
+[2026-01-23T16:10:12.124+0000] {database.py:186} INFO - Inserted 1448 rows into 'liquicomun.liq_prdvbaqh'.
+[2026-01-23T16:10:12.125+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A1_prdvdatos_20260101_20260131.parquet into liq_prdvdatos...
+[2026-01-23T16:10:12.297+0000] {database.py:108} INFO - Table liquicomun."liq_prdvdatos" ensured.
+[2026-01-23T16:10:12.312+0000] {database.py:208} INFO - Index 'idx_liq_prdvdatos_source_file' checked/created on liquicomun."liq_prdvdatos".
+[2026-01-23T16:10:12.341+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:12.358+0000] {liquicomun.py:123} INFO -   Filtered 1 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:12.361+0000] {liquicomun.py:126} INFO -   Inserting 1440 rows into liq_prdvdatos
+[2026-01-23T16:10:12.438+0000] {liquicomun.py:166} INFO -   Cleaned existing data for source_file: A1_prdvdatos_20260101_20260131
+[2026-01-23T16:10:12.619+0000] {database.py:186} INFO - Inserted 1440 rows into 'liquicomun.liq_prdvdatos'.
+[2026-01-23T16:10:12.621+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A1_prdvsuqh_20260101_20260131.parquet into liq_prdvsuqh...
+[2026-01-23T16:10:12.733+0000] {database.py:108} INFO - Table liquicomun."liq_prdvsuqh" ensured.
+[2026-01-23T16:10:12.754+0000] {database.py:208} INFO - Index 'idx_liq_prdvsuqh_source_file' checked/created on liquicomun."liq_prdvsuqh".
+[2026-01-23T16:10:12.767+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:12.775+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:12.775+0000] {liquicomun.py:126} INFO -   Inserting 1448 rows into liq_prdvsuqh
+[2026-01-23T16:10:12.799+0000] {liquicomun.py:166} INFO -   Cleaned existing data for source_file: A1_prdvsuqh_20260101_20260131
+[2026-01-23T16:10:12.894+0000] {database.py:186} INFO - Inserted 1448 rows into 'liquicomun.liq_prdvsuqh'.
+[2026-01-23T16:10:12.901+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A2_enrttrba_20260101_20260131.parquet into liq_enrttrba...
+[2026-01-23T16:10:12.981+0000] {database.py:108} INFO - Table liquicomun."liq_enrttrba" ensured.
+[2026-01-23T16:10:12.985+0000] {database.py:208} INFO - Index 'idx_liq_enrttrba_source_file' checked/created on liquicomun."liq_enrttrba".
+[2026-01-23T16:10:13.004+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:13.008+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:13.010+0000] {liquicomun.py:126} INFO -   Inserting 795 rows into liq_enrttrba
+[2026-01-23T16:10:13.020+0000] {liquicomun.py:148} INFO -   Cumulative data detected (['A2']). Deleting by (fecha, liquidacion)...
+[2026-01-23T16:10:13.102+0000] {database.py:186} INFO - Inserted 795 rows into 'liquicomun.liq_enrttrba'.
+[2026-01-23T16:10:13.103+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A2_enrttrsu_20260101_20260131.parquet into liq_enrttrsu...
+[2026-01-23T16:10:13.173+0000] {database.py:108} INFO - Table liquicomun."liq_enrttrsu" ensured.
+[2026-01-23T16:10:13.180+0000] {database.py:208} INFO - Index 'idx_liq_enrttrsu_source_file' checked/created on liquicomun."liq_enrttrsu".
+[2026-01-23T16:10:13.193+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:13.201+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:13.203+0000] {liquicomun.py:126} INFO -   Inserting 1299 rows into liq_enrttrsu
+[2026-01-23T16:10:13.214+0000] {liquicomun.py:148} INFO -   Cumulative data detected (['A2']). Deleting by (fecha, liquidacion)...
+[2026-01-23T16:10:13.337+0000] {database.py:186} INFO - Inserted 1299 rows into 'liquicomun.liq_enrttrsu'.
+[2026-01-23T16:10:13.340+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A2_ensecqhba_20260101_20260131.parquet into liq_ensecqhba...
+[2026-01-23T16:10:13.396+0000] {database.py:108} INFO - Table liquicomun."liq_ensecqhba" ensured.
+[2026-01-23T16:10:13.399+0000] {database.py:208} INFO - Index 'idx_liq_ensecqhba_source_file' checked/created on liquicomun."liq_ensecqhba".
+[2026-01-23T16:10:13.413+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:13.421+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:13.423+0000] {liquicomun.py:126} INFO -   Inserting 1812 rows into liq_ensecqhba
+[2026-01-23T16:10:13.430+0000] {liquicomun.py:148} INFO -   Cumulative data detected (['A2']). Deleting by (fecha, liquidacion)...
+[2026-01-23T16:10:13.542+0000] {database.py:186} INFO - Inserted 1812 rows into 'liquicomun.liq_ensecqhba'.
+[2026-01-23T16:10:13.543+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A2_ensecqhsu_20260101_20260131.parquet into liq_ensecqhsu...
+[2026-01-23T16:10:13.693+0000] {database.py:108} INFO - Table liquicomun."liq_ensecqhsu" ensured.
+[2026-01-23T16:10:13.701+0000] {database.py:208} INFO - Index 'idx_liq_ensecqhsu_source_file' checked/created on liquicomun."liq_ensecqhsu".
+[2026-01-23T16:10:13.713+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:13.718+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:13.719+0000] {liquicomun.py:126} INFO -   Inserting 1903 rows into liq_ensecqhsu
+[2026-01-23T16:10:13.724+0000] {liquicomun.py:148} INFO -   Cumulative data detected (['A2']). Deleting by (fecha, liquidacion)...
+[2026-01-23T16:10:13.917+0000] {database.py:186} INFO - Inserted 1903 rows into 'liquicomun.liq_ensecqhsu'.
+[2026-01-23T16:10:13.923+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A2_enterqhba_20260101_20260131.parquet into liq_enterqhba...
+[2026-01-23T16:10:13.967+0000] {database.py:108} INFO - Table liquicomun."liq_enterqhba" ensured.
+[2026-01-23T16:10:13.970+0000] {database.py:208} INFO - Index 'idx_liq_enterqhba_source_file' checked/created on liquicomun."liq_enterqhba".
+[2026-01-23T16:10:13.988+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:13.990+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:13.991+0000] {liquicomun.py:126} INFO -   Inserting 1977 rows into liq_enterqhba
+[2026-01-23T16:10:14.000+0000] {liquicomun.py:148} INFO -   Cumulative data detected (['A2']). Deleting by (fecha, liquidacion)...
+[2026-01-23T16:10:14.147+0000] {database.py:186} INFO - Inserted 1977 rows into 'liquicomun.liq_enterqhba'.
+[2026-01-23T16:10:14.152+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A2_enterqhsu_20260101_20260131.parquet into liq_enterqhsu...
+[2026-01-23T16:10:14.195+0000] {database.py:108} INFO - Table liquicomun."liq_enterqhsu" ensured.
+[2026-01-23T16:10:14.198+0000] {database.py:208} INFO - Index 'idx_liq_enterqhsu_source_file' checked/created on liquicomun."liq_enterqhsu".
+[2026-01-23T16:10:14.226+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:14.231+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:14.235+0000] {liquicomun.py:126} INFO -   Inserting 2024 rows into liq_enterqhsu
+[2026-01-23T16:10:14.240+0000] {liquicomun.py:148} INFO -   Cumulative data detected (['A2']). Deleting by (fecha, liquidacion)...
+[2026-01-23T16:10:14.367+0000] {database.py:186} INFO - Inserted 2024 rows into 'liquicomun.liq_enterqhsu'.
+[2026-01-23T16:10:14.369+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A2_prdvbaqh_20260101_20260131.parquet into liq_prdvbaqh...
+[2026-01-23T16:10:14.441+0000] {database.py:108} INFO - Table liquicomun."liq_prdvbaqh" ensured.
+[2026-01-23T16:10:14.448+0000] {database.py:208} INFO - Index 'idx_liq_prdvbaqh_source_file' checked/created on liquicomun."liq_prdvbaqh".
+[2026-01-23T16:10:14.473+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:14.484+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:14.488+0000] {liquicomun.py:126} INFO -   Inserting 2113 rows into liq_prdvbaqh
+[2026-01-23T16:10:14.495+0000] {liquicomun.py:148} INFO -   Cumulative data detected (['A2']). Deleting by (fecha, liquidacion)...
+[2026-01-23T16:10:14.647+0000] {database.py:186} INFO - Inserted 2113 rows into 'liquicomun.liq_prdvbaqh'.
+[2026-01-23T16:10:14.649+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A2_prdvdatos_20260101_20260131.parquet into liq_prdvdatos...
+[2026-01-23T16:10:14.698+0000] {database.py:108} INFO - Table liquicomun."liq_prdvdatos" ensured.
+[2026-01-23T16:10:14.708+0000] {database.py:208} INFO - Index 'idx_liq_prdvdatos_source_file' checked/created on liquicomun."liq_prdvdatos".
+[2026-01-23T16:10:14.729+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:14.745+0000] {liquicomun.py:123} INFO -   Filtered 1 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:14.746+0000] {liquicomun.py:126} INFO -   Inserting 2112 rows into liq_prdvdatos
+[2026-01-23T16:10:14.751+0000] {liquicomun.py:148} INFO -   Cumulative data detected (['A2']). Deleting by (fecha, liquidacion)...
+[2026-01-23T16:10:15.139+0000] {database.py:186} INFO - Inserted 2112 rows into 'liquicomun.liq_prdvdatos'.
+[2026-01-23T16:10:15.142+0000] {liquicomun.py:61} INFO - Loading silver/liquicomun/2026/01/A2_prdvsuqh_20260101_20260131.parquet into liq_prdvsuqh...
+[2026-01-23T16:10:15.161+0000] {database.py:108} INFO - Table liquicomun."liq_prdvsuqh" ensured.
+[2026-01-23T16:10:15.163+0000] {database.py:208} INFO - Index 'idx_liq_prdvsuqh_source_file' checked/created on liquicomun."liq_prdvsuqh".
+[2026-01-23T16:10:15.178+0000] {liquicomun.py:116} INFO -   Filtered 1 rows with NaT dates.
+[2026-01-23T16:10:15.180+0000] {liquicomun.py:123} INFO -   Filtered 9 rows (invalid dates or future dates > 2026-01-23).
+[2026-01-23T16:10:15.182+0000] {liquicomun.py:126} INFO -   Inserting 2113 rows into liq_prdvsuqh
+[2026-01-23T16:10:15.187+0000] {liquicomun.py:148} INFO -   Cumulative data detected (['A2']). Deleting by (fecha, liquidacion)...
+[2026-01-23T16:10:15.312+0000] {database.py:186} INFO - Inserted 2113 rows into 'liquicomun.liq_prdvsuqh'.
+[2026-01-23T16:10:15.318+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-01-23T16:10:15.320+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-23T16:10:15.388+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=esios_liquicomun_pipeline, task_id=process_gold, run_id=scheduled__2026-01-22T08:00:00+00:00, execution_date=20260122T080000, start_date=20260123T161007, end_date=20260123T161015
+[2026-01-23T16:10:16.370+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-23T16:10:16.421+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-23T16:10:16.428+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

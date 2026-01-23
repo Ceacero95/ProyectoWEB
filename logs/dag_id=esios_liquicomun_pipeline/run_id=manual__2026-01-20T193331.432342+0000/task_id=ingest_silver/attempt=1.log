@@ -1,0 +1,55 @@
+[2026-01-20T19:33:39.197+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-20T19:33:39.226+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: esios_liquicomun_pipeline.ingest_silver manual__2026-01-20T19:33:31.432342+00:00 [queued]>
+[2026-01-20T19:33:39.234+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: esios_liquicomun_pipeline.ingest_silver manual__2026-01-20T19:33:31.432342+00:00 [queued]>
+[2026-01-20T19:33:39.235+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-20T19:33:39.247+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): ingest_silver> on 2026-01-20 19:33:31.432342+00:00
+[2026-01-20T19:33:39.254+0000] {standard_task_runner.py:63} INFO - Started process 2342 to run task
+[2026-01-20T19:33:39.258+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'esios_liquicomun_pipeline', 'ingest_silver', 'manual__2026-01-20T19:33:31.432342+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/esios_dag.py', '--cfg-path', '/tmp/tmprc5n2daz']
+[2026-01-20T19:33:39.261+0000] {standard_task_runner.py:91} INFO - Job 53: Subtask ingest_silver
+[2026-01-20T19:33:39.352+0000] {task_command.py:426} INFO - Running <TaskInstance: esios_liquicomun_pipeline.ingest_silver manual__2026-01-20T19:33:31.432342+00:00 [running]> on host d1a9e72e2525
+[2026-01-20T19:33:39.450+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='esios_liquicomun_pipeline' AIRFLOW_CTX_TASK_ID='ingest_silver' AIRFLOW_CTX_EXECUTION_DATE='2026-01-20T19:33:31.432342+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-20T19:33:31.432342+00:00'
+[2026-01-20T19:33:39.452+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-20T19:33:39.478+0000] {logging_mixin.py:188} INFO - Ingesting Silver for 2026-01-20 00:00:00 - 2026-01-20 00:00:00
+[2026-01-20T19:33:39.489+0000] {liquicomun_parquet.py:46} INFO - Ingesting bronze/liquicomun/2026/01/esios_3_20260120.zip to Parquet...
+[2026-01-20T19:33:39.605+0000] {liquicomun_parquet.py:73} INFO -   Processing A2_enrttrba_20260101_20260131 -> enrttrba
+[2026-01-20T19:33:39.624+0000] {liquicomun_parquet.py:104} WARNING -     Column mismatch: Found 4, expected 7
+[2026-01-20T19:33:39.683+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/liquicomun/2026/01/A2_enrttrba_20260101_20260131.parquet
+[2026-01-20T19:33:39.684+0000] {liquicomun_parquet.py:164} INFO -     Saved Parquet: silver/liquicomun/2026/01/A2_enrttrba_20260101_20260131.parquet
+[2026-01-20T19:33:39.684+0000] {liquicomun_parquet.py:73} INFO -   Processing A2_enrttrsu_20260101_20260131 -> enrttrsu
+[2026-01-20T19:33:39.691+0000] {liquicomun_parquet.py:104} WARNING -     Column mismatch: Found 4, expected 7
+[2026-01-20T19:33:39.717+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/liquicomun/2026/01/A2_enrttrsu_20260101_20260131.parquet
+[2026-01-20T19:33:39.718+0000] {liquicomun_parquet.py:164} INFO -     Saved Parquet: silver/liquicomun/2026/01/A2_enrttrsu_20260101_20260131.parquet
+[2026-01-20T19:33:39.719+0000] {liquicomun_parquet.py:73} INFO -   Processing A2_ensecqhba_20260101_20260131 -> ensecqhba
+[2026-01-20T19:33:39.726+0000] {liquicomun_parquet.py:104} WARNING -     Column mismatch: Found 4, expected 7
+[2026-01-20T19:33:39.901+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/liquicomun/2026/01/A2_ensecqhba_20260101_20260131.parquet
+[2026-01-20T19:33:39.902+0000] {liquicomun_parquet.py:164} INFO -     Saved Parquet: silver/liquicomun/2026/01/A2_ensecqhba_20260101_20260131.parquet
+[2026-01-20T19:33:39.904+0000] {liquicomun_parquet.py:73} INFO -   Processing A2_ensecqhsu_20260101_20260131 -> ensecqhsu
+[2026-01-20T19:33:39.916+0000] {liquicomun_parquet.py:104} WARNING -     Column mismatch: Found 4, expected 7
+[2026-01-20T19:33:39.965+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/liquicomun/2026/01/A2_ensecqhsu_20260101_20260131.parquet
+[2026-01-20T19:33:39.966+0000] {liquicomun_parquet.py:164} INFO -     Saved Parquet: silver/liquicomun/2026/01/A2_ensecqhsu_20260101_20260131.parquet
+[2026-01-20T19:33:39.967+0000] {liquicomun_parquet.py:73} INFO -   Processing A2_enterqhba_20260101_20260131 -> enterqhba
+[2026-01-20T19:33:39.973+0000] {liquicomun_parquet.py:104} WARNING -     Column mismatch: Found 4, expected 7
+[2026-01-20T19:33:40.008+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/liquicomun/2026/01/A2_enterqhba_20260101_20260131.parquet
+[2026-01-20T19:33:40.008+0000] {liquicomun_parquet.py:164} INFO -     Saved Parquet: silver/liquicomun/2026/01/A2_enterqhba_20260101_20260131.parquet
+[2026-01-20T19:33:40.009+0000] {liquicomun_parquet.py:73} INFO -   Processing A2_enterqhsu_20260101_20260131 -> enterqhsu
+[2026-01-20T19:33:40.016+0000] {liquicomun_parquet.py:104} WARNING -     Column mismatch: Found 4, expected 7
+[2026-01-20T19:33:40.049+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/liquicomun/2026/01/A2_enterqhsu_20260101_20260131.parquet
+[2026-01-20T19:33:40.050+0000] {liquicomun_parquet.py:164} INFO -     Saved Parquet: silver/liquicomun/2026/01/A2_enterqhsu_20260101_20260131.parquet
+[2026-01-20T19:33:40.050+0000] {liquicomun_parquet.py:73} INFO -   Processing A2_prdvbaqh_20260101_20260131 -> prdvbaqh
+[2026-01-20T19:33:40.055+0000] {liquicomun_parquet.py:104} WARNING -     Column mismatch: Found 4, expected 7
+[2026-01-20T19:33:40.092+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/liquicomun/2026/01/A2_prdvbaqh_20260101_20260131.parquet
+[2026-01-20T19:33:40.093+0000] {liquicomun_parquet.py:164} INFO -     Saved Parquet: silver/liquicomun/2026/01/A2_prdvbaqh_20260101_20260131.parquet
+[2026-01-20T19:33:40.093+0000] {liquicomun_parquet.py:73} INFO -   Processing A2_prdvdatos_20260101_20260131 -> prdvdatos
+[2026-01-20T19:33:40.105+0000] {liquicomun_parquet.py:104} WARNING -     Column mismatch: Found 15, expected 18
+[2026-01-20T19:33:40.140+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/liquicomun/2026/01/A2_prdvdatos_20260101_20260131.parquet
+[2026-01-20T19:33:40.141+0000] {liquicomun_parquet.py:164} INFO -     Saved Parquet: silver/liquicomun/2026/01/A2_prdvdatos_20260101_20260131.parquet
+[2026-01-20T19:33:40.141+0000] {liquicomun_parquet.py:73} INFO -   Processing A2_prdvsuqh_20260101_20260131 -> prdvsuqh
+[2026-01-20T19:33:40.147+0000] {liquicomun_parquet.py:104} WARNING -     Column mismatch: Found 4, expected 7
+[2026-01-20T19:33:40.186+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/liquicomun/2026/01/A2_prdvsuqh_20260101_20260131.parquet
+[2026-01-20T19:33:40.187+0000] {liquicomun_parquet.py:164} INFO -     Saved Parquet: silver/liquicomun/2026/01/A2_prdvsuqh_20260101_20260131.parquet
+[2026-01-20T19:33:40.190+0000] {python.py:237} INFO - Done. Returned value was: {'start': '2026-01-20', 'end': '2026-01-20'}
+[2026-01-20T19:33:40.190+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-20T19:33:40.216+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=esios_liquicomun_pipeline, task_id=ingest_silver, run_id=manual__2026-01-20T19:33:31.432342+00:00, execution_date=20260120T193331, start_date=20260120T193339, end_date=20260120T193340
+[2026-01-20T19:33:40.276+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-20T19:33:40.301+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-20T19:33:40.304+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

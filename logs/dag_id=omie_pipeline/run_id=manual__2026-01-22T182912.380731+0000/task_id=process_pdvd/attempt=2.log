@@ -1,0 +1,43 @@
+[2026-01-23T16:09:45.903+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-23T16:09:46.150+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: omie_pipeline.process_pdvd manual__2026-01-22T18:29:12.380731+00:00 [queued]>
+[2026-01-23T16:09:46.208+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: omie_pipeline.process_pdvd manual__2026-01-22T18:29:12.380731+00:00 [queued]>
+[2026-01-23T16:09:46.217+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-01-23T16:09:46.291+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): process_pdvd> on 2026-01-22 18:29:12.380731+00:00
+[2026-01-23T16:09:46.316+0000] {standard_task_runner.py:63} INFO - Started process 265 to run task
+[2026-01-23T16:09:46.362+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'omie_pipeline', 'process_pdvd', 'manual__2026-01-22T18:29:12.380731+00:00', '--job-id', '180', '--raw', '--subdir', 'DAGS_FOLDER/omie_dag.py', '--cfg-path', '/tmp/tmp7fowelue']
+[2026-01-23T16:09:46.386+0000] {standard_task_runner.py:91} INFO - Job 180: Subtask process_pdvd
+[2026-01-23T16:09:46.763+0000] {task_command.py:426} INFO - Running <TaskInstance: omie_pipeline.process_pdvd manual__2026-01-22T18:29:12.380731+00:00 [running]> on host 2aff4151de2d
+[2026-01-23T16:09:47.541+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='omie_pipeline' AIRFLOW_CTX_TASK_ID='process_pdvd' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T18:29:12.380731+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-22T18:29:12.380731+00:00'
+[2026-01-23T16:09:47.548+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-23T16:09:47.644+0000] {logging_mixin.py:188} INFO - Processing process_pdvd for 2025-01-01 00:00:00 - 2026-01-22 00:00:00
+[2026-01-23T16:11:03.740+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250101.parquet
+[2026-01-23T16:12:03.287+0000] {database.py:186} INFO - Inserted 54033 rows into 'omie.pdvd'.
+[2026-01-23T16:12:03.292+0000] {pdvd.py:125} INFO - Processed pdvd for 20250101
+[2026-01-23T16:12:03.624+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250102.parquet
+[2026-01-23T16:13:14.561+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 1, 2, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:13:14.563+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202501.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 1, 2, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:13:15.002+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250103.parquet
+[2026-01-23T16:14:16.954+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 1, 3, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:14:16.959+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202501.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 1, 3, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:14:17.936+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250104.parquet
+[2026-01-23T16:15:30.516+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdvd: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 1, 4, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:15:30.520+0000] {pdvd.py:127} ERROR - Error processing zip bronze/omie/pdvd/2025/pdvd_202501.zip: duplicate key value violates unique constraint "pdvd_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof)=(2025, 1, 4, 1, ABA1) already exists.
+CONTEXT:  COPY pdvd, line 1
+
+[2026-01-23T16:15:30.951+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250105.parquet

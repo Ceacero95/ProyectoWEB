@@ -20,12 +20,18 @@ def process_liquicomun(start_date: datetime, end_date: datetime):
     storage = StorageManager()
     db_manager = DatabaseManager()
     
+    processed_months = set()
     current_date = start_date
     while current_date <= end_date:
         year = current_date.strftime("%Y")
         month = current_date.strftime("%m")
-        silver_dir = f"silver/liquicomun/{year}/{month}"
+        month_key = f"{year}-{month}"
         
+        if month_key in processed_months:
+            current_date += timedelta(days=1)
+            continue
+            
+        silver_dir = f"silver/liquicomun/{year}/{month}"
         try:
             files = storage.list_files(silver_dir, extension=".parquet")
         except FileNotFoundError:
@@ -36,7 +42,6 @@ def process_liquicomun(start_date: datetime, end_date: datetime):
         for parquet_file in files:
             base_name = os.path.basename(parquet_file).lower()
             
-            # Identify table
             # Identify table
             table_name = None
             valid_types = [
@@ -72,34 +77,52 @@ def process_liquicomun(start_date: datetime, end_date: datetime):
                 logger.error(f"Schema not found for {table_name}")
                 continue
                 
-            schema_def = LIQUICOMUN_SCHEMA[table_name]
+            # Extend Schema with Metadata
+            full_schema = LIQUICOMUN_SCHEMA[table_name].copy()
+            full_schema.update({
+                'periodo': 'INTEGER',
+                'liquidacion': 'VARCHAR(10)',
+                'source_file': 'TEXT',
+                'fecha_proceso': 'TIMESTAMP',
+                'resolucion': 'VARCHAR(5)'
+            })
             
             # 1. Ensure Table Exists
             try:
-                # Use liquicomun schema
-                # PK: Fecha, Periodo, Liquidacion, Source_File
                 pk_cols = ['fecha', 'periodo', 'liquidacion', 'source_file']
-                db_manager.create_table_if_not_exists(table_name, 'liquicomun', schema_def, pk_cols=pk_cols)
-                
-                # Ensure index on source_file
+                db_manager.create_table_if_not_exists(table_name, 'liquicomun', full_schema, pk_cols=pk_cols)
                 db_manager.create_indexes(table_name, ['source_file'], schema='liquicomun')
             except Exception as e:
                  logger.error(f"Failed to ensure table {table_name}: {e}")
                  continue
 
             # 2. Cast Types
-            for col, dtype in schema_def.items():
+            for col, dtype in full_schema.items():
                 if col not in df.columns:
                     df[col] = None
                 
                 if "NUMERIC" in dtype or "DECIMAL" in dtype:
                      df[col] = pd.to_numeric(df[col], errors='coerce')
                 elif "DATE" in dtype:
+                     # Spanish dates are DD/MM/YYYY, so we must use dayfirst=True
                      df[col] = pd.to_datetime(df[col], dayfirst=True, errors='coerce').dt.date
                 elif "INTEGER" in dtype:
                      df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int)
                      
-            # 3. Bulk Insert
+            # 3. Filter rows with invalid dates (e.g. footers like '*')
+            orig_len = len(df)
+            df.dropna(subset=['fecha'], inplace=True)
+            if len(df) < orig_len:
+                logger.info(f"  Filtered {orig_len - len(df)} rows with NaT dates.")
+                
+            # 4. Filter future dates (Safety)
+            from datetime import datetime
+            today = datetime.now().date()
+            df = df[df['fecha'] <= today]
+            if len(df) < orig_len:
+                 logger.info(f"  Filtered {orig_len - len(df)} rows (invalid dates or future dates > {today}).")
+
+            # 5. Bulk Insert
             logger.info(f"  Inserting {len(df)} rows into {table_name}")
             
             # Ensure PK columns are not null
@@ -109,26 +132,44 @@ def process_liquicomun(start_date: datetime, end_date: datetime):
                 continue
                 
             try:
-                # Clean up existing data for this source file to avoid duplicates
                 from sqlalchemy import text
                 from src.common.database import get_engine
                 
-                # Check if source_file column exists and delete if so
-                # We assume it exists based on schema, but safety check is good or just try/except
-                clean_sql = text(f"DELETE FROM liquicomun.\"{table_name}\" WHERE source_file = :src")
-                
-                # Get unique source files in this batch (should be just one usually)
-                src_files = df['source_file'].unique()
                 engine = get_engine()
+                
+                # Robust Cleaning Strategy
+                # For cumulative files (like A2), we should delete by (fecha, liquidacion) to avoid duplicates
+                # when newer cumulative files cover the same dates.
+                liqs = df['liquidacion'].unique()
+                is_cumulative = any(l in ['A2', 'C2'] for l in liqs) # Expand as needed
+                
                 with engine.begin() as conn:
-                    for src in src_files:
-                        conn.execute(clean_sql, {"src": src})
-                        logger.info(f"  Cleaned existing data for source_file: {src}")
+                    if is_cumulative:
+                        logger.info(f"  Cumulative data detected ({liqs}). Deleting by (fecha, liquidacion)...")
+                        # To be efficient, we delete per (date, liq) combination present in DF
+                        for l in liqs:
+                            relevant_dates = df[df['liquidacion'] == l]['fecha'].unique()
+                            # Convert dates to string for SQL if needed, but SQLAlchemy handles it.
+                            for d in relevant_dates:
+                                conn.execute(
+                                    text(f"DELETE FROM liquicomun.\"{table_name}\" WHERE fecha = :d AND liquidacion = :l"),
+                                    {"d": d, "l": l}
+                                )
+                    else:
+                        # Standard logic: delete by source_file
+                        src_files = df['source_file'].unique()
+                        for src in src_files:
+                            conn.execute(
+                                text(f"DELETE FROM liquicomun.\"{table_name}\" WHERE source_file = :src"),
+                                {"src": src}
+                            )
+                            logger.info(f"  Cleaned existing data for source_file: {src}")
 
                 db_manager.bulk_insert_df(df, table_name, schema='liquicomun', if_exists='append', pk_cols=pk_cols)
             except Exception as e:
                 logger.error(f"  Insert failed: {e}")
 
+        processed_months.add(month_key)
         current_date += timedelta(days=1)
 
 if __name__ == "__main__":

@@ -1,0 +1,35 @@
+[2026-01-20T20:41:37.135+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-20T20:41:37.178+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: omie_pipeline.download_pdbf manual__2026-01-20T20:41:35.484859+00:00 [queued]>
+[2026-01-20T20:41:37.198+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: omie_pipeline.download_pdbf manual__2026-01-20T20:41:35.484859+00:00 [queued]>
+[2026-01-20T20:41:37.199+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-20T20:41:37.219+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_pdbf> on 2026-01-20 20:41:35.484859+00:00
+[2026-01-20T20:41:37.229+0000] {standard_task_runner.py:63} INFO - Started process 2048 to run task
+[2026-01-20T20:41:37.234+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'omie_pipeline', 'download_pdbf', 'manual__2026-01-20T20:41:35.484859+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/omie_dag.py', '--cfg-path', '/tmp/tmp8hh_lk4u']
+[2026-01-20T20:41:37.239+0000] {standard_task_runner.py:91} INFO - Job 92: Subtask download_pdbf
+[2026-01-20T20:41:37.360+0000] {task_command.py:426} INFO - Running <TaskInstance: omie_pipeline.download_pdbf manual__2026-01-20T20:41:35.484859+00:00 [running]> on host 2aff4151de2d
+[2026-01-20T20:41:37.551+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='omie_pipeline' AIRFLOW_CTX_TASK_ID='download_pdbf' AIRFLOW_CTX_EXECUTION_DATE='2026-01-20T20:41:35.484859+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-20T20:41:35.484859+00:00'
+[2026-01-20T20:41:37.555+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-20T20:41:37.587+0000] {logging_mixin.py:188} INFO - Downloading download_pdbf from 2026-01-20 20:41:35.484859+00:00 to 2026-01-20 20:41:35.484859+00:00
+[2026-01-20T20:41:37.588+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-20T20:41:37.589+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/omie_dag.py", line 83, in _download_task
+    download_func(s_date, e_date)
+  File "/opt/airflow/src/bronze/omie/pdbf.py", line 19, in download_pdbf
+    while current_date <= end_date:
+TypeError: can't compare offset-naive and offset-aware datetimes
+[2026-01-20T20:41:37.619+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=omie_pipeline, task_id=download_pdbf, run_id=manual__2026-01-20T20:41:35.484859+00:00, execution_date=20260120T204135, start_date=20260120T204137, end_date=20260120T204137
+[2026-01-20T20:41:37.645+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 92 for task download_pdbf (can't compare offset-naive and offset-aware datetimes; 2048)
+[2026-01-20T20:41:37.699+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-01-20T20:41:37.750+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-20T20:41:37.758+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

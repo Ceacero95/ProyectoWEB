@@ -226,3 +226,32 @@ class DatabaseManager:
                     logger.info(f"Index '{index_name}' dropped from {full_table_name}.")
                 except Exception as e:
                     logger.warning(f"Could not drop index {index_name} on {full_table_name}: {e}")
+
+    @staticmethod
+    def get_existing_dates(table_name: str, schema: str, start_date: str, end_date: str) -> set:
+        """
+        Returns a set of dates (datetime.date) that exist in the specified table
+        within the given range.
+        Assumption: Table has a 'fecha' column of type DATE.
+        """
+        engine = get_engine()
+        full_table_name = f"{schema}.\"{table_name}\""
+        
+        try:
+            with engine.connect() as conn:
+                # Check if table exists first
+                table_check = text("SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_schema = :schema AND table_name = :table)")
+                if not conn.execute(table_check, {"schema": schema, "table": table_name}).scalar():
+                    return set()
+
+                query = text(f"""
+                    SELECT DISTINCT fecha 
+                    FROM {full_table_name} 
+                    WHERE fecha >= :start AND fecha <= :end
+                """)
+                result = conn.execute(query, {"start": start_date, "end": end_date}).fetchall()
+                return {row[0] for row in result}
+        except Exception as e:
+            logger.warning(f"Error fetching existing dates from {full_table_name}: {e}")
+            return set()
+

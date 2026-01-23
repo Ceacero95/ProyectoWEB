@@ -1,0 +1,84 @@
+[2026-01-23T16:09:39.395+0000] {processor.py:161} INFO - Started process (PID=212) to work on /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:09:39.396+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/omie_dag.py for tasks to queue
+[2026-01-23T16:09:39.398+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:09:39.398+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:09:40.226+0000] {processor.py:840} INFO - DAG(s) 'omie_pipeline' retrieved from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:09:40.357+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:09:40.356+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T16:09:40.379+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:09:40.378+0000] {dag.py:3954} INFO - Setting next_dagrun for omie_pipeline to 2026-01-22 08:30:00+00:00, run_after=2026-01-23 08:30:00+00:00
+[2026-01-23T16:09:40.403+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/omie_dag.py took 1.018 seconds
+[2026-01-23T16:10:11.005+0000] {processor.py:161} INFO - Started process (PID=324) to work on /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:10:11.012+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/omie_dag.py for tasks to queue
+[2026-01-23T16:10:11.025+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:10:11.024+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:10:13.827+0000] {processor.py:840} INFO - DAG(s) 'omie_pipeline' retrieved from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:10:14.145+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:10:14.144+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T16:10:14.249+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:10:14.248+0000] {dag.py:3954} INFO - Setting next_dagrun for omie_pipeline to 2026-01-23 08:30:00+00:00, run_after=2026-01-24 08:30:00+00:00
+[2026-01-23T16:10:14.355+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/omie_dag.py took 3.376 seconds
+[2026-01-23T16:10:45.050+0000] {processor.py:161} INFO - Started process (PID=397) to work on /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:10:45.054+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/omie_dag.py for tasks to queue
+[2026-01-23T16:10:45.061+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:10:45.060+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:10:46.541+0000] {processor.py:840} INFO - DAG(s) 'omie_pipeline' retrieved from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:10:46.880+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:10:46.879+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T16:10:46.963+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:10:46.962+0000] {dag.py:3954} INFO - Setting next_dagrun for omie_pipeline to 2026-01-23 08:30:00+00:00, run_after=2026-01-24 08:30:00+00:00
+[2026-01-23T16:10:47.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/omie_dag.py took 2.214 seconds
+[2026-01-23T16:11:17.692+0000] {processor.py:161} INFO - Started process (PID=555) to work on /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:11:17.702+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/omie_dag.py for tasks to queue
+[2026-01-23T16:11:17.731+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:11:17.731+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:11:19.615+0000] {processor.py:840} INFO - DAG(s) 'omie_pipeline' retrieved from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:11:20.533+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:11:20.532+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T16:11:20.860+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:11:20.859+0000] {dag.py:3954} INFO - Setting next_dagrun for omie_pipeline to 2026-01-23 08:30:00+00:00, run_after=2026-01-24 08:30:00+00:00
+[2026-01-23T16:11:20.936+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/omie_dag.py took 3.264 seconds
+[2026-01-23T16:11:51.990+0000] {processor.py:161} INFO - Started process (PID=699) to work on /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:11:52.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/omie_dag.py for tasks to queue
+[2026-01-23T16:11:52.056+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:11:52.046+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:11:58.133+0000] {processor.py:840} INFO - DAG(s) 'omie_pipeline' retrieved from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:12:01.200+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:12:01.199+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T16:12:01.382+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:12:01.382+0000] {dag.py:3954} INFO - Setting next_dagrun for omie_pipeline to 2026-01-23 08:30:00+00:00, run_after=2026-01-24 08:30:00+00:00
+[2026-01-23T16:12:01.523+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/omie_dag.py took 9.869 seconds
+[2026-01-23T16:12:32.137+0000] {processor.py:161} INFO - Started process (PID=861) to work on /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:12:32.139+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/omie_dag.py for tasks to queue
+[2026-01-23T16:12:32.174+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:12:32.172+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:12:35.320+0000] {processor.py:840} INFO - DAG(s) 'omie_pipeline' retrieved from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:12:35.731+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:12:35.730+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T16:12:35.835+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:12:35.833+0000] {dag.py:3954} INFO - Setting next_dagrun for omie_pipeline to 2026-01-23 08:30:00+00:00, run_after=2026-01-24 08:30:00+00:00
+[2026-01-23T16:12:35.931+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/omie_dag.py took 3.846 seconds
+[2026-01-23T16:13:06.421+0000] {processor.py:161} INFO - Started process (PID=942) to work on /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:13:06.422+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/omie_dag.py for tasks to queue
+[2026-01-23T16:13:06.426+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:13:06.425+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:13:09.254+0000] {processor.py:840} INFO - DAG(s) 'omie_pipeline' retrieved from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:13:09.505+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:13:09.503+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T16:13:09.566+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:13:09.565+0000] {dag.py:3954} INFO - Setting next_dagrun for omie_pipeline to 2026-01-23 08:30:00+00:00, run_after=2026-01-24 08:30:00+00:00
+[2026-01-23T16:13:09.628+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/omie_dag.py took 3.217 seconds
+[2026-01-23T16:13:40.654+0000] {processor.py:161} INFO - Started process (PID=1038) to work on /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:13:40.668+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/omie_dag.py for tasks to queue
+[2026-01-23T16:13:40.761+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:13:40.743+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:13:47.224+0000] {processor.py:840} INFO - DAG(s) 'omie_pipeline' retrieved from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:13:49.167+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:13:49.166+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T16:13:49.512+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:13:49.509+0000] {dag.py:3954} INFO - Setting next_dagrun for omie_pipeline to 2026-01-23 08:30:00+00:00, run_after=2026-01-24 08:30:00+00:00
+[2026-01-23T16:13:49.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/omie_dag.py took 9.483 seconds
+[2026-01-23T16:14:21.399+0000] {processor.py:161} INFO - Started process (PID=1124) to work on /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:14:21.401+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/omie_dag.py for tasks to queue
+[2026-01-23T16:14:21.404+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:14:21.404+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:14:24.658+0000] {processor.py:840} INFO - DAG(s) 'omie_pipeline' retrieved from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:14:25.131+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:14:25.129+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T16:14:25.216+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:14:25.215+0000] {dag.py:3954} INFO - Setting next_dagrun for omie_pipeline to 2026-01-23 08:30:00+00:00, run_after=2026-01-24 08:30:00+00:00
+[2026-01-23T16:14:25.285+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/omie_dag.py took 3.912 seconds
+[2026-01-23T16:14:55.885+0000] {processor.py:161} INFO - Started process (PID=1212) to work on /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:14:55.888+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/omie_dag.py for tasks to queue
+[2026-01-23T16:14:55.908+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:14:55.905+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:14:58.717+0000] {processor.py:840} INFO - DAG(s) 'omie_pipeline' retrieved from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:14:59.370+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:14:59.369+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T16:14:59.463+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:14:59.463+0000] {dag.py:3954} INFO - Setting next_dagrun for omie_pipeline to 2026-01-23 08:30:00+00:00, run_after=2026-01-24 08:30:00+00:00
+[2026-01-23T16:14:59.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/omie_dag.py took 3.876 seconds
+[2026-01-23T16:15:30.270+0000] {processor.py:161} INFO - Started process (PID=1290) to work on /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:15:30.271+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/omie_dag.py for tasks to queue
+[2026-01-23T16:15:30.278+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:15:30.275+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:15:33.600+0000] {processor.py:840} INFO - DAG(s) 'omie_pipeline' retrieved from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:15:33.804+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:15:33.803+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T16:15:33.917+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:15:33.916+0000] {dag.py:3954} INFO - Setting next_dagrun for omie_pipeline to 2026-01-23 08:30:00+00:00, run_after=2026-01-24 08:30:00+00:00
+[2026-01-23T16:15:34.003+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/omie_dag.py took 3.750 seconds
+[2026-01-23T16:16:06.225+0000] {processor.py:161} INFO - Started process (PID=1370) to work on /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:16:06.321+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/omie_dag.py for tasks to queue
+[2026-01-23T16:16:06.443+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:16:06.442+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:16:18.093+0000] {processor.py:840} INFO - DAG(s) 'omie_pipeline' retrieved from /opt/airflow/dags/omie_dag.py
+[2026-01-23T16:16:19.602+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:16:19.601+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T16:16:20.019+0000] {logging_mixin.py:188} INFO - [2026-01-23T16:16:20.019+0000] {dag.py:3954} INFO - Setting next_dagrun for omie_pipeline to 2026-01-23 08:30:00+00:00, run_after=2026-01-24 08:30:00+00:00
+[2026-01-23T16:16:20.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/omie_dag.py took 14.989 seconds

@@ -102,14 +102,11 @@ def ingest_to_parquet(start_date: datetime, end_date: datetime):
                         df.columns = schema_keys
                     else:
                         logger.warning(f"    Column mismatch: Found {len(df.columns)}, expected {len(schema_keys)}")
-                        # Best effort
+                        # Best effort mapping
                         mapping = {df.columns[i]: schema_keys[i] for i in range(min(len(df.columns), len(schema_keys)))}
                         df.rename(columns=mapping, inplace=True)
 
                     # --- ENRICHMENT ---
-                    # Liquidacion (from filename e.g. _C2_)
-                    # Liquidacion (from filename e.g. A2_...)
-                    # User request: first 2 chars of filename (handling paths if any)
                     base_only = os.path.basename(file_name)
                     liq_val = base_only[:2].upper()
                     
@@ -117,30 +114,19 @@ def ingest_to_parquet(start_date: datetime, end_date: datetime):
                     df['source_file'] = file_name
                     df['fecha_proceso'] = datetime.now()
                     
-                    # Calculate Periodo (1-96)
-                    # Assuming hora is 1-24 and qh is 1-4.
-                    # Ensure numeric
+                    # Ensure numeric for date components
                     for c in ['hora', 'qh']:
                         if c in df.columns:
                             df[c] = pd.to_numeric(df[c], errors='coerce').fillna(0).astype(int)
                             
+                    # Calculate Periodo (1-96)
                     if 'hora' in df.columns and 'qh' in df.columns:
                         df['periodo'] = (df['hora'] - 1) * 4 + df['qh']
                     else:
-                        df['periodo'] = None
-                    
+                        df['periodo'] = 1 # Fallback
+                        
                     # Resolucion logic
-                    resolucion = 'H'
-                    if 'qh' in df.columns:
-                        resolucion = 'QH'
-                    elif 'periodo' in df.columns:
-                        if df['periodo'].max() > 25:
-                            resolucion = 'QH'
-                    elif 'hora' in df.columns:
-                        unique_hours = df['hora'].nunique()
-                        if unique_hours > 30: # Rough heuristic
-                            resolucion = 'QH'
-                    df['resolucion'] = resolucion
+                    df['resolucion'] = 'QH' if 'qh' in df.columns else 'H'
 
                     # --- WRITE PARQUET ---
                     # Path: silver/liquicomun/{year}/{month}/{table_type}_{liq_val}_{timestamp}.parquet

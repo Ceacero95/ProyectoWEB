@@ -1,0 +1,37 @@
+[2026-01-22T18:27:37.060+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-22T18:27:37.261+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: omie_pipeline.download_pdvd scheduled__2026-01-21T08:30:00+00:00 [queued]>
+[2026-01-22T18:27:37.298+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: omie_pipeline.download_pdvd scheduled__2026-01-21T08:30:00+00:00 [queued]>
+[2026-01-22T18:27:37.301+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-22T18:27:37.386+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_pdvd> on 2026-01-21 08:30:00+00:00
+[2026-01-22T18:27:37.406+0000] {standard_task_runner.py:63} INFO - Started process 195 to run task
+[2026-01-22T18:27:37.417+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'omie_pipeline', 'download_pdvd', 'scheduled__2026-01-21T08:30:00+00:00', '--job-id', '120', '--raw', '--subdir', 'DAGS_FOLDER/omie_dag.py', '--cfg-path', '/tmp/tmpaip9zh2k']
+[2026-01-22T18:27:37.434+0000] {standard_task_runner.py:91} INFO - Job 120: Subtask download_pdvd
+[2026-01-22T18:27:37.883+0000] {task_command.py:426} INFO - Running <TaskInstance: omie_pipeline.download_pdvd scheduled__2026-01-21T08:30:00+00:00 [running]> on host 2aff4151de2d
+[2026-01-22T18:27:38.977+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='omie_pipeline' AIRFLOW_CTX_TASK_ID='download_pdvd' AIRFLOW_CTX_EXECUTION_DATE='2026-01-21T08:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-21T08:30:00+00:00'
+[2026-01-22T18:27:38.996+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-22T18:27:39.190+0000] {logging_mixin.py:188} INFO - Downloading download_pdvd from 2026-01-21 08:30:00 to 2026-01-21 08:30:00
+[2026-01-22T18:27:39.298+0000] {pdvd.py:42} INFO - File bronze/omie/pdvd/2025/pdvd_202501.zip already exists (past month). Skipping.
+[2026-01-22T18:27:39.334+0000] {pdvd.py:42} INFO - File bronze/omie/pdvd/2025/pdvd_202502.zip already exists (past month). Skipping.
+[2026-01-22T18:27:39.429+0000] {pdvd.py:42} INFO - File bronze/omie/pdvd/2025/pdvd_202503.zip already exists (past month). Skipping.
+[2026-01-22T18:27:39.517+0000] {pdvd.py:42} INFO - File bronze/omie/pdvd/2025/pdvd_202504.zip already exists (past month). Skipping.
+[2026-01-22T18:27:39.561+0000] {pdvd.py:42} INFO - File bronze/omie/pdvd/2025/pdvd_202505.zip already exists (past month). Skipping.
+[2026-01-22T18:27:39.655+0000] {pdvd.py:42} INFO - File bronze/omie/pdvd/2025/pdvd_202506.zip already exists (past month). Skipping.
+[2026-01-22T18:27:39.737+0000] {pdvd.py:42} INFO - File bronze/omie/pdvd/2025/pdvd_202507.zip already exists (past month). Skipping.
+[2026-01-22T18:27:39.744+0000] {pdvd.py:42} INFO - File bronze/omie/pdvd/2025/pdvd_202508.zip already exists (past month). Skipping.
+[2026-01-22T18:27:39.819+0000] {pdvd.py:42} INFO - File bronze/omie/pdvd/2025/pdvd_202509.zip already exists (past month). Skipping.
+[2026-01-22T18:27:39.872+0000] {pdvd.py:42} INFO - File bronze/omie/pdvd/2025/pdvd_202510.zip already exists (past month). Skipping.
+[2026-01-22T18:27:39.902+0000] {omie_client.py:64} INFO - Downloading pdvd_202511.zip from OMIE...
+[2026-01-22T18:27:41.160+0000] {omie_client.py:68} INFO - File pdvd_202511.zip not found (404).
+[2026-01-22T18:27:41.175+0000] {pdvd.py:50} WARNING - Failed to download pdvd_202511.zip
+[2026-01-22T18:27:41.192+0000] {omie_client.py:64} INFO - Downloading pdvd_202512.zip from OMIE...
+[2026-01-22T18:27:41.884+0000] {omie_client.py:68} INFO - File pdvd_202512.zip not found (404).
+[2026-01-22T18:27:41.902+0000] {pdvd.py:50} WARNING - Failed to download pdvd_202512.zip
+[2026-01-22T18:27:41.927+0000] {omie_client.py:64} INFO - Downloading pdvd_202601.zip from OMIE...
+[2026-01-22T18:27:42.708+0000] {omie_client.py:68} INFO - File pdvd_202601.zip not found (404).
+[2026-01-22T18:27:42.719+0000] {pdvd.py:50} WARNING - Failed to download pdvd_202601.zip
+[2026-01-22T18:27:42.733+0000] {python.py:237} INFO - Done. Returned value was: {'start': '2025-01-01', 'end': '2026-01-21'}
+[2026-01-22T18:27:42.735+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-22T18:27:42.922+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=omie_pipeline, task_id=download_pdvd, run_id=scheduled__2026-01-21T08:30:00+00:00, execution_date=20260121T083000, start_date=20260122T182737, end_date=20260122T182742
+[2026-01-22T18:27:43.059+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-22T18:27:43.230+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-22T18:27:43.236+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

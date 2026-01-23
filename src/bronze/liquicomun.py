@@ -30,8 +30,16 @@ def download_liquicomun(start_date: datetime, end_date: datetime):
             # Conditional Download Logic
             if not is_daily:
                 if storage.exists(path):
-                    logger.info(f"Skipping {archive_id} for {current_date.date()} (Exists: {filename})")
-                    continue
+                    # Check if it is the current month (to allow updates of monthly files)
+                    now = datetime.now()
+                    is_current_month = (now.year == int(year) and now.month == int(month))
+                    
+                    if is_current_month:
+                         logger.info(f"File {filename} exists but is current month. Re-downloading to update.")
+                         # Proceed to download below (don't continue)
+                    else:
+                        logger.info(f"Skipping {archive_id} for {current_date.date()} (Exists: {filename})")
+                        continue
             
             logger.info(f"Checking/Downloading Liquicomun ID {archive_id} for {current_date.date()}...")
             

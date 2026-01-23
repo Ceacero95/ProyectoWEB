@@ -1,0 +1,37 @@
+[2026-01-20T21:00:09.301+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-20T21:00:09.338+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: omie_pipeline.download_pdbf manual__2026-01-20T21:00:07.280516+00:00 [queued]>
+[2026-01-20T21:00:09.348+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: omie_pipeline.download_pdbf manual__2026-01-20T21:00:07.280516+00:00 [queued]>
+[2026-01-20T21:00:09.350+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-20T21:00:09.367+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_pdbf> on 2026-01-20 21:00:07.280516+00:00
+[2026-01-20T21:00:09.374+0000] {standard_task_runner.py:63} INFO - Started process 3140 to run task
+[2026-01-20T21:00:09.379+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'omie_pipeline', 'download_pdbf', 'manual__2026-01-20T21:00:07.280516+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/omie_dag.py', '--cfg-path', '/tmp/tmplpvd8hhn']
+[2026-01-20T21:00:09.384+0000] {standard_task_runner.py:91} INFO - Job 106: Subtask download_pdbf
+[2026-01-20T21:00:09.487+0000] {task_command.py:426} INFO - Running <TaskInstance: omie_pipeline.download_pdbf manual__2026-01-20T21:00:07.280516+00:00 [running]> on host 2aff4151de2d
+[2026-01-20T21:00:09.626+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='omie_pipeline' AIRFLOW_CTX_TASK_ID='download_pdbf' AIRFLOW_CTX_EXECUTION_DATE='2026-01-20T21:00:07.280516+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-20T21:00:07.280516+00:00'
+[2026-01-20T21:00:09.630+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-20T21:00:09.645+0000] {logging_mixin.py:188} INFO - Downloading download_pdbf from 2026-01-20 21:00:07.280516 to 2026-01-20 21:00:07.280516
+[2026-01-20T21:00:09.647+0000] {pdbf.py:42} INFO - File bronze/omie/pdbf/2025/pdbf_202501.zip already exists (past month). Skipping.
+[2026-01-20T21:00:09.651+0000] {pdbf.py:42} INFO - File bronze/omie/pdbf/2025/pdbf_202502.zip already exists (past month). Skipping.
+[2026-01-20T21:00:09.657+0000] {pdbf.py:42} INFO - File bronze/omie/pdbf/2025/pdbf_202503.zip already exists (past month). Skipping.
+[2026-01-20T21:00:09.661+0000] {pdbf.py:42} INFO - File bronze/omie/pdbf/2025/pdbf_202504.zip already exists (past month). Skipping.
+[2026-01-20T21:00:09.666+0000] {pdbf.py:42} INFO - File bronze/omie/pdbf/2025/pdbf_202505.zip already exists (past month). Skipping.
+[2026-01-20T21:00:09.671+0000] {pdbf.py:42} INFO - File bronze/omie/pdbf/2025/pdbf_202506.zip already exists (past month). Skipping.
+[2026-01-20T21:00:09.675+0000] {pdbf.py:42} INFO - File bronze/omie/pdbf/2025/pdbf_202507.zip already exists (past month). Skipping.
+[2026-01-20T21:00:09.679+0000] {pdbf.py:42} INFO - File bronze/omie/pdbf/2025/pdbf_202508.zip already exists (past month). Skipping.
+[2026-01-20T21:00:09.683+0000] {pdbf.py:42} INFO - File bronze/omie/pdbf/2025/pdbf_202509.zip already exists (past month). Skipping.
+[2026-01-20T21:00:09.687+0000] {pdbf.py:42} INFO - File bronze/omie/pdbf/2025/pdbf_202510.zip already exists (past month). Skipping.
+[2026-01-20T21:00:09.690+0000] {omie_client.py:64} INFO - Downloading pdbf_202511.zip from OMIE...
+[2026-01-20T21:00:10.158+0000] {omie_client.py:68} INFO - File pdbf_202511.zip not found (404).
+[2026-01-20T21:00:10.161+0000] {pdbf.py:50} WARNING - Failed to download pdbf_202511.zip
+[2026-01-20T21:00:10.163+0000] {omie_client.py:64} INFO - Downloading pdbf_202512.zip from OMIE...
+[2026-01-20T21:00:10.622+0000] {omie_client.py:68} INFO - File pdbf_202512.zip not found (404).
+[2026-01-20T21:00:10.623+0000] {pdbf.py:50} WARNING - Failed to download pdbf_202512.zip
+[2026-01-20T21:00:10.626+0000] {omie_client.py:64} INFO - Downloading pdbf_202601.zip from OMIE...
+[2026-01-20T21:00:11.092+0000] {omie_client.py:68} INFO - File pdbf_202601.zip not found (404).
+[2026-01-20T21:00:11.094+0000] {pdbf.py:50} WARNING - Failed to download pdbf_202601.zip
+[2026-01-20T21:00:11.095+0000] {python.py:237} INFO - Done. Returned value was: {'start': '2025-01-01', 'end': '2026-01-20'}
+[2026-01-20T21:00:11.095+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-20T21:00:11.126+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=omie_pipeline, task_id=download_pdbf, run_id=manual__2026-01-20T21:00:07.280516+00:00, execution_date=20260120T210007, start_date=20260120T210009, end_date=20260120T210011
+[2026-01-20T21:00:11.163+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-20T21:00:11.196+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-20T21:00:11.198+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -74,6 +74,7 @@ def create_table_if_not_exists():
     try:
         engine = get_engine()
         with engine.begin() as conn:
+            conn.execute(text("CREATE SCHEMA IF NOT EXISTS omie"))
             conn.execute(text(ddl))
     except Exception as e:
         logger.error(f"Error creating table: {e}")
@@ -83,7 +84,13 @@ def process_pdbf(start_date: datetime, end_date: datetime):
     db_manager = DatabaseManager()
     
     current_date = start_date
+    existing_dates = db_manager.get_existing_dates("pdbf", "omie", start_date, end_date)
+    
     while current_date <= end_date:
+        if current_date in existing_dates:
+            current_date += timedelta(days=1)
+            continue
+
         year = current_date.strftime("%Y")
         month = current_date.strftime("%m")
         date_str = current_date.strftime("%Y%m%d")

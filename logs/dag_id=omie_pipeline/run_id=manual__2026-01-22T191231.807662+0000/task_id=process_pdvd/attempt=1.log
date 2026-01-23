@@ -1,0 +1,325 @@
+[2026-01-22T19:13:27.711+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-22T19:13:28.034+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: omie_pipeline.process_pdvd manual__2026-01-22T19:12:31.807662+00:00 [queued]>
+[2026-01-22T19:13:28.133+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: omie_pipeline.process_pdvd manual__2026-01-22T19:12:31.807662+00:00 [queued]>
+[2026-01-22T19:13:28.139+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-22T19:13:28.281+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): process_pdvd> on 2026-01-22 19:12:31.807662+00:00
+[2026-01-22T19:13:28.332+0000] {standard_task_runner.py:63} INFO - Started process 4894 to run task
+[2026-01-22T19:13:28.391+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'omie_pipeline', 'process_pdvd', 'manual__2026-01-22T19:12:31.807662+00:00', '--job-id', '159', '--raw', '--subdir', 'DAGS_FOLDER/omie_dag.py', '--cfg-path', '/tmp/tmp2zr3d9nk']
+[2026-01-22T19:13:28.447+0000] {standard_task_runner.py:91} INFO - Job 159: Subtask process_pdvd
+[2026-01-22T19:13:28.866+0000] {task_command.py:426} INFO - Running <TaskInstance: omie_pipeline.process_pdvd manual__2026-01-22T19:12:31.807662+00:00 [running]> on host 2aff4151de2d
+[2026-01-22T19:13:29.547+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='omie_pipeline' AIRFLOW_CTX_TASK_ID='process_pdvd' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T19:12:31.807662+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-22T19:12:31.807662+00:00'
+[2026-01-22T19:13:29.580+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-22T19:13:29.737+0000] {logging_mixin.py:188} INFO - Processing process_pdvd for 2025-01-01 00:00:00 - 2026-01-22 00:00:00
+[2026-01-22T19:16:12.609+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250101.parquet
+[2026-01-22T19:18:20.020+0000] {database.py:186} INFO - Inserted 54033 rows into 'omie.pdvd'.
+[2026-01-22T19:18:20.036+0000] {pdvd.py:125} INFO - Processed pdvd for 20250101
+[2026-01-22T19:18:21.056+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250102.parquet
+[2026-01-22T19:20:32.076+0000] {database.py:186} INFO - Inserted 55123 rows into 'omie.pdvd'.
+[2026-01-22T19:20:32.082+0000] {pdvd.py:125} INFO - Processed pdvd for 20250102
+[2026-01-22T19:20:33.158+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250103.parquet
+[2026-01-22T19:22:43.007+0000] {database.py:186} INFO - Inserted 55222 rows into 'omie.pdvd'.
+[2026-01-22T19:22:43.016+0000] {pdvd.py:125} INFO - Processed pdvd for 20250103
+[2026-01-22T19:22:44.314+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250104.parquet
+[2026-01-22T19:25:29.303+0000] {database.py:186} INFO - Inserted 54944 rows into 'omie.pdvd'.
+[2026-01-22T19:25:29.312+0000] {pdvd.py:125} INFO - Processed pdvd for 20250104
+[2026-01-22T19:25:30.496+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250105.parquet
+[2026-01-22T19:27:33.610+0000] {database.py:186} INFO - Inserted 54548 rows into 'omie.pdvd'.
+[2026-01-22T19:27:33.642+0000] {pdvd.py:125} INFO - Processed pdvd for 20250105
+[2026-01-22T19:27:40.481+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250106.parquet
+[2026-01-22T19:29:54.097+0000] {database.py:186} INFO - Inserted 54689 rows into 'omie.pdvd'.
+[2026-01-22T19:29:54.101+0000] {pdvd.py:125} INFO - Processed pdvd for 20250106
+[2026-01-22T19:29:54.926+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250107.parquet
+[2026-01-22T19:31:32.231+0000] {database.py:186} INFO - Inserted 56060 rows into 'omie.pdvd'.
+[2026-01-22T19:31:32.238+0000] {pdvd.py:125} INFO - Processed pdvd for 20250107
+[2026-01-22T19:31:33.074+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250108.parquet
+[2026-01-22T19:33:22.948+0000] {database.py:186} INFO - Inserted 55714 rows into 'omie.pdvd'.
+[2026-01-22T19:33:22.954+0000] {pdvd.py:125} INFO - Processed pdvd for 20250108
+[2026-01-22T19:33:23.886+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250109.parquet
+[2026-01-22T19:34:45.114+0000] {database.py:186} INFO - Inserted 56394 rows into 'omie.pdvd'.
+[2026-01-22T19:34:45.117+0000] {pdvd.py:125} INFO - Processed pdvd for 20250109
+[2026-01-22T19:34:46.070+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250110.parquet
+[2026-01-22T19:36:25.058+0000] {database.py:186} INFO - Inserted 56225 rows into 'omie.pdvd'.
+[2026-01-22T19:36:25.061+0000] {pdvd.py:125} INFO - Processed pdvd for 20250110
+[2026-01-22T19:36:26.239+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250111.parquet
+[2026-01-22T19:37:56.430+0000] {database.py:186} INFO - Inserted 55788 rows into 'omie.pdvd'.
+[2026-01-22T19:37:56.449+0000] {pdvd.py:125} INFO - Processed pdvd for 20250111
+[2026-01-22T19:37:57.707+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250112.parquet
+[2026-01-22T19:39:25.449+0000] {database.py:186} INFO - Inserted 55846 rows into 'omie.pdvd'.
+[2026-01-22T19:39:25.454+0000] {pdvd.py:125} INFO - Processed pdvd for 20250112
+[2026-01-22T19:39:28.090+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250113.parquet
+[2026-01-22T19:40:32.722+0000] {database.py:186} INFO - Inserted 56082 rows into 'omie.pdvd'.
+[2026-01-22T19:40:32.726+0000] {pdvd.py:125} INFO - Processed pdvd for 20250113
+[2026-01-22T19:40:33.468+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250114.parquet
+[2026-01-22T19:42:45.547+0000] {database.py:186} INFO - Inserted 56355 rows into 'omie.pdvd'.
+[2026-01-22T19:42:45.551+0000] {pdvd.py:125} INFO - Processed pdvd for 20250114
+[2026-01-22T19:42:46.706+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250115.parquet
+[2026-01-22T19:44:03.754+0000] {database.py:186} INFO - Inserted 55881 rows into 'omie.pdvd'.
+[2026-01-22T19:44:03.758+0000] {pdvd.py:125} INFO - Processed pdvd for 20250115
+[2026-01-22T19:44:04.546+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250116.parquet
+[2026-01-22T19:46:22.669+0000] {database.py:186} INFO - Inserted 56316 rows into 'omie.pdvd'.
+[2026-01-22T19:46:22.686+0000] {pdvd.py:125} INFO - Processed pdvd for 20250116
+[2026-01-22T19:46:24.043+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250117.parquet
+[2026-01-22T19:48:00.343+0000] {database.py:186} INFO - Inserted 56509 rows into 'omie.pdvd'.
+[2026-01-22T19:48:00.353+0000] {pdvd.py:125} INFO - Processed pdvd for 20250117
+[2026-01-22T19:48:01.155+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250118.parquet
+[2026-01-22T19:49:50.397+0000] {database.py:186} INFO - Inserted 56042 rows into 'omie.pdvd'.
+[2026-01-22T19:49:50.402+0000] {pdvd.py:125} INFO - Processed pdvd for 20250118
+[2026-01-22T19:49:51.738+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250119.parquet
+[2026-01-22T19:51:43.860+0000] {database.py:186} INFO - Inserted 55570 rows into 'omie.pdvd'.
+[2026-01-22T19:51:43.865+0000] {pdvd.py:125} INFO - Processed pdvd for 20250119
+[2026-01-22T19:51:44.889+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250120.parquet
+[2026-01-22T19:53:56.078+0000] {database.py:186} INFO - Inserted 56192 rows into 'omie.pdvd'.
+[2026-01-22T19:53:56.080+0000] {pdvd.py:125} INFO - Processed pdvd for 20250120
+[2026-01-22T19:53:56.786+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250121.parquet
+[2026-01-22T19:55:15.265+0000] {database.py:186} INFO - Inserted 56093 rows into 'omie.pdvd'.
+[2026-01-22T19:55:15.268+0000] {pdvd.py:125} INFO - Processed pdvd for 20250121
+[2026-01-22T19:55:16.311+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250122.parquet
+[2026-01-22T19:57:21.974+0000] {database.py:186} INFO - Inserted 56136 rows into 'omie.pdvd'.
+[2026-01-22T19:57:21.979+0000] {pdvd.py:125} INFO - Processed pdvd for 20250122
+[2026-01-22T19:57:22.952+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250123.parquet
+[2026-01-22T19:58:30.567+0000] {database.py:186} INFO - Inserted 56402 rows into 'omie.pdvd'.
+[2026-01-22T19:58:30.569+0000] {pdvd.py:125} INFO - Processed pdvd for 20250123
+[2026-01-22T19:58:31.475+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250124.parquet
+[2026-01-22T20:00:12.851+0000] {database.py:186} INFO - Inserted 56328 rows into 'omie.pdvd'.
+[2026-01-22T20:00:12.856+0000] {pdvd.py:125} INFO - Processed pdvd for 20250124
+[2026-01-22T20:00:13.919+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250125.parquet
+[2026-01-22T20:01:43.526+0000] {database.py:186} INFO - Inserted 55727 rows into 'omie.pdvd'.
+[2026-01-22T20:01:43.528+0000] {pdvd.py:125} INFO - Processed pdvd for 20250125
+[2026-01-22T20:01:43.933+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250126.parquet
+[2026-01-22T20:03:08.290+0000] {database.py:186} INFO - Inserted 54716 rows into 'omie.pdvd'.
+[2026-01-22T20:03:08.301+0000] {pdvd.py:125} INFO - Processed pdvd for 20250126
+[2026-01-22T20:03:10.026+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250127.parquet
+[2026-01-22T20:03:47.548+0000] {database.py:186} INFO - Inserted 55532 rows into 'omie.pdvd'.
+[2026-01-22T20:03:47.550+0000] {pdvd.py:125} INFO - Processed pdvd for 20250127
+[2026-01-22T20:03:48.036+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250128.parquet
+[2026-01-22T20:04:53.332+0000] {database.py:186} INFO - Inserted 55496 rows into 'omie.pdvd'.
+[2026-01-22T20:04:53.335+0000] {pdvd.py:125} INFO - Processed pdvd for 20250128
+[2026-01-22T20:04:53.753+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250129.parquet
+[2026-01-22T20:06:11.124+0000] {database.py:186} INFO - Inserted 55814 rows into 'omie.pdvd'.
+[2026-01-22T20:06:11.126+0000] {pdvd.py:125} INFO - Processed pdvd for 20250129
+[2026-01-22T20:06:11.873+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250130.parquet
+[2026-01-22T20:07:05.906+0000] {database.py:186} INFO - Inserted 56598 rows into 'omie.pdvd'.
+[2026-01-22T20:07:05.950+0000] {pdvd.py:125} INFO - Processed pdvd for 20250130
+[2026-01-22T20:07:10.981+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/01/20250131.parquet
+[2026-01-22T20:08:19.328+0000] {database.py:186} INFO - Inserted 56796 rows into 'omie.pdvd'.
+[2026-01-22T20:08:19.334+0000] {pdvd.py:125} INFO - Processed pdvd for 20250131
+[2026-01-22T20:08:19.770+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250201.parquet
+[2026-01-22T20:09:27.004+0000] {database.py:186} INFO - Inserted 56389 rows into 'omie.pdvd'.
+[2026-01-22T20:09:27.012+0000] {pdvd.py:125} INFO - Processed pdvd for 20250201
+[2026-01-22T20:09:27.818+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250202.parquet
+[2026-01-22T20:10:07.382+0000] {database.py:186} INFO - Inserted 55944 rows into 'omie.pdvd'.
+[2026-01-22T20:10:07.383+0000] {pdvd.py:125} INFO - Processed pdvd for 20250202
+[2026-01-22T20:10:07.671+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250203.parquet
+[2026-01-22T20:10:59.638+0000] {database.py:186} INFO - Inserted 57142 rows into 'omie.pdvd'.
+[2026-01-22T20:10:59.648+0000] {pdvd.py:125} INFO - Processed pdvd for 20250203
+[2026-01-22T20:11:00.311+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250204.parquet
+[2026-01-22T20:12:14.294+0000] {database.py:186} INFO - Inserted 57187 rows into 'omie.pdvd'.
+[2026-01-22T20:12:14.296+0000] {pdvd.py:125} INFO - Processed pdvd for 20250204
+[2026-01-22T20:12:14.940+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250205.parquet
+[2026-01-22T20:13:33.221+0000] {database.py:186} INFO - Inserted 57411 rows into 'omie.pdvd'.
+[2026-01-22T20:13:33.224+0000] {pdvd.py:125} INFO - Processed pdvd for 20250205
+[2026-01-22T20:13:33.711+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250206.parquet
+[2026-01-22T20:14:16.032+0000] {database.py:186} INFO - Inserted 57376 rows into 'omie.pdvd'.
+[2026-01-22T20:14:16.034+0000] {pdvd.py:125} INFO - Processed pdvd for 20250206
+[2026-01-22T20:14:16.497+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250207.parquet
+[2026-01-22T20:14:51.015+0000] {database.py:186} INFO - Inserted 56954 rows into 'omie.pdvd'.
+[2026-01-22T20:14:51.017+0000] {pdvd.py:125} INFO - Processed pdvd for 20250207
+[2026-01-22T20:14:51.309+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250208.parquet
+[2026-01-22T20:15:18.089+0000] {database.py:186} INFO - Inserted 56806 rows into 'omie.pdvd'.
+[2026-01-22T20:15:18.090+0000] {pdvd.py:125} INFO - Processed pdvd for 20250208
+[2026-01-22T20:15:18.416+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250209.parquet
+[2026-01-22T20:16:08.619+0000] {database.py:186} INFO - Inserted 56606 rows into 'omie.pdvd'.
+[2026-01-22T20:16:08.620+0000] {pdvd.py:125} INFO - Processed pdvd for 20250209
+[2026-01-22T20:16:08.928+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250210.parquet
+[2026-01-22T20:16:45.695+0000] {database.py:186} INFO - Inserted 56901 rows into 'omie.pdvd'.
+[2026-01-22T20:16:45.697+0000] {pdvd.py:125} INFO - Processed pdvd for 20250210
+[2026-01-22T20:16:46.063+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250211.parquet
+[2026-01-22T20:17:17.034+0000] {database.py:186} INFO - Inserted 57136 rows into 'omie.pdvd'.
+[2026-01-22T20:17:17.038+0000] {pdvd.py:125} INFO - Processed pdvd for 20250211
+[2026-01-22T20:17:17.395+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250212.parquet
+[2026-01-22T20:17:39.567+0000] {database.py:186} INFO - Inserted 57894 rows into 'omie.pdvd'.
+[2026-01-22T20:17:39.568+0000] {pdvd.py:125} INFO - Processed pdvd for 20250212
+[2026-01-22T20:17:39.866+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250213.parquet
+[2026-01-22T20:18:31.249+0000] {database.py:186} INFO - Inserted 57981 rows into 'omie.pdvd'.
+[2026-01-22T20:18:31.252+0000] {pdvd.py:125} INFO - Processed pdvd for 20250213
+[2026-01-22T20:18:31.778+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250214.parquet
+[2026-01-22T20:19:24.340+0000] {database.py:186} INFO - Inserted 58275 rows into 'omie.pdvd'.
+[2026-01-22T20:19:24.341+0000] {pdvd.py:125} INFO - Processed pdvd for 20250214
+[2026-01-22T20:19:24.761+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250215.parquet
+[2026-01-22T20:19:56.406+0000] {database.py:186} INFO - Inserted 57541 rows into 'omie.pdvd'.
+[2026-01-22T20:19:56.408+0000] {pdvd.py:125} INFO - Processed pdvd for 20250215
+[2026-01-22T20:19:56.707+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250216.parquet
+[2026-01-22T20:21:01.837+0000] {database.py:186} INFO - Inserted 57330 rows into 'omie.pdvd'.
+[2026-01-22T20:21:01.872+0000] {pdvd.py:125} INFO - Processed pdvd for 20250216
+[2026-01-22T20:21:02.274+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250217.parquet
+[2026-01-22T20:21:39.191+0000] {database.py:186} INFO - Inserted 58274 rows into 'omie.pdvd'.
+[2026-01-22T20:21:39.196+0000] {pdvd.py:125} INFO - Processed pdvd for 20250217
+[2026-01-22T20:21:39.506+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250218.parquet
+[2026-01-22T20:22:18.285+0000] {database.py:186} INFO - Inserted 57705 rows into 'omie.pdvd'.
+[2026-01-22T20:22:18.287+0000] {pdvd.py:125} INFO - Processed pdvd for 20250218
+[2026-01-22T20:22:18.752+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250219.parquet
+[2026-01-22T20:22:58.736+0000] {database.py:186} INFO - Inserted 58259 rows into 'omie.pdvd'.
+[2026-01-22T20:22:58.777+0000] {pdvd.py:125} INFO - Processed pdvd for 20250219
+[2026-01-22T20:23:00.214+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250220.parquet
+[2026-01-22T20:23:32.999+0000] {database.py:186} INFO - Inserted 58293 rows into 'omie.pdvd'.
+[2026-01-22T20:23:33.001+0000] {pdvd.py:125} INFO - Processed pdvd for 20250220
+[2026-01-22T20:23:33.444+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250221.parquet
+[2026-01-22T20:24:14.419+0000] {database.py:186} INFO - Inserted 57937 rows into 'omie.pdvd'.
+[2026-01-22T20:24:14.420+0000] {pdvd.py:125} INFO - Processed pdvd for 20250221
+[2026-01-22T20:24:14.654+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250222.parquet
+[2026-01-22T20:24:44.089+0000] {database.py:186} INFO - Inserted 57521 rows into 'omie.pdvd'.
+[2026-01-22T20:24:44.090+0000] {pdvd.py:125} INFO - Processed pdvd for 20250222
+[2026-01-22T20:24:44.384+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250223.parquet
+[2026-01-22T20:25:09.077+0000] {database.py:186} INFO - Inserted 57460 rows into 'omie.pdvd'.
+[2026-01-22T20:25:09.109+0000] {pdvd.py:125} INFO - Processed pdvd for 20250223
+[2026-01-22T20:25:09.485+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250224.parquet
+[2026-01-22T20:25:43.879+0000] {database.py:186} INFO - Inserted 58520 rows into 'omie.pdvd'.
+[2026-01-22T20:25:43.880+0000] {pdvd.py:125} INFO - Processed pdvd for 20250224
+[2026-01-22T20:25:44.713+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250225.parquet
+[2026-01-22T20:26:14.837+0000] {database.py:186} INFO - Inserted 58077 rows into 'omie.pdvd'.
+[2026-01-22T20:26:14.838+0000] {pdvd.py:125} INFO - Processed pdvd for 20250225
+[2026-01-22T20:26:15.174+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250226.parquet
+[2026-01-22T20:27:02.211+0000] {database.py:186} INFO - Inserted 58768 rows into 'omie.pdvd'.
+[2026-01-22T20:27:02.212+0000] {pdvd.py:125} INFO - Processed pdvd for 20250226
+[2026-01-22T20:27:02.434+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250227.parquet
+[2026-01-22T20:27:25.910+0000] {database.py:186} INFO - Inserted 58424 rows into 'omie.pdvd'.
+[2026-01-22T20:27:25.914+0000] {pdvd.py:125} INFO - Processed pdvd for 20250227
+[2026-01-22T20:27:26.341+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/02/20250228.parquet
+[2026-01-22T20:27:59.806+0000] {database.py:186} INFO - Inserted 57651 rows into 'omie.pdvd'.
+[2026-01-22T20:27:59.809+0000] {pdvd.py:125} INFO - Processed pdvd for 20250228
+[2026-01-22T20:28:00.081+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250301.parquet
+[2026-01-22T20:28:21.225+0000] {database.py:186} INFO - Inserted 57803 rows into 'omie.pdvd'.
+[2026-01-22T20:28:21.226+0000] {pdvd.py:125} INFO - Processed pdvd for 20250301
+[2026-01-22T20:28:21.714+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250302.parquet
+[2026-01-22T20:28:46.984+0000] {database.py:186} INFO - Inserted 57254 rows into 'omie.pdvd'.
+[2026-01-22T20:28:46.985+0000] {pdvd.py:125} INFO - Processed pdvd for 20250302
+[2026-01-22T20:28:47.525+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250303.parquet
+[2026-01-22T20:29:13.395+0000] {database.py:186} INFO - Inserted 58376 rows into 'omie.pdvd'.
+[2026-01-22T20:29:13.397+0000] {pdvd.py:125} INFO - Processed pdvd for 20250303
+[2026-01-22T20:29:14.039+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250304.parquet
+[2026-01-22T20:29:49.711+0000] {database.py:186} INFO - Inserted 58679 rows into 'omie.pdvd'.
+[2026-01-22T20:29:49.712+0000] {pdvd.py:125} INFO - Processed pdvd for 20250304
+[2026-01-22T20:29:50.188+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250305.parquet
+[2026-01-22T20:30:32.509+0000] {database.py:186} INFO - Inserted 58232 rows into 'omie.pdvd'.
+[2026-01-22T20:30:32.511+0000] {pdvd.py:125} INFO - Processed pdvd for 20250305
+[2026-01-22T20:30:33.037+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250306.parquet
+[2026-01-22T20:31:10.907+0000] {database.py:186} INFO - Inserted 58584 rows into 'omie.pdvd'.
+[2026-01-22T20:31:10.908+0000] {pdvd.py:125} INFO - Processed pdvd for 20250306
+[2026-01-22T20:31:11.270+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250307.parquet
+[2026-01-22T20:31:43.794+0000] {database.py:186} INFO - Inserted 58399 rows into 'omie.pdvd'.
+[2026-01-22T20:31:43.797+0000] {pdvd.py:125} INFO - Processed pdvd for 20250307
+[2026-01-22T20:31:44.612+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250308.parquet
+[2026-01-22T20:32:12.867+0000] {database.py:186} INFO - Inserted 57396 rows into 'omie.pdvd'.
+[2026-01-22T20:32:12.868+0000] {pdvd.py:125} INFO - Processed pdvd for 20250308
+[2026-01-22T20:32:13.220+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250309.parquet
+[2026-01-22T20:32:42.480+0000] {database.py:186} INFO - Inserted 56951 rows into 'omie.pdvd'.
+[2026-01-22T20:32:42.482+0000] {pdvd.py:125} INFO - Processed pdvd for 20250309
+[2026-01-22T20:32:42.757+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250310.parquet
+[2026-01-22T20:33:14.678+0000] {database.py:186} INFO - Inserted 58139 rows into 'omie.pdvd'.
+[2026-01-22T20:33:14.679+0000] {pdvd.py:125} INFO - Processed pdvd for 20250310
+[2026-01-22T20:33:14.999+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250311.parquet
+[2026-01-22T20:33:41.023+0000] {database.py:186} INFO - Inserted 58259 rows into 'omie.pdvd'.
+[2026-01-22T20:33:41.024+0000] {pdvd.py:125} INFO - Processed pdvd for 20250311
+[2026-01-22T20:33:41.301+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250312.parquet
+[2026-01-22T20:34:14.615+0000] {database.py:186} INFO - Inserted 58818 rows into 'omie.pdvd'.
+[2026-01-22T20:34:14.617+0000] {pdvd.py:125} INFO - Processed pdvd for 20250312
+[2026-01-22T20:34:15.759+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250313.parquet
+[2026-01-22T20:34:50.581+0000] {database.py:186} INFO - Inserted 58624 rows into 'omie.pdvd'.
+[2026-01-22T20:34:50.583+0000] {pdvd.py:125} INFO - Processed pdvd for 20250313
+[2026-01-22T20:34:51.051+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250314.parquet
+[2026-01-22T20:35:19.511+0000] {database.py:186} INFO - Inserted 58924 rows into 'omie.pdvd'.
+[2026-01-22T20:35:19.512+0000] {pdvd.py:125} INFO - Processed pdvd for 20250314
+[2026-01-22T20:35:19.776+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250315.parquet
+[2026-01-22T20:36:13.626+0000] {database.py:186} INFO - Inserted 58436 rows into 'omie.pdvd'.
+[2026-01-22T20:36:13.628+0000] {pdvd.py:125} INFO - Processed pdvd for 20250315
+[2026-01-22T20:36:14.073+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250316.parquet
+[2026-01-22T20:37:03.025+0000] {database.py:186} INFO - Inserted 58252 rows into 'omie.pdvd'.
+[2026-01-22T20:37:03.025+0000] {pdvd.py:125} INFO - Processed pdvd for 20250316
+[2026-01-22T20:37:03.255+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250317.parquet
+[2026-01-22T20:37:28.526+0000] {database.py:186} INFO - Inserted 58679 rows into 'omie.pdvd'.
+[2026-01-22T20:37:28.527+0000] {pdvd.py:125} INFO - Processed pdvd for 20250317
+[2026-01-22T20:37:28.976+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250318.parquet
+[2026-01-22T20:37:58.296+0000] {database.py:186} INFO - Inserted 59022 rows into 'omie.pdvd'.
+[2026-01-22T20:37:58.297+0000] {pdvd.py:125} INFO - Processed pdvd for 20250318
+[2026-01-22T20:37:59.147+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250319.parquet
+[2026-01-22T20:38:35.809+0000] {database.py:186} INFO - Inserted 233968 rows into 'omie.pdvd'.
+[2026-01-22T20:38:35.819+0000] {pdvd.py:125} INFO - Processed pdvd for 20250319
+[2026-01-22T20:38:36.611+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250320.parquet
+[2026-01-22T20:39:14.045+0000] {database.py:186} INFO - Inserted 226372 rows into 'omie.pdvd'.
+[2026-01-22T20:39:14.055+0000] {pdvd.py:125} INFO - Processed pdvd for 20250320
+[2026-01-22T20:39:14.830+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250321.parquet
+[2026-01-22T20:40:01.499+0000] {database.py:186} INFO - Inserted 230368 rows into 'omie.pdvd'.
+[2026-01-22T20:40:01.508+0000] {pdvd.py:125} INFO - Processed pdvd for 20250321
+[2026-01-22T20:40:02.311+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250322.parquet
+[2026-01-22T20:40:39.282+0000] {database.py:186} INFO - Inserted 225908 rows into 'omie.pdvd'.
+[2026-01-22T20:40:39.291+0000] {pdvd.py:125} INFO - Processed pdvd for 20250322
+[2026-01-22T20:40:39.894+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250323.parquet
+[2026-01-22T20:41:20.278+0000] {database.py:186} INFO - Inserted 226156 rows into 'omie.pdvd'.
+[2026-01-22T20:41:20.287+0000] {pdvd.py:125} INFO - Processed pdvd for 20250323
+[2026-01-22T20:41:21.194+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250324.parquet
+[2026-01-22T20:42:16.763+0000] {database.py:186} INFO - Inserted 233448 rows into 'omie.pdvd'.
+[2026-01-22T20:42:16.775+0000] {pdvd.py:125} INFO - Processed pdvd for 20250324
+[2026-01-22T20:42:17.904+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250325.parquet
+[2026-01-22T20:43:14.533+0000] {database.py:186} INFO - Inserted 232996 rows into 'omie.pdvd'.
+[2026-01-22T20:43:14.542+0000] {pdvd.py:125} INFO - Processed pdvd for 20250325
+[2026-01-22T20:43:15.590+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250326.parquet
+[2026-01-22T20:43:53.808+0000] {database.py:186} INFO - Inserted 233228 rows into 'omie.pdvd'.
+[2026-01-22T20:43:53.820+0000] {pdvd.py:125} INFO - Processed pdvd for 20250326
+[2026-01-22T20:43:56.473+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250327.parquet
+[2026-01-22T20:44:33.504+0000] {database.py:186} INFO - Inserted 233696 rows into 'omie.pdvd'.
+[2026-01-22T20:44:33.510+0000] {pdvd.py:125} INFO - Processed pdvd for 20250327
+[2026-01-22T20:44:33.985+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250328.parquet
+[2026-01-22T20:45:22.055+0000] {database.py:186} INFO - Inserted 234064 rows into 'omie.pdvd'.
+[2026-01-22T20:45:22.065+0000] {pdvd.py:125} INFO - Processed pdvd for 20250328
+[2026-01-22T20:45:22.746+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250329.parquet
+[2026-01-22T20:46:11.986+0000] {database.py:186} INFO - Inserted 227640 rows into 'omie.pdvd'.
+[2026-01-22T20:46:11.994+0000] {pdvd.py:125} INFO - Processed pdvd for 20250329
+[2026-01-22T20:46:12.748+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250330.parquet
+[2026-01-22T20:47:15.269+0000] {database.py:186} INFO - Inserted 215288 rows into 'omie.pdvd'.
+[2026-01-22T20:47:15.274+0000] {pdvd.py:125} INFO - Processed pdvd for 20250330
+[2026-01-22T20:47:15.824+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/03/20250331.parquet
+[2026-01-22T20:47:50.772+0000] {database.py:186} INFO - Inserted 233844 rows into 'omie.pdvd'.
+[2026-01-22T20:47:50.779+0000] {pdvd.py:125} INFO - Processed pdvd for 20250331
+[2026-01-22T20:47:51.576+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250401.parquet
+[2026-01-22T20:48:22.357+0000] {database.py:186} INFO - Inserted 233068 rows into 'omie.pdvd'.
+[2026-01-22T20:48:22.401+0000] {pdvd.py:125} INFO - Processed pdvd for 20250401
+[2026-01-22T20:48:23.045+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250402.parquet
+[2026-01-22T20:48:57.932+0000] {database.py:186} INFO - Inserted 233612 rows into 'omie.pdvd'.
+[2026-01-22T20:48:57.941+0000] {pdvd.py:125} INFO - Processed pdvd for 20250402
+[2026-01-22T20:48:58.944+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250403.parquet
+[2026-01-22T20:49:38.432+0000] {database.py:186} INFO - Inserted 233096 rows into 'omie.pdvd'.
+[2026-01-22T20:49:38.444+0000] {pdvd.py:125} INFO - Processed pdvd for 20250403
+[2026-01-22T20:49:42.113+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250404.parquet
+[2026-01-22T20:50:17.805+0000] {database.py:186} INFO - Inserted 233844 rows into 'omie.pdvd'.
+[2026-01-22T20:50:17.813+0000] {pdvd.py:125} INFO - Processed pdvd for 20250404
+[2026-01-22T20:50:18.753+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250405.parquet
+[2026-01-22T20:51:01.517+0000] {database.py:186} INFO - Inserted 230888 rows into 'omie.pdvd'.
+[2026-01-22T20:51:01.524+0000] {pdvd.py:125} INFO - Processed pdvd for 20250405
+[2026-01-22T20:51:02.270+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250406.parquet
+[2026-01-22T20:51:31.423+0000] {database.py:186} INFO - Inserted 230148 rows into 'omie.pdvd'.
+[2026-01-22T20:51:31.426+0000] {pdvd.py:125} INFO - Processed pdvd for 20250406
+[2026-01-22T20:51:32.354+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250407.parquet
+[2026-01-22T20:52:24.793+0000] {database.py:186} INFO - Inserted 234908 rows into 'omie.pdvd'.
+[2026-01-22T20:52:24.801+0000] {pdvd.py:125} INFO - Processed pdvd for 20250407
+[2026-01-22T20:52:25.625+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250408.parquet
+[2026-01-22T20:52:56.477+0000] {database.py:186} INFO - Inserted 233168 rows into 'omie.pdvd'.
+[2026-01-22T20:52:56.478+0000] {pdvd.py:125} INFO - Processed pdvd for 20250408
+[2026-01-22T20:52:57.162+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250409.parquet
+[2026-01-22T20:53:34.279+0000] {database.py:186} INFO - Inserted 235408 rows into 'omie.pdvd'.
+[2026-01-22T20:53:34.285+0000] {pdvd.py:125} INFO - Processed pdvd for 20250409
+[2026-01-22T20:53:35.015+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250410.parquet
+[2026-01-22T20:54:08.354+0000] {database.py:186} INFO - Inserted 234920 rows into 'omie.pdvd'.
+[2026-01-22T20:54:08.361+0000] {pdvd.py:125} INFO - Processed pdvd for 20250410
+[2026-01-22T20:54:09.248+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250411.parquet
+[2026-01-22T20:54:41.497+0000] {database.py:186} INFO - Inserted 233740 rows into 'omie.pdvd'.
+[2026-01-22T20:54:41.559+0000] {pdvd.py:125} INFO - Processed pdvd for 20250411
+[2026-01-22T20:54:43.032+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250412.parquet
+[2026-01-22T20:55:17.669+0000] {database.py:186} INFO - Inserted 230756 rows into 'omie.pdvd'.
+[2026-01-22T20:55:17.680+0000] {pdvd.py:125} INFO - Processed pdvd for 20250412
+[2026-01-22T20:55:18.771+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250413.parquet
+[2026-01-22T20:55:51.292+0000] {database.py:186} INFO - Inserted 231524 rows into 'omie.pdvd'.
+[2026-01-22T20:55:51.297+0000] {pdvd.py:125} INFO - Processed pdvd for 20250413
+[2026-01-22T20:55:52.135+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250414.parquet
+[2026-01-22T20:56:29.323+0000] {database.py:186} INFO - Inserted 235512 rows into 'omie.pdvd'.
+[2026-01-22T20:56:29.333+0000] {pdvd.py:125} INFO - Processed pdvd for 20250414
+[2026-01-22T20:56:30.705+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdvd/2025/04/20250415.parquet

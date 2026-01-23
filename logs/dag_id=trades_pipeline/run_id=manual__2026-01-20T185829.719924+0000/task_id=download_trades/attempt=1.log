@@ -1,0 +1,20 @@
+[2026-01-20T18:58:32.008+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-20T18:58:32.058+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: trades_pipeline.download_trades manual__2026-01-20T18:58:29.719924+00:00 [queued]>
+[2026-01-20T18:58:32.069+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: trades_pipeline.download_trades manual__2026-01-20T18:58:29.719924+00:00 [queued]>
+[2026-01-20T18:58:32.070+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-20T18:58:32.086+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_trades> on 2026-01-20 18:58:29.719924+00:00
+[2026-01-20T18:58:32.095+0000] {standard_task_runner.py:63} INFO - Started process 957 to run task
+[2026-01-20T18:58:32.100+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'trades_pipeline', 'download_trades', 'manual__2026-01-20T18:58:29.719924+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/trades_dag.py', '--cfg-path', '/tmp/tmp4otg_uom']
+[2026-01-20T18:58:32.106+0000] {standard_task_runner.py:91} INFO - Job 35: Subtask download_trades
+[2026-01-20T18:58:32.200+0000] {task_command.py:426} INFO - Running <TaskInstance: trades_pipeline.download_trades manual__2026-01-20T18:58:29.719924+00:00 [running]> on host d1a9e72e2525
+[2026-01-20T18:58:32.313+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='trades_pipeline' AIRFLOW_CTX_TASK_ID='download_trades' AIRFLOW_CTX_EXECUTION_DATE='2026-01-20T18:58:29.719924+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-20T18:58:29.719924+00:00'
+[2026-01-20T18:58:32.315+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-20T18:58:32.342+0000] {omie_client.py:64} INFO - Downloading trades_202601.zip from OMIE...
+[2026-01-20T18:58:33.546+0000] {omie_client.py:68} INFO - File trades_202601.zip not found (404).
+[2026-01-20T18:58:33.549+0000] {trades.py:59} WARNING - Failed to download trades_202601.zip
+[2026-01-20T18:58:33.551+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-01-20T18:58:33.556+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-20T18:58:33.574+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=trades_pipeline, task_id=download_trades, run_id=manual__2026-01-20T18:58:29.719924+00:00, execution_date=20260120T185829, start_date=20260120T185832, end_date=20260120T185833
+[2026-01-20T18:58:33.656+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-20T18:58:33.694+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-20T18:58:33.708+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

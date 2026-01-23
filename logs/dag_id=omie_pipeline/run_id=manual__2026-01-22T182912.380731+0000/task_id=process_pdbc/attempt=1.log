@@ -1,0 +1,1518 @@
+[2026-01-22T18:29:53.498+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-22T18:29:53.935+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: omie_pipeline.process_pdbc manual__2026-01-22T18:29:12.380731+00:00 [queued]>
+[2026-01-22T18:29:54.029+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: omie_pipeline.process_pdbc manual__2026-01-22T18:29:12.380731+00:00 [queued]>
+[2026-01-22T18:29:54.060+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-22T18:29:54.180+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): process_pdbc> on 2026-01-22 18:29:12.380731+00:00
+[2026-01-22T18:29:54.259+0000] {standard_task_runner.py:63} INFO - Started process 413 to run task
+[2026-01-22T18:29:54.290+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'omie_pipeline', 'process_pdbc', 'manual__2026-01-22T18:29:12.380731+00:00', '--job-id', '143', '--raw', '--subdir', 'DAGS_FOLDER/omie_dag.py', '--cfg-path', '/tmp/tmprm7lom5q']
+[2026-01-22T18:29:54.313+0000] {standard_task_runner.py:91} INFO - Job 143: Subtask process_pdbc
+[2026-01-22T18:29:55.019+0000] {task_command.py:426} INFO - Running <TaskInstance: omie_pipeline.process_pdbc manual__2026-01-22T18:29:12.380731+00:00 [running]> on host 2aff4151de2d
+[2026-01-22T18:29:55.875+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='omie_pipeline' AIRFLOW_CTX_TASK_ID='process_pdbc' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T18:29:12.380731+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-22T18:29:12.380731+00:00'
+[2026-01-22T18:29:55.911+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-22T18:29:56.099+0000] {logging_mixin.py:188} INFO - Processing process_pdbc for 2025-01-01 00:00:00 - 2026-01-22 00:00:00
+[2026-01-22T18:31:02.218+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250101.parquet
+[2026-01-22T18:32:10.055+0000] {database.py:186} INFO - Inserted 31756 rows into 'omie.pdbc'.
+[2026-01-22T18:32:10.059+0000] {pdbc.py:160} INFO - Processed pdbc for 20250101
+[2026-01-22T18:32:11.421+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250102.parquet
+[2026-01-22T18:32:29.087+0000] {database.py:186} INFO - Inserted 33789 rows into 'omie.pdbc'.
+[2026-01-22T18:32:29.099+0000] {pdbc.py:160} INFO - Processed pdbc for 20250102
+[2026-01-22T18:32:30.299+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250103.parquet
+[2026-01-22T18:32:45.417+0000] {database.py:186} INFO - Inserted 34353 rows into 'omie.pdbc'.
+[2026-01-22T18:32:45.419+0000] {pdbc.py:160} INFO - Processed pdbc for 20250103
+[2026-01-22T18:32:46.642+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250104.parquet
+[2026-01-22T18:33:07.179+0000] {database.py:186} INFO - Inserted 33917 rows into 'omie.pdbc'.
+[2026-01-22T18:33:07.187+0000] {pdbc.py:160} INFO - Processed pdbc for 20250104
+[2026-01-22T18:33:08.513+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250105.parquet
+[2026-01-22T18:33:23.397+0000] {database.py:186} INFO - Inserted 34355 rows into 'omie.pdbc'.
+[2026-01-22T18:33:23.401+0000] {pdbc.py:160} INFO - Processed pdbc for 20250105
+[2026-01-22T18:33:24.244+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250106.parquet
+[2026-01-22T18:33:35.230+0000] {database.py:186} INFO - Inserted 34266 rows into 'omie.pdbc'.
+[2026-01-22T18:33:35.232+0000] {pdbc.py:160} INFO - Processed pdbc for 20250106
+[2026-01-22T18:33:36.136+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250107.parquet
+[2026-01-22T18:33:50.230+0000] {database.py:186} INFO - Inserted 35598 rows into 'omie.pdbc'.
+[2026-01-22T18:33:50.245+0000] {pdbc.py:160} INFO - Processed pdbc for 20250107
+[2026-01-22T18:33:51.378+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250108.parquet
+[2026-01-22T18:34:04.389+0000] {database.py:186} INFO - Inserted 35745 rows into 'omie.pdbc'.
+[2026-01-22T18:34:04.394+0000] {pdbc.py:160} INFO - Processed pdbc for 20250108
+[2026-01-22T18:34:05.485+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250109.parquet
+[2026-01-22T18:34:17.088+0000] {database.py:186} INFO - Inserted 36252 rows into 'omie.pdbc'.
+[2026-01-22T18:34:17.089+0000] {pdbc.py:160} INFO - Processed pdbc for 20250109
+[2026-01-22T18:34:17.495+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250110.parquet
+[2026-01-22T18:34:29.355+0000] {database.py:186} INFO - Inserted 35950 rows into 'omie.pdbc'.
+[2026-01-22T18:34:29.360+0000] {pdbc.py:160} INFO - Processed pdbc for 20250110
+[2026-01-22T18:34:30.094+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250111.parquet
+[2026-01-22T18:34:42.823+0000] {database.py:186} INFO - Inserted 35193 rows into 'omie.pdbc'.
+[2026-01-22T18:34:42.850+0000] {pdbc.py:160} INFO - Processed pdbc for 20250111
+[2026-01-22T18:34:43.835+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250112.parquet
+[2026-01-22T18:34:55.315+0000] {database.py:186} INFO - Inserted 35378 rows into 'omie.pdbc'.
+[2026-01-22T18:34:55.322+0000] {pdbc.py:160} INFO - Processed pdbc for 20250112
+[2026-01-22T18:34:56.198+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250113.parquet
+[2026-01-22T18:35:06.915+0000] {database.py:186} INFO - Inserted 36281 rows into 'omie.pdbc'.
+[2026-01-22T18:35:06.922+0000] {pdbc.py:160} INFO - Processed pdbc for 20250113
+[2026-01-22T18:35:08.131+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250114.parquet
+[2026-01-22T18:35:20.793+0000] {database.py:186} INFO - Inserted 36592 rows into 'omie.pdbc'.
+[2026-01-22T18:35:20.804+0000] {pdbc.py:160} INFO - Processed pdbc for 20250114
+[2026-01-22T18:35:22.137+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250115.parquet
+[2026-01-22T18:35:38.524+0000] {database.py:186} INFO - Inserted 36378 rows into 'omie.pdbc'.
+[2026-01-22T18:35:38.545+0000] {pdbc.py:160} INFO - Processed pdbc for 20250115
+[2026-01-22T18:35:39.295+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250116.parquet
+[2026-01-22T18:35:48.190+0000] {database.py:186} INFO - Inserted 36613 rows into 'omie.pdbc'.
+[2026-01-22T18:35:48.203+0000] {pdbc.py:160} INFO - Processed pdbc for 20250116
+[2026-01-22T18:35:49.287+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250117.parquet
+[2026-01-22T18:35:55.335+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 17, 1, ABA1, 9363921) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:35:55.351+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202501.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 17, 1, ABA1, 9363921) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:35:55.794+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250118.parquet
+[2026-01-22T18:36:01.869+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 18, 1, ABA1, 9368498) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:36:01.871+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202501.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 18, 1, ABA1, 9368498) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:36:03.020+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250119.parquet
+[2026-01-22T18:36:14.065+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 19, 1, ABA1, 9368500) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:36:14.077+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202501.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 19, 1, ABA1, 9368500) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:36:16.132+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250120.parquet
+[2026-01-22T18:36:39.481+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 20, 1, ABA1, 9368520) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:36:39.485+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202501.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 20, 1, ABA1, 9368520) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:36:40.788+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250121.parquet
+[2026-01-22T18:36:53.892+0000] {database.py:186} INFO - Inserted 36096 rows into 'omie.pdbc'.
+[2026-01-22T18:36:53.927+0000] {pdbc.py:160} INFO - Processed pdbc for 20250121
+[2026-01-22T18:36:56.603+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250122.parquet
+[2026-01-22T18:37:21.406+0000] {database.py:186} INFO - Inserted 36086 rows into 'omie.pdbc'.
+[2026-01-22T18:37:21.408+0000] {pdbc.py:160} INFO - Processed pdbc for 20250122
+[2026-01-22T18:37:22.742+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250123.parquet
+[2026-01-22T18:37:48.704+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 23, 1, ABA1, 9375416) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:37:48.706+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202501.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 23, 1, ABA1, 9375416) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:37:49.835+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250124.parquet
+[2026-01-22T18:38:13.899+0000] {database.py:186} INFO - Inserted 36714 rows into 'omie.pdbc'.
+[2026-01-22T18:38:13.914+0000] {pdbc.py:160} INFO - Processed pdbc for 20250124
+[2026-01-22T18:38:15.228+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250125.parquet
+[2026-01-22T18:38:34.728+0000] {database.py:186} INFO - Inserted 35984 rows into 'omie.pdbc'.
+[2026-01-22T18:38:34.731+0000] {pdbc.py:160} INFO - Processed pdbc for 20250125
+[2026-01-22T18:38:35.815+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250126.parquet
+[2026-01-22T18:38:52.963+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 26, 1, ABA1, 9382307) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:38:52.967+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202501.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 26, 1, ABA1, 9382307) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:38:53.865+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250127.parquet
+[2026-01-22T18:39:09.842+0000] {database.py:186} INFO - Inserted 36034 rows into 'omie.pdbc'.
+[2026-01-22T18:39:09.845+0000] {pdbc.py:160} INFO - Processed pdbc for 20250127
+[2026-01-22T18:39:11.060+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250128.parquet
+[2026-01-22T18:39:26.087+0000] {database.py:186} INFO - Inserted 35803 rows into 'omie.pdbc'.
+[2026-01-22T18:39:26.091+0000] {pdbc.py:160} INFO - Processed pdbc for 20250128
+[2026-01-22T18:39:27.258+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250129.parquet
+[2026-01-22T18:39:47.915+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 29, 1, ABA1, 9389567) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:39:47.919+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202501.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 29, 1, ABA1, 9389567) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:39:48.952+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250130.parquet
+[2026-01-22T18:40:01.512+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 30, 1, ABA1, 9393762) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:40:01.522+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202501.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 1, 30, 1, ABA1, 9393762) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:40:02.259+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/01/20250131.parquet
+[2026-01-22T18:40:14.574+0000] {database.py:186} INFO - Inserted 36980 rows into 'omie.pdbc'.
+[2026-01-22T18:40:14.598+0000] {pdbc.py:160} INFO - Processed pdbc for 20250131
+[2026-01-22T18:40:23.559+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250201.parquet
+[2026-01-22T18:40:38.555+0000] {database.py:186} INFO - Inserted 36045 rows into 'omie.pdbc'.
+[2026-01-22T18:40:38.563+0000] {pdbc.py:160} INFO - Processed pdbc for 20250201
+[2026-01-22T18:40:39.894+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250202.parquet
+[2026-01-22T18:40:59.351+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 2, 1, ABA1, 9398485) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:40:59.354+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 2, 1, ABA1, 9398485) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:41:00.356+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250203.parquet
+[2026-01-22T18:41:18.249+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 3, 1, ABA1, 9400945) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:41:18.251+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 3, 1, ABA1, 9400945) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:41:18.943+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250204.parquet
+[2026-01-22T18:41:35.193+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 4, 1, ABA1, 9404002) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:41:35.195+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 4, 1, ABA1, 9404002) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:41:36.351+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250205.parquet
+[2026-01-22T18:41:47.755+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 5, 1, ABA1, 9408050) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:41:47.777+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 5, 1, ABA1, 9408050) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:41:48.660+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250206.parquet
+[2026-01-22T18:41:58.627+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 6, 1, ABA1, 9408122) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:41:58.633+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 6, 1, ABA1, 9408122) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:41:59.324+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250207.parquet
+[2026-01-22T18:42:12.870+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 7, 1, ABA1, 9410395) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:42:12.874+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 7, 1, ABA1, 9410395) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:42:14.589+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250208.parquet
+[2026-01-22T18:42:30.322+0000] {database.py:186} INFO - Inserted 36867 rows into 'omie.pdbc'.
+[2026-01-22T18:42:30.329+0000] {pdbc.py:160} INFO - Processed pdbc for 20250208
+[2026-01-22T18:42:31.534+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250209.parquet
+[2026-01-22T18:42:46.323+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 9, 1, ABA1, 9415006) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:42:46.325+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 9, 1, ABA1, 9415006) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:42:47.301+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250210.parquet
+[2026-01-22T18:43:03.904+0000] {database.py:186} INFO - Inserted 36642 rows into 'omie.pdbc'.
+[2026-01-22T18:43:03.913+0000] {pdbc.py:160} INFO - Processed pdbc for 20250210
+[2026-01-22T18:43:05.112+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250211.parquet
+[2026-01-22T18:43:24.143+0000] {database.py:186} INFO - Inserted 37310 rows into 'omie.pdbc'.
+[2026-01-22T18:43:24.150+0000] {pdbc.py:160} INFO - Processed pdbc for 20250211
+[2026-01-22T18:43:25.317+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250212.parquet
+[2026-01-22T18:43:49.228+0000] {database.py:186} INFO - Inserted 37816 rows into 'omie.pdbc'.
+[2026-01-22T18:43:49.235+0000] {pdbc.py:160} INFO - Processed pdbc for 20250212
+[2026-01-22T18:43:51.238+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250213.parquet
+[2026-01-22T18:44:13.115+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 13, 1, ABA1, 9424286) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:44:13.121+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 13, 1, ABA1, 9424286) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:44:14.241+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250214.parquet
+[2026-01-22T18:44:32.475+0000] {database.py:186} INFO - Inserted 38036 rows into 'omie.pdbc'.
+[2026-01-22T18:44:32.485+0000] {pdbc.py:160} INFO - Processed pdbc for 20250214
+[2026-01-22T18:44:34.646+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250215.parquet
+[2026-01-22T18:44:51.944+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 15, 1, ABA1, 9431594) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:44:51.959+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 15, 1, ABA1, 9431594) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:44:53.936+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250216.parquet
+[2026-01-22T18:45:11.578+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 16, 1, ABA1, 9431618) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:45:11.582+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 16, 1, ABA1, 9431618) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:45:13.334+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250217.parquet
+[2026-01-22T18:45:26.291+0000] {database.py:186} INFO - Inserted 37171 rows into 'omie.pdbc'.
+[2026-01-22T18:45:26.305+0000] {pdbc.py:160} INFO - Processed pdbc for 20250217
+[2026-01-22T18:45:31.345+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250218.parquet
+[2026-01-22T18:45:42.540+0000] {database.py:186} INFO - Inserted 38244 rows into 'omie.pdbc'.
+[2026-01-22T18:45:42.554+0000] {pdbc.py:160} INFO - Processed pdbc for 20250218
+[2026-01-22T18:45:43.523+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250219.parquet
+[2026-01-22T18:46:01.155+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 19, 1, ABA1, 9438804) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:46:01.172+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 19, 1, ABA1, 9438804) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:46:02.830+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250220.parquet
+[2026-01-22T18:46:19.767+0000] {database.py:186} INFO - Inserted 38097 rows into 'omie.pdbc'.
+[2026-01-22T18:46:19.773+0000] {pdbc.py:160} INFO - Processed pdbc for 20250220
+[2026-01-22T18:46:21.465+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250221.parquet
+[2026-01-22T18:46:36.614+0000] {database.py:186} INFO - Inserted 38299 rows into 'omie.pdbc'.
+[2026-01-22T18:46:36.620+0000] {pdbc.py:160} INFO - Processed pdbc for 20250221
+[2026-01-22T18:46:38.380+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250222.parquet
+[2026-01-22T18:46:48.896+0000] {database.py:186} INFO - Inserted 37348 rows into 'omie.pdbc'.
+[2026-01-22T18:46:48.903+0000] {pdbc.py:160} INFO - Processed pdbc for 20250222
+[2026-01-22T18:46:49.612+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250223.parquet
+[2026-01-22T18:47:05.778+0000] {database.py:186} INFO - Inserted 36822 rows into 'omie.pdbc'.
+[2026-01-22T18:47:05.781+0000] {pdbc.py:160} INFO - Processed pdbc for 20250223
+[2026-01-22T18:47:06.464+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250224.parquet
+[2026-01-22T18:47:27.320+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 24, 1, ABA1, 9450284) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:47:27.322+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 24, 1, ABA1, 9450284) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:47:27.886+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250225.parquet
+[2026-01-22T18:47:44.581+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 25, 1, ABA1, 9453163) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:47:44.583+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 25, 1, ABA1, 9453163) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:47:45.319+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250226.parquet
+[2026-01-22T18:47:56.717+0000] {database.py:186} INFO - Inserted 38563 rows into 'omie.pdbc'.
+[2026-01-22T18:47:56.722+0000] {pdbc.py:160} INFO - Processed pdbc for 20250226
+[2026-01-22T18:47:57.498+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250227.parquet
+[2026-01-22T18:48:12.511+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 27, 1, ABA1, 9457305) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:48:12.515+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 27, 1, ABA1, 9457305) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:48:13.186+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/02/20250228.parquet
+[2026-01-22T18:48:22.795+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 28, 1, ABA1, 9459655) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:48:22.797+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202502.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 2, 28, 1, ABA1, 9459655) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:48:23.864+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250301.parquet
+[2026-01-22T18:48:36.124+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 1, 1, ABA1, 9461932) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:48:36.127+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 1, 1, ABA1, 9461932) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:48:36.757+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250302.parquet
+[2026-01-22T18:48:53.113+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 2, 1, ABA1, 9464442) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:48:53.115+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 2, 1, ABA1, 9464442) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:48:54.119+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250303.parquet
+[2026-01-22T18:49:06.411+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 3, 1, ABA1, 9467051) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:49:06.416+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 3, 1, ABA1, 9467051) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:49:06.971+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250304.parquet
+[2026-01-22T18:49:14.067+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 4, 1, ABA1, 9470421) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:49:14.071+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 4, 1, ABA1, 9470421) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:49:14.784+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250305.parquet
+[2026-01-22T18:49:29.553+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 5, 1, ABA1, 9474483) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:49:29.556+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 5, 1, ABA1, 9474483) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:49:30.707+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250306.parquet
+[2026-01-22T18:49:41.983+0000] {database.py:186} INFO - Inserted 38677 rows into 'omie.pdbc'.
+[2026-01-22T18:49:41.985+0000] {pdbc.py:160} INFO - Processed pdbc for 20250306
+[2026-01-22T18:49:42.842+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250307.parquet
+[2026-01-22T18:50:19.397+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 7, 1, ABA1, 9479198) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:50:19.407+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 7, 1, ABA1, 9479198) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:50:20.964+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250308.parquet
+[2026-01-22T18:50:38.420+0000] {database.py:186} INFO - Inserted 37191 rows into 'omie.pdbc'.
+[2026-01-22T18:50:38.424+0000] {pdbc.py:160} INFO - Processed pdbc for 20250308
+[2026-01-22T18:50:39.444+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250309.parquet
+[2026-01-22T18:50:51.060+0000] {database.py:186} INFO - Inserted 37026 rows into 'omie.pdbc'.
+[2026-01-22T18:50:51.072+0000] {pdbc.py:160} INFO - Processed pdbc for 20250309
+[2026-01-22T18:50:52.533+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250310.parquet
+[2026-01-22T18:51:06.401+0000] {database.py:186} INFO - Inserted 38048 rows into 'omie.pdbc'.
+[2026-01-22T18:51:06.411+0000] {pdbc.py:160} INFO - Processed pdbc for 20250310
+[2026-01-22T18:51:07.672+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250311.parquet
+[2026-01-22T18:51:23.754+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 11, 1, ABA1, 9486949) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:51:23.761+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 11, 1, ABA1, 9486949) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:51:24.727+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250312.parquet
+[2026-01-22T18:51:45.211+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 12, 1, ABA1, 9494884) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:51:45.213+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 12, 1, ABA1, 9494884) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:51:49.727+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250313.parquet
+[2026-01-22T18:52:09.208+0000] {database.py:186} INFO - Inserted 38859 rows into 'omie.pdbc'.
+[2026-01-22T18:52:09.243+0000] {pdbc.py:160} INFO - Processed pdbc for 20250313
+[2026-01-22T18:52:14.504+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250314.parquet
+[2026-01-22T18:52:24.526+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 14, 1, ABA1, 9495850) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:52:24.542+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 14, 1, ABA1, 9495850) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:52:28.258+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250315.parquet
+[2026-01-22T18:52:51.212+0000] {database.py:186} INFO - Inserted 38180 rows into 'omie.pdbc'.
+[2026-01-22T18:52:51.232+0000] {pdbc.py:160} INFO - Processed pdbc for 20250315
+[2026-01-22T18:52:53.429+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250316.parquet
+[2026-01-22T18:53:11.460+0000] {database.py:186} INFO - Inserted 37813 rows into 'omie.pdbc'.
+[2026-01-22T18:53:11.476+0000] {pdbc.py:160} INFO - Processed pdbc for 20250316
+[2026-01-22T18:53:14.686+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250317.parquet
+[2026-01-22T18:53:31.782+0000] {database.py:186} INFO - Inserted 38356 rows into 'omie.pdbc'.
+[2026-01-22T18:53:31.796+0000] {pdbc.py:160} INFO - Processed pdbc for 20250317
+[2026-01-22T18:53:33.957+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250318.parquet
+[2026-01-22T18:53:47.341+0000] {database.py:186} INFO - Inserted 39249 rows into 'omie.pdbc'.
+[2026-01-22T18:53:47.367+0000] {pdbc.py:160} INFO - Processed pdbc for 20250318
+[2026-01-22T18:53:48.892+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250319.parquet
+[2026-01-22T18:54:12.375+0000] {database.py:186} INFO - Inserted 39202 rows into 'omie.pdbc'.
+[2026-01-22T18:54:12.406+0000] {pdbc.py:160} INFO - Processed pdbc for 20250319
+[2026-01-22T18:54:16.365+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250320.parquet
+[2026-01-22T18:54:33.204+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 20, 1, ABA1, 9510930) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:54:33.206+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 20, 1, ABA1, 9510930) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:54:35.676+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250321.parquet
+[2026-01-22T18:54:52.436+0000] {database.py:186} INFO - Inserted 37750 rows into 'omie.pdbc'.
+[2026-01-22T18:54:52.440+0000] {pdbc.py:160} INFO - Processed pdbc for 20250321
+[2026-01-22T18:54:53.478+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250322.parquet
+[2026-01-22T18:55:09.991+0000] {database.py:186} INFO - Inserted 35359 rows into 'omie.pdbc'.
+[2026-01-22T18:55:10.075+0000] {pdbc.py:160} INFO - Processed pdbc for 20250322
+[2026-01-22T18:55:12.597+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250323.parquet
+[2026-01-22T18:55:23.883+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 23, 1, ABOUC01, 9512378) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:55:23.886+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 23, 1, ABOUC01, 9512378) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:55:24.841+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250324.parquet
+[2026-01-22T18:55:37.798+0000] {database.py:186} INFO - Inserted 38771 rows into 'omie.pdbc'.
+[2026-01-22T18:55:37.805+0000] {pdbc.py:160} INFO - Processed pdbc for 20250324
+[2026-01-22T18:55:38.714+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250325.parquet
+[2026-01-22T18:55:49.627+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 25, 1, ABOUC01, 9512378) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:55:49.633+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 25, 1, ABOUC01, 9512378) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:55:50.757+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250326.parquet
+[2026-01-22T18:56:03.319+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 26, 1, ABA1, 9528752) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:56:03.321+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 26, 1, ABA1, 9528752) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:56:04.433+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250327.parquet
+[2026-01-22T18:56:17.764+0000] {database.py:186} INFO - Inserted 37739 rows into 'omie.pdbc'.
+[2026-01-22T18:56:17.772+0000] {pdbc.py:160} INFO - Processed pdbc for 20250327
+[2026-01-22T18:56:18.959+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250328.parquet
+[2026-01-22T18:56:40.763+0000] {database.py:186} INFO - Inserted 36062 rows into 'omie.pdbc'.
+[2026-01-22T18:56:40.771+0000] {pdbc.py:160} INFO - Processed pdbc for 20250328
+[2026-01-22T18:56:42.366+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250329.parquet
+[2026-01-22T18:56:59.157+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 29, 1, ABA1, 9536514) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:56:59.162+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 29, 1, ABA1, 9536514) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:56:59.980+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250330.parquet
+[2026-01-22T18:57:13.193+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 30, 1, ABA1, 9532415) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:57:13.194+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 30, 1, ABA1, 9532415) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:57:14.105+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250331.parquet
+[2026-01-22T18:57:26.902+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 31, 1, ABA1, 9534493) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:57:26.904+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202503.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 3, 31, 1, ABA1, 9534493) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:57:28.008+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250401.parquet
+[2026-01-22T18:57:41.631+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 1, 1, ABA1, 9538054) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:57:41.633+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 1, 1, ABA1, 9538054) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T18:57:43.585+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250402.parquet
+[2026-01-22T18:57:55.763+0000] {database.py:186} INFO - Inserted 38068 rows into 'omie.pdbc'.
+[2026-01-22T18:57:55.783+0000] {pdbc.py:160} INFO - Processed pdbc for 20250402
+[2026-01-22T18:57:56.680+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250403.parquet
+[2026-01-22T18:58:20.797+0000] {database.py:186} INFO - Inserted 39099 rows into 'omie.pdbc'.
+[2026-01-22T18:58:20.804+0000] {pdbc.py:160} INFO - Processed pdbc for 20250403
+[2026-01-22T18:58:24.951+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250404.parquet
+[2026-01-22T18:58:49.552+0000] {database.py:186} INFO - Inserted 38124 rows into 'omie.pdbc'.
+[2026-01-22T18:58:49.588+0000] {pdbc.py:160} INFO - Processed pdbc for 20250404
+[2026-01-22T18:58:58.500+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250405.parquet
+[2026-01-22T18:59:23.703+0000] {database.py:186} INFO - Inserted 35901 rows into 'omie.pdbc'.
+[2026-01-22T18:59:23.799+0000] {pdbc.py:160} INFO - Processed pdbc for 20250405
+[2026-01-22T18:59:29.147+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250406.parquet
+[2026-01-22T18:59:49.198+0000] {database.py:186} INFO - Inserted 34469 rows into 'omie.pdbc'.
+[2026-01-22T18:59:49.224+0000] {pdbc.py:160} INFO - Processed pdbc for 20250406
+[2026-01-22T18:59:50.799+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250407.parquet
+[2026-01-22T19:00:05.045+0000] {database.py:186} INFO - Inserted 38648 rows into 'omie.pdbc'.
+[2026-01-22T19:00:05.098+0000] {pdbc.py:160} INFO - Processed pdbc for 20250407
+[2026-01-22T19:00:06.141+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250408.parquet
+[2026-01-22T19:00:21.343+0000] {database.py:186} INFO - Inserted 36270 rows into 'omie.pdbc'.
+[2026-01-22T19:00:21.350+0000] {pdbc.py:160} INFO - Processed pdbc for 20250408
+[2026-01-22T19:00:22.828+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250409.parquet
+[2026-01-22T19:00:46.729+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 9, 1, ABOUC01, 9553186) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:00:46.732+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 9, 1, ABOUC01, 9553186) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:00:50.294+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250410.parquet
+[2026-01-22T19:01:48.487+0000] {database.py:186} INFO - Inserted 38840 rows into 'omie.pdbc'.
+[2026-01-22T19:01:48.499+0000] {pdbc.py:160} INFO - Processed pdbc for 20250410
+[2026-01-22T19:01:51.265+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250411.parquet
+[2026-01-22T19:02:27.554+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 11, 1, ABOUC01, 9553193) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:02:27.559+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 11, 1, ABOUC01, 9553193) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:02:31.247+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250412.parquet
+[2026-01-22T19:03:09.903+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 12, 1, ABA1, 9566221) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:03:09.908+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 12, 1, ABA1, 9566221) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:03:12.246+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250413.parquet
+[2026-01-22T19:03:38.990+0000] {database.py:186} INFO - Inserted 36813 rows into 'omie.pdbc'.
+[2026-01-22T19:03:38.995+0000] {pdbc.py:160} INFO - Processed pdbc for 20250413
+[2026-01-22T19:03:42.405+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250414.parquet
+[2026-01-22T19:04:12.968+0000] {database.py:186} INFO - Inserted 39208 rows into 'omie.pdbc'.
+[2026-01-22T19:04:12.987+0000] {pdbc.py:160} INFO - Processed pdbc for 20250414
+[2026-01-22T19:04:18.479+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250415.parquet
+[2026-01-22T19:04:42.148+0000] {database.py:186} INFO - Inserted 38712 rows into 'omie.pdbc'.
+[2026-01-22T19:04:42.161+0000] {pdbc.py:160} INFO - Processed pdbc for 20250415
+[2026-01-22T19:04:44.909+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250416.parquet
+[2026-01-22T19:05:18.220+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 16, 1, ABOUC01, 9577123) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:05:18.235+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 16, 1, ABOUC01, 9577123) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:05:23.693+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250417.parquet
+[2026-01-22T19:05:43.971+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 17, 1, ABA1, 9575496) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:05:43.978+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 17, 1, ABA1, 9575496) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:05:45.294+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250418.parquet
+[2026-01-22T19:06:00.587+0000] {database.py:186} INFO - Inserted 36113 rows into 'omie.pdbc'.
+[2026-01-22T19:06:00.599+0000] {pdbc.py:160} INFO - Processed pdbc for 20250418
+[2026-01-22T19:06:02.244+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250419.parquet
+[2026-01-22T19:06:14.605+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 19, 1, ABA1, 9583175) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:06:14.606+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 19, 1, ABA1, 9583175) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:06:15.559+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250420.parquet
+[2026-01-22T19:06:24.315+0000] {database.py:186} INFO - Inserted 34348 rows into 'omie.pdbc'.
+[2026-01-22T19:06:24.316+0000] {pdbc.py:160} INFO - Processed pdbc for 20250420
+[2026-01-22T19:06:25.481+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250421.parquet
+[2026-01-22T19:06:38.117+0000] {database.py:186} INFO - Inserted 38703 rows into 'omie.pdbc'.
+[2026-01-22T19:06:38.153+0000] {pdbc.py:160} INFO - Processed pdbc for 20250421
+[2026-01-22T19:06:39.569+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250422.parquet
+[2026-01-22T19:06:56.477+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 22, 1, ABA1, 9587923) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:06:56.504+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 22, 1, ABA1, 9587923) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:07:03.879+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250423.parquet
+[2026-01-22T19:07:32.233+0000] {database.py:186} INFO - Inserted 40145 rows into 'omie.pdbc'.
+[2026-01-22T19:07:32.318+0000] {pdbc.py:160} INFO - Processed pdbc for 20250423
+[2026-01-22T19:07:38.272+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250424.parquet
+[2026-01-22T19:08:03.055+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 24, 1, ABOUC01, 9594167) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:08:03.067+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 24, 1, ABOUC01, 9594167) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:08:08.710+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250425.parquet
+[2026-01-22T19:08:25.539+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 25, 1, ABA1, 9594408) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:08:25.542+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 25, 1, ABA1, 9594408) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:08:26.837+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250426.parquet
+[2026-01-22T19:08:36.333+0000] {database.py:186} INFO - Inserted 35133 rows into 'omie.pdbc'.
+[2026-01-22T19:08:36.336+0000] {pdbc.py:160} INFO - Processed pdbc for 20250426
+[2026-01-22T19:08:37.207+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250427.parquet
+[2026-01-22T19:08:49.011+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 27, 1, ABA1, 9601569) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:08:49.014+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 27, 1, ABA1, 9601569) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:08:49.845+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250428.parquet
+[2026-01-22T19:09:01.860+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 28, 1, ABA1, 9601580) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:09:01.862+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 28, 1, ABA1, 9601580) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:09:02.687+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250429.parquet
+[2026-01-22T19:09:43.512+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 29, 1, ABA1, 9604703) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:09:43.515+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202504.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 4, 29, 1, ABA1, 9604703) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:09:44.242+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250430.parquet
+[2026-01-22T19:09:55.820+0000] {database.py:186} INFO - Inserted 38362 rows into 'omie.pdbc'.
+[2026-01-22T19:09:55.822+0000] {pdbc.py:160} INFO - Processed pdbc for 20250430
+[2026-01-22T19:10:00.833+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250501.parquet
+[2026-01-22T19:10:10.971+0000] {database.py:186} INFO - Inserted 33520 rows into 'omie.pdbc'.
+[2026-01-22T19:10:10.973+0000] {pdbc.py:160} INFO - Processed pdbc for 20250501
+[2026-01-22T19:10:11.750+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250502.parquet
+[2026-01-22T19:10:20.989+0000] {database.py:186} INFO - Inserted 36220 rows into 'omie.pdbc'.
+[2026-01-22T19:10:20.991+0000] {pdbc.py:160} INFO - Processed pdbc for 20250502
+[2026-01-22T19:10:21.596+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250503.parquet
+[2026-01-22T19:10:33.264+0000] {database.py:186} INFO - Inserted 35908 rows into 'omie.pdbc'.
+[2026-01-22T19:10:33.267+0000] {pdbc.py:160} INFO - Processed pdbc for 20250503
+[2026-01-22T19:10:34.677+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250504.parquet
+[2026-01-22T19:10:51.817+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 4, 1, ABA1, 9617528) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:10:51.822+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202505.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 4, 1, ABA1, 9617528) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:10:52.683+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250505.parquet
+[2026-01-22T19:11:02.688+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 5, 1, ABA1, 9619876) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:11:02.689+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202505.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 5, 1, ABA1, 9619876) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:11:03.380+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250506.parquet
+[2026-01-22T19:11:20.756+0000] {database.py:186} INFO - Inserted 36129 rows into 'omie.pdbc'.
+[2026-01-22T19:11:20.762+0000] {pdbc.py:160} INFO - Processed pdbc for 20250506
+[2026-01-22T19:11:22.123+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250507.parquet
+[2026-01-22T19:11:38.432+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 7, 1, ABA1, 9624429) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:11:38.434+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202505.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 7, 1, ABA1, 9624429) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:11:39.047+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250508.parquet
+[2026-01-22T19:11:48.356+0000] {database.py:186} INFO - Inserted 39167 rows into 'omie.pdbc'.
+[2026-01-22T19:11:48.358+0000] {pdbc.py:160} INFO - Processed pdbc for 20250508
+[2026-01-22T19:11:48.946+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250509.parquet
+[2026-01-22T19:11:59.956+0000] {database.py:186} INFO - Inserted 39931 rows into 'omie.pdbc'.
+[2026-01-22T19:11:59.960+0000] {pdbc.py:160} INFO - Processed pdbc for 20250509
+[2026-01-22T19:12:00.760+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250510.parquet
+[2026-01-22T19:12:14.718+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 10, 1, ABA1, 9631937) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:12:14.720+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202505.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 10, 1, ABA1, 9631937) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:12:15.376+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250511.parquet
+[2026-01-22T19:12:23.771+0000] {database.py:186} INFO - Inserted 32612 rows into 'omie.pdbc'.
+[2026-01-22T19:12:23.773+0000] {pdbc.py:160} INFO - Processed pdbc for 20250511
+[2026-01-22T19:12:24.506+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250512.parquet
+[2026-01-22T19:12:35.426+0000] {database.py:186} INFO - Inserted 37080 rows into 'omie.pdbc'.
+[2026-01-22T19:12:35.446+0000] {pdbc.py:160} INFO - Processed pdbc for 20250512
+[2026-01-22T19:12:37.276+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250513.parquet
+[2026-01-22T19:12:47.313+0000] {database.py:186} INFO - Inserted 38615 rows into 'omie.pdbc'.
+[2026-01-22T19:12:47.315+0000] {pdbc.py:160} INFO - Processed pdbc for 20250513
+[2026-01-22T19:12:48.113+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250514.parquet
+[2026-01-22T19:13:10.813+0000] {database.py:186} INFO - Inserted 37675 rows into 'omie.pdbc'.
+[2026-01-22T19:13:10.819+0000] {pdbc.py:160} INFO - Processed pdbc for 20250514
+[2026-01-22T19:13:12.243+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250515.parquet
+[2026-01-22T19:13:37.346+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 15, 1, ABA1, 9643534) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:13:37.354+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202505.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 15, 1, ABA1, 9643534) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:13:38.184+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250516.parquet
+[2026-01-22T19:13:59.376+0000] {database.py:186} INFO - Inserted 35651 rows into 'omie.pdbc'.
+[2026-01-22T19:13:59.380+0000] {pdbc.py:160} INFO - Processed pdbc for 20250516
+[2026-01-22T19:14:01.572+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250517.parquet
+[2026-01-22T19:14:57.429+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 17, 1, ABA1, 9648333) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:14:57.431+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202505.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 17, 1, ABA1, 9648333) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:14:58.450+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250518.parquet
+[2026-01-22T19:16:06.397+0000] {database.py:186} INFO - Inserted 33458 rows into 'omie.pdbc'.
+[2026-01-22T19:16:06.400+0000] {pdbc.py:160} INFO - Processed pdbc for 20250518
+[2026-01-22T19:16:07.406+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250519.parquet
+[2026-01-22T19:17:33.741+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 19, 1, ABOUC01, 9656667) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:17:33.749+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202505.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 19, 1, ABOUC01, 9656667) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:17:35.124+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250520.parquet
+[2026-01-22T19:17:58.592+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 20, 1, ABOUC01, 9656668) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:17:58.597+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202505.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 20, 1, ABOUC01, 9656668) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:17:59.370+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250521.parquet
+[2026-01-22T19:18:44.237+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 21, 1, ABOUC01, 9656669) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:18:44.240+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202505.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 5, 21, 1, ABOUC01, 9656669) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:18:45.750+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250522.parquet
+[2026-01-22T19:19:30.705+0000] {database.py:186} INFO - Inserted 36627 rows into 'omie.pdbc'.
+[2026-01-22T19:19:30.719+0000] {pdbc.py:160} INFO - Processed pdbc for 20250522
+[2026-01-22T19:19:32.536+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250523.parquet
+[2026-01-22T19:20:12.740+0000] {database.py:186} INFO - Inserted 37810 rows into 'omie.pdbc'.
+[2026-01-22T19:20:12.743+0000] {pdbc.py:160} INFO - Processed pdbc for 20250523
+[2026-01-22T19:20:13.850+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250524.parquet
+[2026-01-22T19:20:48.316+0000] {database.py:186} INFO - Inserted 34057 rows into 'omie.pdbc'.
+[2026-01-22T19:20:48.323+0000] {pdbc.py:160} INFO - Processed pdbc for 20250524
+[2026-01-22T19:20:49.230+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250525.parquet
+[2026-01-22T19:21:35.209+0000] {database.py:186} INFO - Inserted 33256 rows into 'omie.pdbc'.
+[2026-01-22T19:21:35.214+0000] {pdbc.py:160} INFO - Processed pdbc for 20250525
+[2026-01-22T19:21:36.348+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250526.parquet
+[2026-01-22T19:22:03.084+0000] {database.py:186} INFO - Inserted 38249 rows into 'omie.pdbc'.
+[2026-01-22T19:22:03.088+0000] {pdbc.py:160} INFO - Processed pdbc for 20250526
+[2026-01-22T19:22:04.329+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250527.parquet
+[2026-01-22T19:23:08.824+0000] {database.py:186} INFO - Inserted 38814 rows into 'omie.pdbc'.
+[2026-01-22T19:23:08.843+0000] {pdbc.py:160} INFO - Processed pdbc for 20250527
+[2026-01-22T19:23:11.047+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250528.parquet
+[2026-01-22T19:24:23.764+0000] {database.py:186} INFO - Inserted 38898 rows into 'omie.pdbc'.
+[2026-01-22T19:24:23.766+0000] {pdbc.py:160} INFO - Processed pdbc for 20250528
+[2026-01-22T19:24:25.071+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250529.parquet
+[2026-01-22T19:25:25.038+0000] {database.py:186} INFO - Inserted 39343 rows into 'omie.pdbc'.
+[2026-01-22T19:25:25.041+0000] {pdbc.py:160} INFO - Processed pdbc for 20250529
+[2026-01-22T19:25:25.803+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250530.parquet
+[2026-01-22T19:26:18.777+0000] {database.py:186} INFO - Inserted 39322 rows into 'omie.pdbc'.
+[2026-01-22T19:26:18.781+0000] {pdbc.py:160} INFO - Processed pdbc for 20250530
+[2026-01-22T19:26:19.847+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/05/20250531.parquet
+[2026-01-22T19:26:53.465+0000] {database.py:186} INFO - Inserted 36884 rows into 'omie.pdbc'.
+[2026-01-22T19:26:53.470+0000] {pdbc.py:160} INFO - Processed pdbc for 20250531
+[2026-01-22T19:26:54.756+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250601.parquet
+[2026-01-22T19:28:21.624+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 1, 1, ABA1, 9685645) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:28:21.629+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 1, 1, ABA1, 9685645) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:28:22.662+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250602.parquet
+[2026-01-22T19:29:24.093+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 2, 1, ABA1, 9688182) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:29:24.095+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 2, 1, ABA1, 9688182) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:29:24.999+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250603.parquet
+[2026-01-22T19:29:56.973+0000] {database.py:186} INFO - Inserted 41123 rows into 'omie.pdbc'.
+[2026-01-22T19:29:56.978+0000] {pdbc.py:160} INFO - Processed pdbc for 20250603
+[2026-01-22T19:29:57.953+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250604.parquet
+[2026-01-22T19:30:22.078+0000] {database.py:186} INFO - Inserted 41829 rows into 'omie.pdbc'.
+[2026-01-22T19:30:22.090+0000] {pdbc.py:160} INFO - Processed pdbc for 20250604
+[2026-01-22T19:30:22.959+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250605.parquet
+[2026-01-22T19:30:47.526+0000] {database.py:186} INFO - Inserted 40034 rows into 'omie.pdbc'.
+[2026-01-22T19:30:47.529+0000] {pdbc.py:160} INFO - Processed pdbc for 20250605
+[2026-01-22T19:30:49.226+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250606.parquet
+[2026-01-22T19:31:12.713+0000] {database.py:186} INFO - Inserted 40899 rows into 'omie.pdbc'.
+[2026-01-22T19:31:12.730+0000] {pdbc.py:160} INFO - Processed pdbc for 20250606
+[2026-01-22T19:31:14.104+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250607.parquet
+[2026-01-22T19:31:34.892+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 7, 1, ABA1, 9700719) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:31:34.895+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 7, 1, ABA1, 9700719) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:31:35.701+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250608.parquet
+[2026-01-22T19:31:58.938+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 8, 1, ABA1, 9703207) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:31:58.940+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 8, 1, ABA1, 9703207) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:31:59.719+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250609.parquet
+[2026-01-22T19:32:32.149+0000] {database.py:186} INFO - Inserted 41419 rows into 'omie.pdbc'.
+[2026-01-22T19:32:32.153+0000] {pdbc.py:160} INFO - Processed pdbc for 20250609
+[2026-01-22T19:32:33.359+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250610.parquet
+[2026-01-22T19:33:16.746+0000] {database.py:186} INFO - Inserted 41775 rows into 'omie.pdbc'.
+[2026-01-22T19:33:16.752+0000] {pdbc.py:160} INFO - Processed pdbc for 20250610
+[2026-01-22T19:33:17.777+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250611.parquet
+[2026-01-22T19:33:30.798+0000] {database.py:186} INFO - Inserted 42266 rows into 'omie.pdbc'.
+[2026-01-22T19:33:30.806+0000] {pdbc.py:160} INFO - Processed pdbc for 20250611
+[2026-01-22T19:33:31.889+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250612.parquet
+[2026-01-22T19:33:45.308+0000] {database.py:186} INFO - Inserted 41444 rows into 'omie.pdbc'.
+[2026-01-22T19:33:45.312+0000] {pdbc.py:160} INFO - Processed pdbc for 20250612
+[2026-01-22T19:33:46.306+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250613.parquet
+[2026-01-22T19:34:05.013+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 13, 1, ABA1, 9715237) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:34:05.021+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 13, 1, ABA1, 9715237) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:34:05.802+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250614.parquet
+[2026-01-22T19:34:28.837+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 14, 1, ABA1, 9717878) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:34:28.840+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 14, 1, ABA1, 9717878) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:34:29.802+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250615.parquet
+[2026-01-22T19:34:46.219+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 15, 1, ABA1, 9720436) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:34:46.227+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 15, 1, ABA1, 9720436) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:34:47.179+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250616.parquet
+[2026-01-22T19:35:06.806+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 16, 1, ABA1, 9722876) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:35:06.811+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 16, 1, ABA1, 9722876) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:35:07.349+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250617.parquet
+[2026-01-22T19:35:24.487+0000] {database.py:186} INFO - Inserted 42341 rows into 'omie.pdbc'.
+[2026-01-22T19:35:24.492+0000] {pdbc.py:160} INFO - Processed pdbc for 20250617
+[2026-01-22T19:35:25.178+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250618.parquet
+[2026-01-22T19:35:42.394+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 18, 1, ABA1, 9728133) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:35:42.397+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 18, 1, ABA1, 9728133) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:35:43.698+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250619.parquet
+[2026-01-22T19:36:37.948+0000] {database.py:186} INFO - Inserted 42291 rows into 'omie.pdbc'.
+[2026-01-22T19:36:37.951+0000] {pdbc.py:160} INFO - Processed pdbc for 20250619
+[2026-01-22T19:36:39.490+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250620.parquet
+[2026-01-22T19:37:02.579+0000] {database.py:186} INFO - Inserted 42339 rows into 'omie.pdbc'.
+[2026-01-22T19:37:02.582+0000] {pdbc.py:160} INFO - Processed pdbc for 20250620
+[2026-01-22T19:37:03.586+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250621.parquet
+[2026-01-22T19:37:21.972+0000] {database.py:186} INFO - Inserted 40391 rows into 'omie.pdbc'.
+[2026-01-22T19:37:21.974+0000] {pdbc.py:160} INFO - Processed pdbc for 20250621
+[2026-01-22T19:37:22.693+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250622.parquet
+[2026-01-22T19:37:38.698+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 22, 1, ABOUC01, 9732074) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:37:38.701+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 22, 1, ABOUC01, 9732074) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:37:39.423+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250623.parquet
+[2026-01-22T19:37:57.251+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 23, 1, ABOUC01, 9740038) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:37:57.254+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 23, 1, ABOUC01, 9740038) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:37:58.136+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250624.parquet
+[2026-01-22T19:38:14.971+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 24, 1, ABOUC01, 9740039) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:38:14.972+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 24, 1, ABOUC01, 9740039) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:38:15.796+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250625.parquet
+[2026-01-22T19:38:39.923+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 25, 1, ABOUC01, 9749471) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:38:39.925+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 25, 1, ABOUC01, 9749471) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:38:40.772+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250626.parquet
+[2026-01-22T19:38:51.016+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 26, 1, ABOUC01, 9749477) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:38:51.021+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 26, 1, ABOUC01, 9749477) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:38:51.791+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250627.parquet
+[2026-01-22T19:39:01.978+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 27, 1, ABOUC01, 9749479) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:39:01.979+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 27, 1, ABOUC01, 9749479) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:39:02.900+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250628.parquet
+[2026-01-22T19:39:27.471+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 28, 1, ABOUC01, 9749484) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:39:27.491+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 28, 1, ABOUC01, 9749484) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:39:29.811+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250629.parquet
+[2026-01-22T19:39:52.192+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 29, 1, ABOUC01, 9749485) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:39:52.195+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202506.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 6, 29, 1, ABOUC01, 9749485) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:39:52.885+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/06/20250630.parquet
+[2026-01-22T19:40:05.373+0000] {database.py:186} INFO - Inserted 41703 rows into 'omie.pdbc'.
+[2026-01-22T19:40:05.377+0000] {pdbc.py:160} INFO - Processed pdbc for 20250630
+[2026-01-22T19:40:06.568+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250701.parquet
+[2026-01-22T19:40:22.106+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 1, 1, ABOUC01, 9757248) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:40:22.108+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202507.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 1, 1, ABOUC01, 9757248) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:40:23.054+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250702.parquet
+[2026-01-22T19:40:46.448+0000] {database.py:186} INFO - Inserted 43122 rows into 'omie.pdbc'.
+[2026-01-22T19:40:46.451+0000] {pdbc.py:160} INFO - Processed pdbc for 20250702
+[2026-01-22T19:40:47.380+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250703.parquet
+[2026-01-22T19:41:05.015+0000] {database.py:186} INFO - Inserted 43552 rows into 'omie.pdbc'.
+[2026-01-22T19:41:05.021+0000] {pdbc.py:160} INFO - Processed pdbc for 20250703
+[2026-01-22T19:41:06.155+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250704.parquet
+[2026-01-22T19:41:24.641+0000] {database.py:186} INFO - Inserted 43442 rows into 'omie.pdbc'.
+[2026-01-22T19:41:24.646+0000] {pdbc.py:160} INFO - Processed pdbc for 20250704
+[2026-01-22T19:41:26.002+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250705.parquet
+[2026-01-22T19:41:45.745+0000] {database.py:186} INFO - Inserted 42416 rows into 'omie.pdbc'.
+[2026-01-22T19:41:45.786+0000] {pdbc.py:160} INFO - Processed pdbc for 20250705
+[2026-01-22T19:41:47.615+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250706.parquet
+[2026-01-22T19:42:10.541+0000] {database.py:186} INFO - Inserted 40869 rows into 'omie.pdbc'.
+[2026-01-22T19:42:10.613+0000] {pdbc.py:160} INFO - Processed pdbc for 20250706
+[2026-01-22T19:42:17.361+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250707.parquet
+[2026-01-22T19:42:40.229+0000] {database.py:186} INFO - Inserted 42977 rows into 'omie.pdbc'.
+[2026-01-22T19:42:40.231+0000] {pdbc.py:160} INFO - Processed pdbc for 20250707
+[2026-01-22T19:42:41.153+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250708.parquet
+[2026-01-22T19:43:03.528+0000] {database.py:186} INFO - Inserted 42966 rows into 'omie.pdbc'.
+[2026-01-22T19:43:03.534+0000] {pdbc.py:160} INFO - Processed pdbc for 20250708
+[2026-01-22T19:43:04.610+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250709.parquet
+[2026-01-22T19:43:36.293+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 9, 1, ABA1, 9787384) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:43:36.295+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202507.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 9, 1, ABA1, 9787384) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:43:37.416+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250710.parquet
+[2026-01-22T19:44:06.174+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 10, 1, ABA1, 9788471) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:44:06.182+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202507.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 10, 1, ABA1, 9788471) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:44:06.963+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250711.parquet
+[2026-01-22T19:45:18.132+0000] {database.py:186} INFO - Inserted 43424 rows into 'omie.pdbc'.
+[2026-01-22T19:45:18.137+0000] {pdbc.py:160} INFO - Processed pdbc for 20250711
+[2026-01-22T19:45:19.626+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250712.parquet
+[2026-01-22T19:45:49.935+0000] {database.py:186} INFO - Inserted 41957 rows into 'omie.pdbc'.
+[2026-01-22T19:45:49.937+0000] {pdbc.py:160} INFO - Processed pdbc for 20250712
+[2026-01-22T19:45:50.954+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250713.parquet
+[2026-01-22T19:46:25.139+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 13, 1, ABA1, 9791013) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:46:25.143+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202507.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 13, 1, ABA1, 9791013) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:46:26.167+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250714.parquet
+[2026-01-22T19:46:40.446+0000] {database.py:186} INFO - Inserted 42579 rows into 'omie.pdbc'.
+[2026-01-22T19:46:40.447+0000] {pdbc.py:160} INFO - Processed pdbc for 20250714
+[2026-01-22T19:46:41.119+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250715.parquet
+[2026-01-22T19:46:52.634+0000] {database.py:186} INFO - Inserted 42615 rows into 'omie.pdbc'.
+[2026-01-22T19:46:52.636+0000] {pdbc.py:160} INFO - Processed pdbc for 20250715
+[2026-01-22T19:46:53.474+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250716.parquet
+[2026-01-22T19:47:04.865+0000] {database.py:186} INFO - Inserted 42679 rows into 'omie.pdbc'.
+[2026-01-22T19:47:04.871+0000] {pdbc.py:160} INFO - Processed pdbc for 20250716
+[2026-01-22T19:47:05.897+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250717.parquet
+[2026-01-22T19:47:27.443+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 17, 1, ABA1, 9800813) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:47:27.448+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202507.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 17, 1, ABA1, 9800813) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:47:28.732+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250718.parquet
+[2026-01-22T19:47:41.558+0000] {database.py:186} INFO - Inserted 43092 rows into 'omie.pdbc'.
+[2026-01-22T19:47:41.561+0000] {pdbc.py:160} INFO - Processed pdbc for 20250718
+[2026-01-22T19:47:42.539+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250719.parquet
+[2026-01-22T19:47:57.314+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 19, 1, ABA1, 9806279) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:47:57.316+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202507.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 19, 1, ABA1, 9806279) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:47:58.250+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250720.parquet
+[2026-01-22T19:48:15.124+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 20, 1, ABA1, 9808700) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:48:15.127+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202507.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 20, 1, ABA1, 9808700) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:48:16.025+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250721.parquet
+[2026-01-22T19:48:56.012+0000] {database.py:186} INFO - Inserted 43143 rows into 'omie.pdbc'.
+[2026-01-22T19:48:56.074+0000] {pdbc.py:160} INFO - Processed pdbc for 20250721
+[2026-01-22T19:48:57.662+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250722.parquet
+[2026-01-22T19:49:14.365+0000] {database.py:186} INFO - Inserted 42825 rows into 'omie.pdbc'.
+[2026-01-22T19:49:14.370+0000] {pdbc.py:160} INFO - Processed pdbc for 20250722
+[2026-01-22T19:49:15.669+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250723.parquet
+[2026-01-22T19:49:55.194+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 23, 1, ABOUC01, 9813148) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:49:55.203+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202507.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 23, 1, ABOUC01, 9813148) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:49:56.469+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250724.parquet
+[2026-01-22T19:50:23.445+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 24, 1, ABOUC01, 9821426) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:50:23.450+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202507.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 24, 1, ABOUC01, 9821426) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:50:24.507+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250725.parquet
+[2026-01-22T19:50:45.082+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 25, 1, ABOUC01, 9821427) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:50:45.091+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202507.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 25, 1, ABOUC01, 9821427) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:50:46.884+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250726.parquet
+[2026-01-22T19:51:04.896+0000] {database.py:186} INFO - Inserted 40502 rows into 'omie.pdbc'.
+[2026-01-22T19:51:04.898+0000] {pdbc.py:160} INFO - Processed pdbc for 20250726
+[2026-01-22T19:51:05.925+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250727.parquet
+[2026-01-22T19:51:23.427+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 27, 1, ABOUC01, 9828403) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:51:23.429+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202507.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 27, 1, ABOUC01, 9828403) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:51:24.644+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250728.parquet
+[2026-01-22T19:51:36.574+0000] {database.py:186} INFO - Inserted 42212 rows into 'omie.pdbc'.
+[2026-01-22T19:51:36.577+0000] {pdbc.py:160} INFO - Processed pdbc for 20250728
+[2026-01-22T19:51:37.506+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250729.parquet
+[2026-01-22T19:51:52.088+0000] {database.py:186} INFO - Inserted 41996 rows into 'omie.pdbc'.
+[2026-01-22T19:51:52.090+0000] {pdbc.py:160} INFO - Processed pdbc for 20250729
+[2026-01-22T19:51:53.177+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250730.parquet
+[2026-01-22T19:52:36.951+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 30, 1, ABOUC01, 9828484) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:52:36.961+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202507.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 7, 30, 1, ABOUC01, 9828484) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:52:40.410+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/07/20250731.parquet
+[2026-01-22T19:53:11.015+0000] {database.py:186} INFO - Inserted 42191 rows into 'omie.pdbc'.
+[2026-01-22T19:53:11.038+0000] {pdbc.py:160} INFO - Processed pdbc for 20250731
+[2026-01-22T19:53:17.321+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250801.parquet
+[2026-01-22T19:53:36.382+0000] {database.py:186} INFO - Inserted 42231 rows into 'omie.pdbc'.
+[2026-01-22T19:53:36.385+0000] {pdbc.py:160} INFO - Processed pdbc for 20250801
+[2026-01-22T19:53:37.427+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250802.parquet
+[2026-01-22T19:53:58.242+0000] {database.py:186} INFO - Inserted 40296 rows into 'omie.pdbc'.
+[2026-01-22T19:53:58.244+0000] {pdbc.py:160} INFO - Processed pdbc for 20250802
+[2026-01-22T19:53:59.101+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250803.parquet
+[2026-01-22T19:54:25.474+0000] {database.py:186} INFO - Inserted 36188 rows into 'omie.pdbc'.
+[2026-01-22T19:54:25.477+0000] {pdbc.py:160} INFO - Processed pdbc for 20250803
+[2026-01-22T19:54:26.324+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250804.parquet
+[2026-01-22T19:54:40.705+0000] {database.py:186} INFO - Inserted 40972 rows into 'omie.pdbc'.
+[2026-01-22T19:54:40.710+0000] {pdbc.py:160} INFO - Processed pdbc for 20250804
+[2026-01-22T19:54:41.874+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250805.parquet
+[2026-01-22T19:55:12.496+0000] {database.py:186} INFO - Inserted 41098 rows into 'omie.pdbc'.
+[2026-01-22T19:55:12.507+0000] {pdbc.py:160} INFO - Processed pdbc for 20250805
+[2026-01-22T19:55:13.395+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250806.parquet
+[2026-01-22T19:55:44.734+0000] {database.py:186} INFO - Inserted 41763 rows into 'omie.pdbc'.
+[2026-01-22T19:55:44.737+0000] {pdbc.py:160} INFO - Processed pdbc for 20250806
+[2026-01-22T19:55:47.583+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250807.parquet
+[2026-01-22T19:56:17.891+0000] {database.py:186} INFO - Inserted 41599 rows into 'omie.pdbc'.
+[2026-01-22T19:56:17.911+0000] {pdbc.py:160} INFO - Processed pdbc for 20250807
+[2026-01-22T19:56:20.308+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250808.parquet
+[2026-01-22T19:56:42.496+0000] {database.py:186} INFO - Inserted 41706 rows into 'omie.pdbc'.
+[2026-01-22T19:56:42.499+0000] {pdbc.py:160} INFO - Processed pdbc for 20250808
+[2026-01-22T19:56:43.402+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250809.parquet
+[2026-01-22T19:56:56.662+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 9, 1, ABA1, 9862261) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:56:56.666+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202508.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 9, 1, ABA1, 9862261) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:56:57.573+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250810.parquet
+[2026-01-22T19:57:09.497+0000] {database.py:186} INFO - Inserted 37160 rows into 'omie.pdbc'.
+[2026-01-22T19:57:09.499+0000] {pdbc.py:160} INFO - Processed pdbc for 20250810
+[2026-01-22T19:57:10.272+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250811.parquet
+[2026-01-22T19:57:26.904+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 11, 1, ABA1, 9864972) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:57:26.905+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202508.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 11, 1, ABA1, 9864972) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:57:27.789+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250812.parquet
+[2026-01-22T19:57:41.371+0000] {database.py:186} INFO - Inserted 41131 rows into 'omie.pdbc'.
+[2026-01-22T19:57:41.374+0000] {pdbc.py:160} INFO - Processed pdbc for 20250812
+[2026-01-22T19:57:42.127+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250813.parquet
+[2026-01-22T19:57:54.999+0000] {database.py:186} INFO - Inserted 40986 rows into 'omie.pdbc'.
+[2026-01-22T19:57:55.001+0000] {pdbc.py:160} INFO - Processed pdbc for 20250813
+[2026-01-22T19:57:55.910+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250814.parquet
+[2026-01-22T19:58:05.017+0000] {database.py:186} INFO - Inserted 41310 rows into 'omie.pdbc'.
+[2026-01-22T19:58:05.020+0000] {pdbc.py:160} INFO - Processed pdbc for 20250814
+[2026-01-22T19:58:05.928+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250815.parquet
+[2026-01-22T19:58:17.791+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 15, 1, ABA1, 9874836) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:58:17.806+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202508.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 15, 1, ABA1, 9874836) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:58:18.652+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250816.parquet
+[2026-01-22T19:58:32.825+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 16, 1, ABA1, 9877486) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:58:32.828+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202508.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 16, 1, ABA1, 9877486) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T19:58:33.752+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250817.parquet
+[2026-01-22T19:59:30.570+0000] {database.py:186} INFO - Inserted 38794 rows into 'omie.pdbc'.
+[2026-01-22T19:59:30.618+0000] {pdbc.py:160} INFO - Processed pdbc for 20250817
+[2026-01-22T19:59:34.185+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250818.parquet
+[2026-01-22T19:59:44.337+0000] {database.py:186} INFO - Inserted 40070 rows into 'omie.pdbc'.
+[2026-01-22T19:59:44.338+0000] {pdbc.py:160} INFO - Processed pdbc for 20250818
+[2026-01-22T19:59:44.719+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250819.parquet
+[2026-01-22T19:59:54.764+0000] {database.py:186} INFO - Inserted 41285 rows into 'omie.pdbc'.
+[2026-01-22T19:59:54.771+0000] {pdbc.py:160} INFO - Processed pdbc for 20250819
+[2026-01-22T19:59:54.996+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250820.parquet
+[2026-01-22T19:59:59.505+0000] {database.py:186} INFO - Inserted 41437 rows into 'omie.pdbc'.
+[2026-01-22T19:59:59.508+0000] {pdbc.py:160} INFO - Processed pdbc for 20250820
+[2026-01-22T19:59:59.846+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250821.parquet
+[2026-01-22T20:00:02.449+0000] {database.py:186} INFO - Inserted 41039 rows into 'omie.pdbc'.
+[2026-01-22T20:00:02.451+0000] {pdbc.py:160} INFO - Processed pdbc for 20250821
+[2026-01-22T20:00:02.848+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250822.parquet
+[2026-01-22T20:00:09.498+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 22, 1, ABA1, 9892236) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:00:09.499+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202508.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 22, 1, ABA1, 9892236) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:00:09.902+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250823.parquet
+[2026-01-22T20:00:19.878+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 23, 1, ABA1, 9894907) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:00:19.879+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202508.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 23, 1, ABA1, 9894907) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:00:20.250+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250824.parquet
+[2026-01-22T20:00:23.152+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 24, 1, ABA1, 9897494) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:00:23.161+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202508.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 24, 1, ABA1, 9897494) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:00:24.497+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250825.parquet
+[2026-01-22T20:00:41.096+0000] {database.py:186} INFO - Inserted 40185 rows into 'omie.pdbc'.
+[2026-01-22T20:00:41.107+0000] {pdbc.py:160} INFO - Processed pdbc for 20250825
+[2026-01-22T20:00:41.533+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250826.parquet
+[2026-01-22T20:00:47.585+0000] {database.py:186} INFO - Inserted 40893 rows into 'omie.pdbc'.
+[2026-01-22T20:00:47.588+0000] {pdbc.py:160} INFO - Processed pdbc for 20250826
+[2026-01-22T20:00:52.697+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250827.parquet
+[2026-01-22T20:01:03.132+0000] {database.py:186} INFO - Inserted 41555 rows into 'omie.pdbc'.
+[2026-01-22T20:01:03.134+0000] {pdbc.py:160} INFO - Processed pdbc for 20250827
+[2026-01-22T20:01:03.588+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250828.parquet
+[2026-01-22T20:01:10.928+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 28, 1, ABA1, 9907449) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:01:10.929+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202508.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 8, 28, 1, ABA1, 9907449) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:01:12.614+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250829.parquet
+[2026-01-22T20:01:17.882+0000] {database.py:186} INFO - Inserted 40668 rows into 'omie.pdbc'.
+[2026-01-22T20:01:17.883+0000] {pdbc.py:160} INFO - Processed pdbc for 20250829
+[2026-01-22T20:01:18.390+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250830.parquet
+[2026-01-22T20:01:23.184+0000] {database.py:186} INFO - Inserted 38482 rows into 'omie.pdbc'.
+[2026-01-22T20:01:23.185+0000] {pdbc.py:160} INFO - Processed pdbc for 20250830
+[2026-01-22T20:01:23.467+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/08/20250831.parquet
+[2026-01-22T20:01:26.560+0000] {database.py:186} INFO - Inserted 37021 rows into 'omie.pdbc'.
+[2026-01-22T20:01:26.561+0000] {pdbc.py:160} INFO - Processed pdbc for 20250831
+[2026-01-22T20:01:27.603+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250901.parquet
+[2026-01-22T20:01:31.332+0000] {database.py:186} INFO - Inserted 40195 rows into 'omie.pdbc'.
+[2026-01-22T20:01:31.333+0000] {pdbc.py:160} INFO - Processed pdbc for 20250901
+[2026-01-22T20:01:31.584+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250902.parquet
+[2026-01-22T20:01:35.265+0000] {database.py:186} INFO - Inserted 40438 rows into 'omie.pdbc'.
+[2026-01-22T20:01:35.266+0000] {pdbc.py:160} INFO - Processed pdbc for 20250902
+[2026-01-22T20:01:35.588+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250903.parquet
+[2026-01-22T20:01:40.173+0000] {database.py:186} INFO - Inserted 38836 rows into 'omie.pdbc'.
+[2026-01-22T20:01:40.174+0000] {pdbc.py:160} INFO - Processed pdbc for 20250903
+[2026-01-22T20:01:50.997+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250904.parquet
+[2026-01-22T20:01:57.182+0000] {database.py:186} INFO - Inserted 40805 rows into 'omie.pdbc'.
+[2026-01-22T20:01:57.184+0000] {pdbc.py:160} INFO - Processed pdbc for 20250904
+[2026-01-22T20:01:57.514+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250905.parquet
+[2026-01-22T20:02:04.296+0000] {database.py:186} INFO - Inserted 41010 rows into 'omie.pdbc'.
+[2026-01-22T20:02:04.297+0000] {pdbc.py:160} INFO - Processed pdbc for 20250905
+[2026-01-22T20:02:04.929+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250906.parquet
+[2026-01-22T20:02:09.606+0000] {database.py:186} INFO - Inserted 38118 rows into 'omie.pdbc'.
+[2026-01-22T20:02:09.609+0000] {pdbc.py:160} INFO - Processed pdbc for 20250906
+[2026-01-22T20:02:10.345+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250907.parquet
+[2026-01-22T20:02:19.042+0000] {database.py:186} INFO - Inserted 39036 rows into 'omie.pdbc'.
+[2026-01-22T20:02:19.043+0000] {pdbc.py:160} INFO - Processed pdbc for 20250907
+[2026-01-22T20:02:19.462+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250908.parquet
+[2026-01-22T20:02:47.506+0000] {database.py:186} INFO - Inserted 39974 rows into 'omie.pdbc'.
+[2026-01-22T20:02:47.507+0000] {pdbc.py:160} INFO - Processed pdbc for 20250908
+[2026-01-22T20:02:48.558+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250909.parquet
+[2026-01-22T20:02:52.948+0000] {database.py:186} INFO - Inserted 41109 rows into 'omie.pdbc'.
+[2026-01-22T20:02:52.949+0000] {pdbc.py:160} INFO - Processed pdbc for 20250909
+[2026-01-22T20:02:53.279+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250910.parquet
+[2026-01-22T20:02:59.458+0000] {database.py:186} INFO - Inserted 39295 rows into 'omie.pdbc'.
+[2026-01-22T20:02:59.460+0000] {pdbc.py:160} INFO - Processed pdbc for 20250910
+[2026-01-22T20:02:59.884+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250911.parquet
+[2026-01-22T20:03:06.912+0000] {database.py:186} INFO - Inserted 38901 rows into 'omie.pdbc'.
+[2026-01-22T20:03:06.917+0000] {pdbc.py:160} INFO - Processed pdbc for 20250911
+[2026-01-22T20:03:08.238+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250912.parquet
+[2026-01-22T20:03:42.411+0000] {database.py:186} INFO - Inserted 40326 rows into 'omie.pdbc'.
+[2026-01-22T20:03:42.413+0000] {pdbc.py:160} INFO - Processed pdbc for 20250912
+[2026-01-22T20:03:44.507+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250913.parquet
+[2026-01-22T20:03:53.721+0000] {database.py:186} INFO - Inserted 38113 rows into 'omie.pdbc'.
+[2026-01-22T20:03:53.723+0000] {pdbc.py:160} INFO - Processed pdbc for 20250913
+[2026-01-22T20:03:54.194+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250914.parquet
+[2026-01-22T20:04:14.460+0000] {database.py:186} INFO - Inserted 37002 rows into 'omie.pdbc'.
+[2026-01-22T20:04:14.461+0000] {pdbc.py:160} INFO - Processed pdbc for 20250914
+[2026-01-22T20:04:14.719+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250915.parquet
+[2026-01-22T20:04:32.150+0000] {database.py:186} INFO - Inserted 40129 rows into 'omie.pdbc'.
+[2026-01-22T20:04:32.155+0000] {pdbc.py:160} INFO - Processed pdbc for 20250915
+[2026-01-22T20:04:32.584+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250916.parquet
+[2026-01-22T20:04:40.827+0000] {database.py:186} INFO - Inserted 40222 rows into 'omie.pdbc'.
+[2026-01-22T20:04:40.830+0000] {pdbc.py:160} INFO - Processed pdbc for 20250916
+[2026-01-22T20:04:41.325+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250917.parquet
+[2026-01-22T20:04:47.426+0000] {database.py:186} INFO - Inserted 40005 rows into 'omie.pdbc'.
+[2026-01-22T20:04:47.428+0000] {pdbc.py:160} INFO - Processed pdbc for 20250917
+[2026-01-22T20:04:47.920+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250918.parquet
+[2026-01-22T20:04:53.849+0000] {database.py:186} INFO - Inserted 41051 rows into 'omie.pdbc'.
+[2026-01-22T20:04:53.850+0000] {pdbc.py:160} INFO - Processed pdbc for 20250918
+[2026-01-22T20:04:54.323+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250919.parquet
+[2026-01-22T20:04:59.298+0000] {database.py:186} INFO - Inserted 41587 rows into 'omie.pdbc'.
+[2026-01-22T20:04:59.300+0000] {pdbc.py:160} INFO - Processed pdbc for 20250919
+[2026-01-22T20:04:59.727+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250920.parquet
+[2026-01-22T20:05:06.464+0000] {database.py:186} INFO - Inserted 39499 rows into 'omie.pdbc'.
+[2026-01-22T20:05:06.466+0000] {pdbc.py:160} INFO - Processed pdbc for 20250920
+[2026-01-22T20:05:06.917+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250921.parquet
+[2026-01-22T20:05:11.983+0000] {database.py:186} INFO - Inserted 37844 rows into 'omie.pdbc'.
+[2026-01-22T20:05:11.985+0000] {pdbc.py:160} INFO - Processed pdbc for 20250921
+[2026-01-22T20:05:12.505+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250922.parquet
+[2026-01-22T20:05:17.739+0000] {database.py:186} INFO - Inserted 39155 rows into 'omie.pdbc'.
+[2026-01-22T20:05:17.740+0000] {pdbc.py:160} INFO - Processed pdbc for 20250922
+[2026-01-22T20:05:18.164+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250923.parquet
+[2026-01-22T20:05:23.172+0000] {database.py:186} INFO - Inserted 39900 rows into 'omie.pdbc'.
+[2026-01-22T20:05:23.173+0000] {pdbc.py:160} INFO - Processed pdbc for 20250923
+[2026-01-22T20:05:24.086+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250924.parquet
+[2026-01-22T20:05:29.342+0000] {database.py:186} INFO - Inserted 40616 rows into 'omie.pdbc'.
+[2026-01-22T20:05:29.343+0000] {pdbc.py:160} INFO - Processed pdbc for 20250924
+[2026-01-22T20:05:30.129+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250925.parquet
+[2026-01-22T20:05:36.371+0000] {database.py:186} INFO - Inserted 40567 rows into 'omie.pdbc'.
+[2026-01-22T20:05:36.372+0000] {pdbc.py:160} INFO - Processed pdbc for 20250925
+[2026-01-22T20:05:36.578+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250926.parquet
+[2026-01-22T20:05:58.175+0000] {database.py:186} INFO - Inserted 40676 rows into 'omie.pdbc'.
+[2026-01-22T20:05:58.179+0000] {pdbc.py:160} INFO - Processed pdbc for 20250926
+[2026-01-22T20:05:58.590+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250927.parquet
+[2026-01-22T20:06:05.981+0000] {database.py:186} INFO - Inserted 39279 rows into 'omie.pdbc'.
+[2026-01-22T20:06:05.983+0000] {pdbc.py:160} INFO - Processed pdbc for 20250927
+[2026-01-22T20:06:06.483+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250928.parquet
+[2026-01-22T20:06:13.758+0000] {database.py:186} INFO - Inserted 39495 rows into 'omie.pdbc'.
+[2026-01-22T20:06:13.760+0000] {pdbc.py:160} INFO - Processed pdbc for 20250928
+[2026-01-22T20:06:14.284+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250929.parquet
+[2026-01-22T20:06:27.287+0000] {database.py:186} INFO - Inserted 40454 rows into 'omie.pdbc'.
+[2026-01-22T20:06:27.289+0000] {pdbc.py:160} INFO - Processed pdbc for 20250929
+[2026-01-22T20:06:27.764+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/09/20250930.parquet
+[2026-01-22T20:06:34.686+0000] {database.py:186} INFO - Inserted 40027 rows into 'omie.pdbc'.
+[2026-01-22T20:06:34.688+0000] {pdbc.py:160} INFO - Processed pdbc for 20250930
+[2026-01-22T20:06:36.973+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251001.parquet
+[2026-01-22T20:06:46.122+0000] {database.py:186} INFO - Inserted 159077 rows into 'omie.pdbc'.
+[2026-01-22T20:06:46.131+0000] {pdbc.py:160} INFO - Processed pdbc for 20251001
+[2026-01-22T20:06:47.677+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251002.parquet
+[2026-01-22T20:07:08.269+0000] {database.py:186} INFO - Inserted 158356 rows into 'omie.pdbc'.
+[2026-01-22T20:07:08.300+0000] {pdbc.py:160} INFO - Processed pdbc for 20251002
+[2026-01-22T20:07:15.947+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251003.parquet
+[2026-01-22T20:07:30.279+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 3, 1, ABOUC01, 10000450) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:07:30.280+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202510.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 3, 1, ABOUC01, 10000450) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:07:31.266+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251004.parquet
+[2026-01-22T20:07:38.308+0000] {database.py:186} INFO - Inserted 150543 rows into 'omie.pdbc'.
+[2026-01-22T20:07:38.316+0000] {pdbc.py:160} INFO - Processed pdbc for 20251004
+[2026-01-22T20:07:42.733+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251005.parquet
+[2026-01-22T20:07:49.675+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 5, 1, ABA1, 10005318) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:07:49.677+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202510.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 5, 1, ABA1, 10005318) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:07:50.604+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251006.parquet
+[2026-01-22T20:08:07.321+0000] {database.py:186} INFO - Inserted 155489 rows into 'omie.pdbc'.
+[2026-01-22T20:08:07.332+0000] {pdbc.py:160} INFO - Processed pdbc for 20251006
+[2026-01-22T20:08:07.994+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251007.parquet
+[2026-01-22T20:08:15.694+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 7, 1, ABOUC01, 10000454) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:08:15.695+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202510.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 7, 1, ABOUC01, 10000454) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:08:16.599+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251008.parquet
+[2026-01-22T20:08:34.068+0000] {database.py:186} INFO - Inserted 158255 rows into 'omie.pdbc'.
+[2026-01-22T20:08:34.070+0000] {pdbc.py:160} INFO - Processed pdbc for 20251008
+[2026-01-22T20:08:34.700+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251009.parquet
+[2026-01-22T20:08:57.019+0000] {database.py:186} INFO - Inserted 160685 rows into 'omie.pdbc'.
+[2026-01-22T20:08:57.028+0000] {pdbc.py:160} INFO - Processed pdbc for 20251009
+[2026-01-22T20:08:57.619+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251010.parquet
+[2026-01-22T20:09:04.417+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 10, 1, ABA1, 10020933) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:09:04.418+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202510.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 10, 1, ABA1, 10020933) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:09:05.389+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251011.parquet
+[2026-01-22T20:09:13.102+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 11, 1, ABA1, 10020938) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:09:13.103+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202510.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 11, 1, ABA1, 10020938) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:09:13.827+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251012.parquet
+[2026-01-22T20:09:22.613+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 12, 1, ABA1, 10023577) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:09:22.614+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202510.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 12, 1, ABA1, 10023577) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:09:23.343+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251013.parquet
+[2026-01-22T20:09:32.051+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 13, 1, ABA1, 10026037) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:09:32.052+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202510.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 13, 1, ABA1, 10026037) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:09:33.179+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251014.parquet
+[2026-01-22T20:09:41.089+0000] {database.py:186} INFO - Inserted 154997 rows into 'omie.pdbc'.
+[2026-01-22T20:09:41.090+0000] {pdbc.py:160} INFO - Processed pdbc for 20251014
+[2026-01-22T20:09:41.811+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/10/20251015.parquet
+[2026-01-22T20:09:51.005+0000] {database.py:189} ERROR - Error during bulk insert into omie.pdbc: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 15, 1, ABA1, 10031510) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:09:51.005+0000] {pdbc.py:162} ERROR - Error processing zip bronze/omie/pdbc/2025/pdbc_202510.zip: duplicate key value violates unique constraint "pdbc_pkey"
+DETAIL:  Key (anio, mes, dia, periodo, codigo_uof, codigo_oferta)=(2025, 10, 15, 1, ABA1, 10031510) already exists.
+CONTEXT:  COPY pdbc, line 1
+
+[2026-01-22T20:09:54.632+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-01-22T20:09:54.649+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-22T20:09:54.825+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=omie_pipeline, task_id=process_pdbc, run_id=manual__2026-01-22T18:29:12.380731+00:00, execution_date=20260122T182912, start_date=20260122T182953, end_date=20260122T200954
+[2026-01-22T20:09:55.070+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-22T20:09:56.021+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-22T20:09:56.047+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

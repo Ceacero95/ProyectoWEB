@@ -10,6 +10,12 @@ x-airflow-common: &airflow-common
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
+    # App Settings
+    DB_HOST: postgres
+    DB_PORT: 5432
+    DB_NAME: airflow
+    DB_USER: airflow
+    DB_PASS: airflow
     # Project Settings
     PYTHONPATH: /opt/airflow:/opt/airflow/src
     LOCAL_DATA_DIR: /opt/airflow/local_data

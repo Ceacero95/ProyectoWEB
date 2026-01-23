@@ -138,7 +138,16 @@ def process_trades(start_date: datetime, end_date: datetime):
     create_table_if_not_exists()
     
     current_date = start_date
+    
+    # Pre-fetch existing dates to skip
+    existing_dates = db_manager.get_existing_dates("trades", "omie", start_date, end_date)
+    
     while current_date <= end_date:
+        if current_date in existing_dates:
+            # logger.info(f"Skipping {current_date}: Already in DB") # Verbose
+            current_date += timedelta(days=1)
+            continue
+
         year = current_date.strftime("%Y")
         month = current_date.strftime("%m")
         date_str = current_date.strftime("%Y%m%d") 

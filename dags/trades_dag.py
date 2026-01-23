@@ -39,21 +39,38 @@ default_args = {
 }
 
 def _download_task(download_func, **kwargs):
-    logical_date = kwargs['logical_date']
-    # If running daily, we might want to process "yesterday" or just passed date
-    # But download_trades handles monthly logic smart enough (checks existence)
-    # Let's verify safe range. For daily run, logical_date is fine.
-    start_date = logical_date
-    end_date = logical_date
+    logical_date = kwargs['logical_date'].replace(tzinfo=None) # Make naive
+    # Start from 2025-01-01 to ensure holes are filled
+    # 'download_trades' checks if ZIP exists, so it's efficient
+    start_date = datetime(2025, 1, 1)
+    end_date = logical_date # Up to execution date (or run end)
+    
+    # If logical_date is older than 2025 (backfill), just use that.
+    if logical_date.year < 2025:
+         start_date = logical_date.replace(day=1)
+    
+    # Ensure start <= end
+    if start_date > end_date:
+        start_date = end_date
+
     download_func(start_date, end_date)
 
+
 def _process_task(process_func, parent_task_id, **kwargs):
-    logical_date = kwargs['logical_date']
-    ti = kwargs['ti']
-    # Ensure parent task succeeded (Airflow handles this via dependencies, but good practice)
-    start_date = logical_date
+    logical_date = kwargs['logical_date'].replace(tzinfo=None) # Make naive
+    # Scan full year (or from 2025)
+    # Processing logic will skip existing dates, so this efficiently fills gaps
+    start_date = datetime(2025, 1, 1)
     end_date = logical_date
+    
+    if logical_date.year < 2025:
+         start_date = logical_date
+
+    if start_date > end_date:
+        start_date = end_date
+
     process_func(start_date, end_date)
+
 
 with DAG(
     'trades_pipeline',
@@ -80,3 +97,17 @@ with DAG(
     )
     
     t_down_trades >> t_proc_trades
+
+    # --- Monitoring ---
+    def _monitor_task(**kwargs):
+        from src.common.monitoring import MonitoringManager
+        monitor = MonitoringManager()
+        monitor.update_control_table("trades", "omie")
+        
+    t_monitor = PythonOperator(
+        task_id='monitor_trades',
+        python_callable=_monitor_task
+    )
+    
+    t_proc_trades >> t_monitor
+

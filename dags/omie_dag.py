@@ -68,12 +68,22 @@ with DAG(
             s_date = datetime.strptime(start, '%Y-%m-%d')
             e_date = datetime.strptime(end, '%Y-%m-%d')
         else:
-            s_date = context['logical_date']
-            e_date = context['logical_date']
+            # Convert to naive to match script expectations
+            s_date = context['logical_date'].replace(tzinfo=None)
+            e_date = context['logical_date'].replace(tzinfo=None)
 
         print(f"Downloading {download_func.__name__} from {s_date} to {e_date}")
+        
+        # Override for Gap Detection: Force Start from 2025-01-01
+        # Only if we are in 2025 range
+        if s_date.year >= 2025:
+             real_start = datetime(2025, 1, 1)
+             # Ensure we don't go future if s_date was earlier (unlikely)
+             s_date = real_start
+        
         download_func(s_date, e_date)
         return {'start': s_date.strftime('%Y-%m-%d'), 'end': e_date.strftime('%Y-%m-%d')}
+
 
     def _process_task(process_func, parent_task_id, **context):
         dates = context['ti'].xcom_pull(task_ids=parent_task_id)
@@ -142,4 +152,34 @@ with DAG(
     )
     t_down_mar_pdbc >> t_proc_mar_pdbc
 
+    # --- Marginal PIBC ---
+    t_down_mar_pibc = PythonOperator(
+        task_id='download_marginal_pibc',
+        python_callable=_download_task,
+        op_kwargs={'download_func': download_marginalpibc},
+        provide_context=True
+    )
+    t_proc_mar_pibc = PythonOperator(
+        task_id='process_marginal_pibc',
+        python_callable=_process_task,
+        op_kwargs={'process_func': process_marginalpibc, 'parent_task_id': 'download_marginal_pibc'},
+        provide_context=True
+    )
     t_down_mar_pibc >> t_proc_mar_pibc
+
+    # --- Monitoring ---
+    def _monitor_task(**kwargs):
+        from src.common.monitoring import MonitoringManager
+        monitor = MonitoringManager()
+        # Monitor all OMIE tables
+        for table in ["pdbc", "pdbf", "pdvd", "marginalpdbc", "marginalpibc"]:
+            monitor.update_control_table(table, "omie")
+        
+    t_monitor = PythonOperator(
+        task_id='monitor_omie',
+        python_callable=_monitor_task
+    )
+    
+    # Link all processes to monitor
+    [t_proc_pdbc, t_proc_pdbf, t_proc_pdvd, t_proc_mar_pdbc, t_proc_mar_pibc] >> t_monitor
+

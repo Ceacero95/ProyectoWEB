@@ -1,0 +1,144 @@
+[2026-01-20T18:58:35.703+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-20T18:58:35.735+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: esios_liquicomun_pipeline.process_gold scheduled__2026-01-19T08:00:00+00:00 [queued]>
+[2026-01-20T18:58:35.745+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: esios_liquicomun_pipeline.process_gold scheduled__2026-01-19T08:00:00+00:00 [queued]>
+[2026-01-20T18:58:35.746+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-20T18:58:35.758+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): process_gold> on 2026-01-19 08:00:00+00:00
+[2026-01-20T18:58:35.765+0000] {standard_task_runner.py:63} INFO - Started process 1027 to run task
+[2026-01-20T18:58:35.769+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'esios_liquicomun_pipeline', 'process_gold', 'scheduled__2026-01-19T08:00:00+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/esios_dag.py', '--cfg-path', '/tmp/tmp2ilg3e5l']
+[2026-01-20T18:58:35.772+0000] {standard_task_runner.py:91} INFO - Job 44: Subtask process_gold
+[2026-01-20T18:58:35.874+0000] {task_command.py:426} INFO - Running <TaskInstance: esios_liquicomun_pipeline.process_gold scheduled__2026-01-19T08:00:00+00:00 [running]> on host d1a9e72e2525
+[2026-01-20T18:58:35.972+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='esios_liquicomun_pipeline' AIRFLOW_CTX_TASK_ID='process_gold' AIRFLOW_CTX_EXECUTION_DATE='2026-01-19T08:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-19T08:00:00+00:00'
+[2026-01-20T18:58:35.973+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-20T18:58:35.997+0000] {logging_mixin.py:188} INFO - Processing Gold for 2026-01-19 00:00:00 - 2026-01-19 00:00:00
+[2026-01-20T18:58:36.008+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A1_enrttrba_20260101_20260131.parquet into liq_enrttrba...
+[2026-01-20T18:58:36.054+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_enrttrba: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.055+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A1_enrttrsu_20260101_20260131.parquet into liq_enrttrsu...
+[2026-01-20T18:58:36.067+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_enrttrsu: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.068+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A1_ensecqhba_20260101_20260131.parquet into liq_ensecqhba...
+[2026-01-20T18:58:36.081+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_ensecqhba: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.082+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A1_ensecqhsu_20260101_20260131.parquet into liq_ensecqhsu...
+[2026-01-20T18:58:36.093+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_ensecqhsu: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.094+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A1_enterqhba_20260101_20260131.parquet into liq_enterqhba...
+[2026-01-20T18:58:36.107+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_enterqhba: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.108+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A1_enterqhsu_20260101_20260131.parquet into liq_enterqhsu...
+[2026-01-20T18:58:36.121+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_enterqhsu: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.122+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A1_prdvbaqh_20260101_20260131.parquet into liq_prdvbaqh...
+[2026-01-20T18:58:36.132+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_prdvbaqh: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.133+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A1_prdvdatos_20260101_20260131.parquet into liq_prdvdatos...
+[2026-01-20T18:58:36.146+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_prdvdatos: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.146+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A1_prdvsuqh_20260101_20260131.parquet into liq_prdvsuqh...
+[2026-01-20T18:58:36.156+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_prdvsuqh: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.157+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A2_enrttrba_20260101_20260131.parquet into liq_enrttrba...
+[2026-01-20T18:58:36.169+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_enrttrba: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.170+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A2_enrttrsu_20260101_20260131.parquet into liq_enrttrsu...
+[2026-01-20T18:58:36.180+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_enrttrsu: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.181+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A2_ensecqhba_20260101_20260131.parquet into liq_ensecqhba...
+[2026-01-20T18:58:36.193+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_ensecqhba: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.194+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A2_ensecqhsu_20260101_20260131.parquet into liq_ensecqhsu...
+[2026-01-20T18:58:36.207+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_ensecqhsu: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.209+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A2_enterqhba_20260101_20260131.parquet into liq_enterqhba...
+[2026-01-20T18:58:36.220+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_enterqhba: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.221+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A2_enterqhsu_20260101_20260131.parquet into liq_enterqhsu...
+[2026-01-20T18:58:36.234+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_enterqhsu: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.235+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A2_prdvbaqh_20260101_20260131.parquet into liq_prdvbaqh...
+[2026-01-20T18:58:36.251+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_prdvbaqh: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.252+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A2_prdvdatos_20260101_20260131.parquet into liq_prdvdatos...
+[2026-01-20T18:58:36.273+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_prdvdatos: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.274+0000] {liquicomun.py:56} INFO - Loading silver/liquicomun/2026/01/A2_prdvsuqh_20260101_20260131.parquet into liq_prdvsuqh...
+[2026-01-20T18:58:36.290+0000] {liquicomun.py:87} ERROR - Failed to ensure table liq_prdvsuqh: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:58:36.292+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-01-20T18:58:36.294+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-20T18:58:36.310+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=esios_liquicomun_pipeline, task_id=process_gold, run_id=scheduled__2026-01-19T08:00:00+00:00, execution_date=20260119T080000, start_date=20260120T185835, end_date=20260120T185836
+[2026-01-20T18:58:36.385+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-20T18:58:36.413+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-20T18:58:36.424+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

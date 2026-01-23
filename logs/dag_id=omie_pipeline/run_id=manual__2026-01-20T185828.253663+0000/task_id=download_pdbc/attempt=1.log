@@ -1,0 +1,21 @@
+[2026-01-20T18:58:30.548+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-20T18:58:30.612+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: omie_pipeline.download_pdbc manual__2026-01-20T18:58:28.253663+00:00 [queued]>
+[2026-01-20T18:58:30.629+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: omie_pipeline.download_pdbc manual__2026-01-20T18:58:28.253663+00:00 [queued]>
+[2026-01-20T18:58:30.631+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-20T18:58:30.661+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_pdbc> on 2026-01-20 18:58:28.253663+00:00
+[2026-01-20T18:58:30.673+0000] {standard_task_runner.py:63} INFO - Started process 941 to run task
+[2026-01-20T18:58:30.680+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'omie_pipeline', 'download_pdbc', 'manual__2026-01-20T18:58:28.253663+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/omie_dag.py', '--cfg-path', '/tmp/tmpzeu09dqj']
+[2026-01-20T18:58:30.687+0000] {standard_task_runner.py:91} INFO - Job 30: Subtask download_pdbc
+[2026-01-20T18:58:30.813+0000] {task_command.py:426} INFO - Running <TaskInstance: omie_pipeline.download_pdbc manual__2026-01-20T18:58:28.253663+00:00 [running]> on host d1a9e72e2525
+[2026-01-20T18:58:30.973+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='omie_pipeline' AIRFLOW_CTX_TASK_ID='download_pdbc' AIRFLOW_CTX_EXECUTION_DATE='2026-01-20T18:58:28.253663+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-20T18:58:28.253663+00:00'
+[2026-01-20T18:58:30.975+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-20T18:58:30.999+0000] {logging_mixin.py:188} INFO - Downloading download_pdbc from 2026-01-20 18:58:28.253663+00:00 to 2026-01-20 18:58:28.253663+00:00
+[2026-01-20T18:58:31.007+0000] {omie_client.py:64} INFO - Downloading pdbc_202601.zip from OMIE...
+[2026-01-20T18:58:31.536+0000] {omie_client.py:68} INFO - File pdbc_202601.zip not found (404).
+[2026-01-20T18:58:31.540+0000] {pdbc.py:43} WARNING - Failed to download pdbc_202601.zip
+[2026-01-20T18:58:31.543+0000] {python.py:237} INFO - Done. Returned value was: {'start': '2026-01-20', 'end': '2026-01-20'}
+[2026-01-20T18:58:31.543+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-20T18:58:31.578+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=omie_pipeline, task_id=download_pdbc, run_id=manual__2026-01-20T18:58:28.253663+00:00, execution_date=20260120T185828, start_date=20260120T185830, end_date=20260120T185831
+[2026-01-20T18:58:31.668+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-20T18:58:31.702+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-20T18:58:31.717+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

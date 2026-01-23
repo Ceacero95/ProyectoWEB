@@ -104,6 +104,7 @@ def create_table_if_not_exists():
     try:
         engine = get_engine()
         with engine.begin() as conn:
+            conn.execute(text("CREATE SCHEMA IF NOT EXISTS omie"))
             conn.execute(text(ddl))
             logger.info("Ensured table omie.marginalpibc exists.")
     except Exception as e:
@@ -116,7 +117,13 @@ def process_marginalpibc(start_date: datetime, end_date: datetime):
     create_table_if_not_exists()
     
     current_date = start_date
+    existing_dates = db_manager.get_existing_dates("marginalpibc", "omie", start_date, end_date)
+
     while current_date <= end_date:
+        if current_date in existing_dates:
+            current_date += timedelta(days=1)
+            continue
+
         year = current_date.strftime("%Y")
         month = current_date.strftime("%m")
         date_str = current_date.strftime("%Y%m%d")

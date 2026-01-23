@@ -1,0 +1,48 @@
+[2026-01-20T18:55:04.342+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-20T18:55:04.373+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: omie_pipeline.process_marginal_pibc scheduled__2026-01-19T08:30:00+00:00 [queued]>
+[2026-01-20T18:55:04.383+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: omie_pipeline.process_marginal_pibc scheduled__2026-01-19T08:30:00+00:00 [queued]>
+[2026-01-20T18:55:04.384+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-20T18:55:04.396+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): process_marginal_pibc> on 2026-01-19 08:30:00+00:00
+[2026-01-20T18:55:04.402+0000] {standard_task_runner.py:63} INFO - Started process 751 to run task
+[2026-01-20T18:55:04.407+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'omie_pipeline', 'process_marginal_pibc', 'scheduled__2026-01-19T08:30:00+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/omie_dag.py', '--cfg-path', '/tmp/tmpnlr85qt0']
+[2026-01-20T18:55:04.410+0000] {standard_task_runner.py:91} INFO - Job 23: Subtask process_marginal_pibc
+[2026-01-20T18:55:04.503+0000] {task_command.py:426} INFO - Running <TaskInstance: omie_pipeline.process_marginal_pibc scheduled__2026-01-19T08:30:00+00:00 [running]> on host d1a9e72e2525
+[2026-01-20T18:55:04.614+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='omie_pipeline' AIRFLOW_CTX_TASK_ID='process_marginal_pibc' AIRFLOW_CTX_EXECUTION_DATE='2026-01-19T08:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-19T08:30:00+00:00'
+[2026-01-20T18:55:04.615+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-20T18:55:04.637+0000] {logging_mixin.py:188} INFO - Processing process_marginalpibc for 2026-01-19 00:00:00 - 2026-01-19 00:00:00
+[2026-01-20T18:55:04.639+0000] {marginalpibc.py:110} ERROR - Error creating table: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:55:04.682+0000] {marginalpibc.py:140} INFO - Processing Silver marginalpibc_2026011901.1...
+[2026-01-20T18:55:04.738+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/marginalpibc/2026/01/20260119_marginalpibc_2026011901.1.parquet
+[2026-01-20T18:55:04.741+0000] {marginalpibc.py:165} ERROR - Error ingesting marginalpibc_2026011901.1: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:55:04.741+0000] {marginalpibc.py:140} INFO - Processing Silver marginalpibc_2026011902.1...
+[2026-01-20T18:55:04.783+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/marginalpibc/2026/01/20260119_marginalpibc_2026011902.1.parquet
+[2026-01-20T18:55:04.787+0000] {marginalpibc.py:165} ERROR - Error ingesting marginalpibc_2026011902.1: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:55:04.787+0000] {marginalpibc.py:140} INFO - Processing Silver marginalpibc_2026011903.1...
+[2026-01-20T18:55:04.828+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/marginalpibc/2026/01/20260119_marginalpibc_2026011903.1.parquet
+[2026-01-20T18:55:04.831+0000] {marginalpibc.py:165} ERROR - Error ingesting marginalpibc_2026011903.1: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-01-20T18:55:04.832+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-01-20T18:55:04.833+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-20T18:55:04.846+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=omie_pipeline, task_id=process_marginal_pibc, run_id=scheduled__2026-01-19T08:30:00+00:00, execution_date=20260119T083000, start_date=20260120T185504, end_date=20260120T185504
+[2026-01-20T18:55:04.900+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-20T18:55:04.924+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-20T18:55:04.927+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -26,8 +26,21 @@ def download_pdbf(start_date: datetime, end_date: datetime):
             target_path = f"bronze/omie/pdbf/{year}/{filename}"
             
             if storage.exists(target_path):
-                logger.info(f"File {target_path} already exists. Skipping.")
-                processed_months.add(key)
+                # Check if it is the current month
+                now = datetime.now()
+                is_current_month = (now.year == int(year) and now.month == int(month))
+                
+                if is_current_month:
+                    logger.info(f"File {target_path} exists but is current month. Re-downloading to update.")
+                    response = client.download_file(filename)
+                    if response:
+                        storage.save(target_path, response.content, overwrite=True)
+                        processed_months.add(key)
+                    else:
+                        logger.warning(f"Failed to re-download {filename}")
+                else:
+                    logger.info(f"File {target_path} already exists (past month). Skipping.")
+                    processed_months.add(key)
             else:
                 response = client.download_file(filename)
                 if response:

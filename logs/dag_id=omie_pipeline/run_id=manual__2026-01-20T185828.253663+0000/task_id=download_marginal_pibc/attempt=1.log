@@ -1,0 +1,22 @@
+[2026-01-20T18:58:30.638+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-20T18:58:30.707+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: omie_pipeline.download_marginal_pibc manual__2026-01-20T18:58:28.253663+00:00 [queued]>
+[2026-01-20T18:58:30.727+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: omie_pipeline.download_marginal_pibc manual__2026-01-20T18:58:28.253663+00:00 [queued]>
+[2026-01-20T18:58:30.732+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-20T18:58:30.752+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_marginal_pibc> on 2026-01-20 18:58:28.253663+00:00
+[2026-01-20T18:58:30.766+0000] {standard_task_runner.py:63} INFO - Started process 944 to run task
+[2026-01-20T18:58:30.775+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'omie_pipeline', 'download_marginal_pibc', 'manual__2026-01-20T18:58:28.253663+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/omie_dag.py', '--cfg-path', '/tmp/tmpe5ligs64']
+[2026-01-20T18:58:30.779+0000] {standard_task_runner.py:91} INFO - Job 33: Subtask download_marginal_pibc
+[2026-01-20T18:58:30.887+0000] {task_command.py:426} INFO - Running <TaskInstance: omie_pipeline.download_marginal_pibc manual__2026-01-20T18:58:28.253663+00:00 [running]> on host d1a9e72e2525
+[2026-01-20T18:58:31.048+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='omie_pipeline' AIRFLOW_CTX_TASK_ID='download_marginal_pibc' AIRFLOW_CTX_EXECUTION_DATE='2026-01-20T18:58:28.253663+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-20T18:58:28.253663+00:00'
+[2026-01-20T18:58:31.049+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-20T18:58:31.079+0000] {logging_mixin.py:188} INFO - Downloading download_marginalpibc from 2026-01-20 18:58:28.253663+00:00 to 2026-01-20 18:58:28.253663+00:00
+[2026-01-20T18:58:31.083+0000] {omie_client.py:64} INFO - Downloading marginalpibc_2026.zip from OMIE...
+[2026-01-20T18:58:31.611+0000] {omie_client.py:68} INFO - File marginalpibc_2026.zip not found (404).
+[2026-01-20T18:58:31.647+0000] {omie_client.py:64} INFO - Downloading marginalpibc_2026012001.1 from OMIE...
+[2026-01-20T18:58:32.173+0000] {omie_client.py:68} INFO - File marginalpibc_2026012001.1 not found (404).
+[2026-01-20T18:58:32.183+0000] {python.py:237} INFO - Done. Returned value was: {'start': '2026-01-20', 'end': '2026-01-20'}
+[2026-01-20T18:58:32.184+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-20T18:58:32.223+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=omie_pipeline, task_id=download_marginal_pibc, run_id=manual__2026-01-20T18:58:28.253663+00:00, execution_date=20260120T185828, start_date=20260120T185830, end_date=20260120T185832
+[2026-01-20T18:58:32.283+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-20T18:58:32.315+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-20T18:58:32.318+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
