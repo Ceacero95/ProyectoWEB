@@ -25,8 +25,11 @@ def _download_task(**context):
         s_date = datetime.strptime(start, '%Y-%m-%d')
         e_date = datetime.strptime(end, '%Y-%m-%d')
     else:
-        s_date = context['logical_date'].replace(tzinfo=None)
-        e_date = context['logical_date'].replace(tzinfo=None)
+        # Default behavior: Run from start of current month to today
+        # This ensures manual trigger fills gaps for the month.
+        now = datetime.now()
+        s_date = datetime(now.year, now.month, 1)
+        e_date = now.replace(hour=0, minute=0, second=0, microsecond=0)
     
     download_marginalpibc(s_date, e_date)
     return {'start': s_date.strftime('%Y-%m-%d'), 'end': e_date.strftime('%Y-%m-%d')}
