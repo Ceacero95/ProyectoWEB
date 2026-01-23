@@ -883,3 +883,615 @@ CONTEXT:  COPY trades, line 2982: "2025-06-23	20250623 05:30-20250623 05:45	GALP
 
 [2026-01-23T16:19:42.320+0000] {trades.py:171} INFO - Extracting trades_20250624.1 from trades_202506.zip
 [2026-01-23T16:19:42.922+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/06/20250624.parquet
+[2026-01-23T16:19:46.916+0000] {database.py:186} INFO - Inserted 37831 rows into 'omie.trades'.
+[2026-01-23T16:19:46.921+0000] {trades.py:190} INFO - Processed trades for 20250624
+[2026-01-23T16:19:47.135+0000] {trades.py:171} INFO - Extracting trades_20250625.1 from trades_202506.zip
+[2026-01-23T16:19:48.130+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/06/20250625.parquet
+[2026-01-23T16:19:56.628+0000] {database.py:186} INFO - Inserted 39503 rows into 'omie.trades'.
+[2026-01-23T16:19:56.630+0000] {trades.py:190} INFO - Processed trades for 20250625
+[2026-01-23T16:19:56.755+0000] {trades.py:171} INFO - Extracting trades_20250626.1 from trades_202506.zip
+[2026-01-23T16:19:57.417+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/06/20250626.parquet
+[2026-01-23T16:20:02.229+0000] {database.py:186} INFO - Inserted 39004 rows into 'omie.trades'.
+[2026-01-23T16:20:02.230+0000] {trades.py:190} INFO - Processed trades for 20250626
+[2026-01-23T16:20:02.410+0000] {trades.py:171} INFO - Extracting trades_20250627.1 from trades_202506.zip
+[2026-01-23T16:20:03.256+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/06/20250627.parquet
+[2026-01-23T16:20:09.223+0000] {database.py:186} INFO - Inserted 40021 rows into 'omie.trades'.
+[2026-01-23T16:20:09.225+0000] {trades.py:190} INFO - Processed trades for 20250627
+[2026-01-23T16:20:09.293+0000] {trades.py:171} INFO - Extracting trades_20250628.1 from trades_202506.zip
+[2026-01-23T16:20:09.838+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/06/20250628.parquet
+[2026-01-23T16:20:13.822+0000] {database.py:186} INFO - Inserted 31587 rows into 'omie.trades'.
+[2026-01-23T16:20:13.824+0000] {trades.py:190} INFO - Processed trades for 20250628
+[2026-01-23T16:20:13.989+0000] {trades.py:171} INFO - Extracting trades_20250629.1 from trades_202506.zip
+[2026-01-23T16:20:14.890+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/06/20250629.parquet
+[2026-01-23T16:20:19.499+0000] {database.py:186} INFO - Inserted 41648 rows into 'omie.trades'.
+[2026-01-23T16:20:19.500+0000] {trades.py:190} INFO - Processed trades for 20250629
+[2026-01-23T16:20:19.593+0000] {trades.py:171} INFO - Extracting trades_20250630.1 from trades_202506.zip
+[2026-01-23T16:20:20.085+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/06/20250630.parquet
+[2026-01-23T16:20:23.459+0000] {database.py:186} INFO - Inserted 42536 rows into 'omie.trades'.
+[2026-01-23T16:20:23.460+0000] {trades.py:190} INFO - Processed trades for 20250630
+[2026-01-23T16:20:23.803+0000] {trades.py:171} INFO - Extracting trades_20250701.1 from trades_202507.zip
+[2026-01-23T16:20:24.415+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250701.parquet
+[2026-01-23T16:20:29.425+0000] {database.py:186} INFO - Inserted 44679 rows into 'omie.trades'.
+[2026-01-23T16:20:29.427+0000] {trades.py:190} INFO - Processed trades for 20250701
+[2026-01-23T16:20:29.569+0000] {trades.py:171} INFO - Extracting trades_20250702.1 from trades_202507.zip
+[2026-01-23T16:20:30.418+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250702.parquet
+[2026-01-23T16:20:37.744+0000] {database.py:186} INFO - Inserted 60267 rows into 'omie.trades'.
+[2026-01-23T16:20:37.746+0000] {trades.py:190} INFO - Processed trades for 20250702
+[2026-01-23T16:20:37.967+0000] {trades.py:171} INFO - Extracting trades_20250703.1 from trades_202507.zip
+[2026-01-23T16:20:39.009+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250703.parquet
+[2026-01-23T16:20:44.775+0000] {database.py:186} INFO - Inserted 58697 rows into 'omie.trades'.
+[2026-01-23T16:20:44.776+0000] {trades.py:190} INFO - Processed trades for 20250703
+[2026-01-23T16:20:44.925+0000] {trades.py:171} INFO - Extracting trades_20250704.1 from trades_202507.zip
+[2026-01-23T16:20:45.602+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250704.parquet
+[2026-01-23T16:20:46.472+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-04, 20250704 09:30-20250704 09:45, , , , SOREX, SORXC01, 10YES-REE------0, 86.38, 1, null, trades_20250704.1).
+CONTEXT:  COPY trades, line 3444: "2025-07-04	20250704 09:30-20250704 09:45				SOREX	SORXC01	10YES-REE------0	86.38	1.0	__NULL__	trades..."
+
+[2026-01-23T16:20:46.474+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202507.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-04, 20250704 09:30-20250704 09:45, , , , SOREX, SORXC01, 10YES-REE------0, 86.38, 1, null, trades_20250704.1).
+CONTEXT:  COPY trades, line 3444: "2025-07-04	20250704 09:30-20250704 09:45				SOREX	SORXC01	10YES-REE------0	86.38	1.0	__NULL__	trades..."
+
+[2026-01-23T16:20:46.644+0000] {trades.py:171} INFO - Extracting trades_20250705.1 from trades_202507.zip
+[2026-01-23T16:20:47.134+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250705.parquet
+[2026-01-23T16:20:49.332+0000] {database.py:186} INFO - Inserted 26956 rows into 'omie.trades'.
+[2026-01-23T16:20:49.333+0000] {trades.py:190} INFO - Processed trades for 20250705
+[2026-01-23T16:20:49.466+0000] {trades.py:171} INFO - Extracting trades_20250706.1 from trades_202507.zip
+[2026-01-23T16:20:50.126+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250706.parquet
+[2026-01-23T16:20:53.760+0000] {database.py:186} INFO - Inserted 41287 rows into 'omie.trades'.
+[2026-01-23T16:20:53.761+0000] {trades.py:190} INFO - Processed trades for 20250706
+[2026-01-23T16:20:54.024+0000] {trades.py:171} INFO - Extracting trades_20250707.1 from trades_202507.zip
+[2026-01-23T16:20:58.394+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250707.parquet
+[2026-01-23T16:21:03.247+0000] {database.py:186} INFO - Inserted 39727 rows into 'omie.trades'.
+[2026-01-23T16:21:03.249+0000] {trades.py:190} INFO - Processed trades for 20250707
+[2026-01-23T16:21:03.336+0000] {trades.py:171} INFO - Extracting trades_20250708.1 from trades_202507.zip
+[2026-01-23T16:21:03.837+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250708.parquet
+[2026-01-23T16:21:07.756+0000] {database.py:186} INFO - Inserted 36816 rows into 'omie.trades'.
+[2026-01-23T16:21:07.757+0000] {trades.py:190} INFO - Processed trades for 20250708
+[2026-01-23T16:21:07.957+0000] {trades.py:171} INFO - Extracting trades_20250709.1 from trades_202507.zip
+[2026-01-23T16:21:09.643+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250709.parquet
+[2026-01-23T16:21:13.480+0000] {database.py:186} INFO - Inserted 29665 rows into 'omie.trades'.
+[2026-01-23T16:21:13.482+0000] {trades.py:190} INFO - Processed trades for 20250709
+[2026-01-23T16:21:13.641+0000] {trades.py:171} INFO - Extracting trades_20250710.1 from trades_202507.zip
+[2026-01-23T16:21:14.088+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250710.parquet
+[2026-01-23T16:21:16.153+0000] {database.py:186} INFO - Inserted 22998 rows into 'omie.trades'.
+[2026-01-23T16:21:16.154+0000] {trades.py:190} INFO - Processed trades for 20250710
+[2026-01-23T16:21:16.260+0000] {trades.py:171} INFO - Extracting trades_20250711.1 from trades_202507.zip
+[2026-01-23T16:21:16.566+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250711.parquet
+[2026-01-23T16:21:19.988+0000] {database.py:186} INFO - Inserted 27095 rows into 'omie.trades'.
+[2026-01-23T16:21:19.997+0000] {trades.py:190} INFO - Processed trades for 20250711
+[2026-01-23T16:21:20.370+0000] {trades.py:171} INFO - Extracting trades_20250712.1 from trades_202507.zip
+[2026-01-23T16:21:21.094+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250712.parquet
+[2026-01-23T16:21:24.444+0000] {database.py:186} INFO - Inserted 42259 rows into 'omie.trades'.
+[2026-01-23T16:21:24.445+0000] {trades.py:190} INFO - Processed trades for 20250712
+[2026-01-23T16:21:24.592+0000] {trades.py:171} INFO - Extracting trades_20250713.1 from trades_202507.zip
+[2026-01-23T16:21:25.639+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250713.parquet
+[2026-01-23T16:21:30.011+0000] {database.py:186} INFO - Inserted 54418 rows into 'omie.trades'.
+[2026-01-23T16:21:30.013+0000] {trades.py:190} INFO - Processed trades for 20250713
+[2026-01-23T16:21:30.162+0000] {trades.py:171} INFO - Extracting trades_20250714.1 from trades_202507.zip
+[2026-01-23T16:21:30.973+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250714.parquet
+[2026-01-23T16:21:33.381+0000] {database.py:186} INFO - Inserted 34204 rows into 'omie.trades'.
+[2026-01-23T16:21:33.382+0000] {trades.py:190} INFO - Processed trades for 20250714
+[2026-01-23T16:21:33.520+0000] {trades.py:171} INFO - Extracting trades_20250715.1 from trades_202507.zip
+[2026-01-23T16:21:34.115+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250715.parquet
+[2026-01-23T16:21:34.608+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-15, 20250715 07:45-20250715 08:00, IBGES, IBEVD22, 10YES-REE------0, GALP, GALPC01, 10YES-REE------0, 113.7, 2.7, null, trades_20250715.1).
+CONTEXT:  COPY trades, line 1055: "2025-07-15	20250715 07:45-20250715 08:00	IBGES	IBEVD22	10YES-REE------0	GALP	GALPC01	10YES-REE------..."
+
+[2026-01-23T16:21:34.611+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202507.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-15, 20250715 07:45-20250715 08:00, IBGES, IBEVD22, 10YES-REE------0, GALP, GALPC01, 10YES-REE------0, 113.7, 2.7, null, trades_20250715.1).
+CONTEXT:  COPY trades, line 1055: "2025-07-15	20250715 07:45-20250715 08:00	IBGES	IBEVD22	10YES-REE------0	GALP	GALPC01	10YES-REE------..."
+
+[2026-01-23T16:21:34.793+0000] {trades.py:171} INFO - Extracting trades_20250716.1 from trades_202507.zip
+[2026-01-23T16:21:36.686+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250716.parquet
+[2026-01-23T16:21:37.672+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-16, 20250716 07:45-20250716 08:00, ENPEN, ENPRM01, 10YES-REE------0, GALP, GALVD21, 10YES-REE------0, 115.67, 0.1, null, trades_20250716.1).
+CONTEXT:  COPY trades, line 13961: "2025-07-16	20250716 07:45-20250716 08:00	ENPEN	ENPRM01	10YES-REE------0	GALP	GALVD21	10YES-REE------..."
+
+[2026-01-23T16:21:37.673+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202507.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-16, 20250716 07:45-20250716 08:00, ENPEN, ENPRM01, 10YES-REE------0, GALP, GALVD21, 10YES-REE------0, 115.67, 0.1, null, trades_20250716.1).
+CONTEXT:  COPY trades, line 13961: "2025-07-16	20250716 07:45-20250716 08:00	ENPEN	ENPRM01	10YES-REE------0	GALP	GALVD21	10YES-REE------..."
+
+[2026-01-23T16:21:37.806+0000] {trades.py:171} INFO - Extracting trades_20250717.1 from trades_202507.zip
+[2026-01-23T16:21:38.279+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250717.parquet
+[2026-01-23T16:21:41.166+0000] {database.py:186} INFO - Inserted 32049 rows into 'omie.trades'.
+[2026-01-23T16:21:41.168+0000] {trades.py:190} INFO - Processed trades for 20250717
+[2026-01-23T16:21:41.443+0000] {trades.py:171} INFO - Extracting trades_20250718.1 from trades_202507.zip
+[2026-01-23T16:21:42.504+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250718.parquet
+[2026-01-23T16:21:46.081+0000] {database.py:186} INFO - Inserted 40432 rows into 'omie.trades'.
+[2026-01-23T16:21:46.082+0000] {trades.py:190} INFO - Processed trades for 20250718
+[2026-01-23T16:21:46.227+0000] {trades.py:171} INFO - Extracting trades_20250719.1 from trades_202507.zip
+[2026-01-23T16:21:46.905+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250719.parquet
+[2026-01-23T16:21:53.524+0000] {database.py:186} INFO - Inserted 34777 rows into 'omie.trades'.
+[2026-01-23T16:21:53.525+0000] {trades.py:190} INFO - Processed trades for 20250719
+[2026-01-23T16:21:53.610+0000] {trades.py:171} INFO - Extracting trades_20250720.1 from trades_202507.zip
+[2026-01-23T16:21:53.993+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250720.parquet
+[2026-01-23T16:21:58.067+0000] {database.py:186} INFO - Inserted 44616 rows into 'omie.trades'.
+[2026-01-23T16:21:58.072+0000] {trades.py:190} INFO - Processed trades for 20250720
+[2026-01-23T16:21:58.266+0000] {trades.py:171} INFO - Extracting trades_20250721.1 from trades_202507.zip
+[2026-01-23T16:21:58.932+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250721.parquet
+[2026-01-23T16:22:04.352+0000] {database.py:186} INFO - Inserted 41611 rows into 'omie.trades'.
+[2026-01-23T16:22:04.353+0000] {trades.py:190} INFO - Processed trades for 20250721
+[2026-01-23T16:22:04.465+0000] {trades.py:171} INFO - Extracting trades_20250722.1 from trades_202507.zip
+[2026-01-23T16:22:04.916+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250722.parquet
+[2026-01-23T16:22:08.259+0000] {database.py:186} INFO - Inserted 32366 rows into 'omie.trades'.
+[2026-01-23T16:22:08.261+0000] {trades.py:190} INFO - Processed trades for 20250722
+[2026-01-23T16:22:08.494+0000] {trades.py:171} INFO - Extracting trades_20250723.1 from trades_202507.zip
+[2026-01-23T16:22:09.036+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250723.parquet
+[2026-01-23T16:22:09.529+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-23, 20250723 08:00-20250723 08:15, , , , IBGES, DUER, 10YES-REE------0, 101.42, 0.2, null, trades_20250723.1).
+CONTEXT:  COPY trades, line 1952: "2025-07-23	20250723 08:00-20250723 08:15				IBGES	DUER	10YES-REE------0	101.42	0.2	__NULL__	trades_2..."
+
+[2026-01-23T16:22:09.530+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202507.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-23, 20250723 08:00-20250723 08:15, , , , IBGES, DUER, 10YES-REE------0, 101.42, 0.2, null, trades_20250723.1).
+CONTEXT:  COPY trades, line 1952: "2025-07-23	20250723 08:00-20250723 08:15				IBGES	DUER	10YES-REE------0	101.42	0.2	__NULL__	trades_2..."
+
+[2026-01-23T16:22:09.681+0000] {trades.py:171} INFO - Extracting trades_20250724.1 from trades_202507.zip
+[2026-01-23T16:22:10.186+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250724.parquet
+[2026-01-23T16:22:10.717+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-24, 20250724 03:00-20250724 03:15, GALP, GALPC01, 10YES-REE------0, , , , 94.57, 2.5, null, trades_20250724.1).
+CONTEXT:  COPY trades, line 2908: "2025-07-24	20250724 03:00-20250724 03:15	GALP	GALPC01	10YES-REE------0				94.57	2.5	__NULL__	trades_..."
+
+[2026-01-23T16:22:10.718+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202507.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-24, 20250724 03:00-20250724 03:15, GALP, GALPC01, 10YES-REE------0, , , , 94.57, 2.5, null, trades_20250724.1).
+CONTEXT:  COPY trades, line 2908: "2025-07-24	20250724 03:00-20250724 03:15	GALP	GALPC01	10YES-REE------0				94.57	2.5	__NULL__	trades_..."
+
+[2026-01-23T16:22:10.856+0000] {trades.py:171} INFO - Extracting trades_20250725.1 from trades_202507.zip
+[2026-01-23T16:22:11.241+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250725.parquet
+[2026-01-23T16:22:11.575+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-25, 20250725 03:45-20250725 04:00, FEN, FENC01, 10YES-REE------0, ENUFR, ENUFC01, 10YES-REE------0, 64.14, 1, null, trades_20250725.1).
+CONTEXT:  COPY trades, line 912: "2025-07-25	20250725 03:45-20250725 04:00	FEN	FENC01	10YES-REE------0	ENUFR	ENUFC01	10YES-REE------0	..."
+
+[2026-01-23T16:22:11.576+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202507.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-25, 20250725 03:45-20250725 04:00, FEN, FENC01, 10YES-REE------0, ENUFR, ENUFC01, 10YES-REE------0, 64.14, 1, null, trades_20250725.1).
+CONTEXT:  COPY trades, line 912: "2025-07-25	20250725 03:45-20250725 04:00	FEN	FENC01	10YES-REE------0	ENUFR	ENUFC01	10YES-REE------0	..."
+
+[2026-01-23T16:22:11.770+0000] {trades.py:171} INFO - Extracting trades_20250726.1 from trades_202507.zip
+[2026-01-23T16:22:12.442+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250726.parquet
+[2026-01-23T16:22:15.226+0000] {database.py:186} INFO - Inserted 36593 rows into 'omie.trades'.
+[2026-01-23T16:22:15.227+0000] {trades.py:190} INFO - Processed trades for 20250726
+[2026-01-23T16:22:15.344+0000] {trades.py:171} INFO - Extracting trades_20250727.1 from trades_202507.zip
+[2026-01-23T16:22:16.233+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250727.parquet
+[2026-01-23T16:22:18.559+0000] {database.py:186} INFO - Inserted 29471 rows into 'omie.trades'.
+[2026-01-23T16:22:18.563+0000] {trades.py:190} INFO - Processed trades for 20250727
+[2026-01-23T16:22:18.732+0000] {trades.py:171} INFO - Extracting trades_20250728.1 from trades_202507.zip
+[2026-01-23T16:22:19.202+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250728.parquet
+[2026-01-23T16:22:24.992+0000] {database.py:186} INFO - Inserted 37121 rows into 'omie.trades'.
+[2026-01-23T16:22:24.993+0000] {trades.py:190} INFO - Processed trades for 20250728
+[2026-01-23T16:22:25.113+0000] {trades.py:171} INFO - Extracting trades_20250729.1 from trades_202507.zip
+[2026-01-23T16:22:25.641+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250729.parquet
+[2026-01-23T16:22:30.848+0000] {database.py:186} INFO - Inserted 37858 rows into 'omie.trades'.
+[2026-01-23T16:22:30.849+0000] {trades.py:190} INFO - Processed trades for 20250729
+[2026-01-23T16:22:30.963+0000] {trades.py:171} INFO - Extracting trades_20250730.1 from trades_202507.zip
+[2026-01-23T16:22:31.422+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250730.parquet
+[2026-01-23T16:22:36.147+0000] {database.py:186} INFO - Inserted 40669 rows into 'omie.trades'.
+[2026-01-23T16:22:36.148+0000] {trades.py:190} INFO - Processed trades for 20250730
+[2026-01-23T16:22:36.278+0000] {trades.py:171} INFO - Extracting trades_20250731.1 from trades_202507.zip
+[2026-01-23T16:22:36.893+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/07/20250731.parquet
+[2026-01-23T16:22:37.597+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-31, 20250731 09:30-20250731 09:45, FEN, FENC01, 10YES-REE------0, FEN, FENC01, 10YES-REE------0, 38.82, 0.1, null, trades_20250731.1).
+CONTEXT:  COPY trades, line 2957: "2025-07-31	20250731 09:30-20250731 09:45	FEN	FENC01	10YES-REE------0	FEN	FENC01	10YES-REE------0	38...."
+
+[2026-01-23T16:22:37.599+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202507.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-07-31, 20250731 09:30-20250731 09:45, FEN, FENC01, 10YES-REE------0, FEN, FENC01, 10YES-REE------0, 38.82, 0.1, null, trades_20250731.1).
+CONTEXT:  COPY trades, line 2957: "2025-07-31	20250731 09:30-20250731 09:45	FEN	FENC01	10YES-REE------0	FEN	FENC01	10YES-REE------0	38...."
+
+[2026-01-23T16:22:38.075+0000] {trades.py:171} INFO - Extracting trades_20250801.1 from trades_202508.zip
+[2026-01-23T16:22:38.813+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250801.parquet
+[2026-01-23T16:22:44.034+0000] {database.py:186} INFO - Inserted 45859 rows into 'omie.trades'.
+[2026-01-23T16:22:44.035+0000] {trades.py:190} INFO - Processed trades for 20250801
+[2026-01-23T16:22:44.272+0000] {trades.py:171} INFO - Extracting trades_20250802.1 from trades_202508.zip
+[2026-01-23T16:22:45.189+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250802.parquet
+[2026-01-23T16:22:48.283+0000] {database.py:186} INFO - Inserted 41370 rows into 'omie.trades'.
+[2026-01-23T16:22:48.284+0000] {trades.py:190} INFO - Processed trades for 20250802
+[2026-01-23T16:22:48.443+0000] {trades.py:171} INFO - Extracting trades_20250803.1 from trades_202508.zip
+[2026-01-23T16:22:49.237+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250803.parquet
+[2026-01-23T16:22:52.817+0000] {database.py:186} INFO - Inserted 47871 rows into 'omie.trades'.
+[2026-01-23T16:22:52.819+0000] {trades.py:190} INFO - Processed trades for 20250803
+[2026-01-23T16:22:52.955+0000] {trades.py:171} INFO - Extracting trades_20250804.1 from trades_202508.zip
+[2026-01-23T16:22:53.432+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250804.parquet
+[2026-01-23T16:22:54.076+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-04, 20250804 02:00-20250804 02:15, , , , GALPW, GALPWV2, 10YPT-REN------W, 74.7, 0.1, null, trades_20250804.1).
+CONTEXT:  COPY trades, line 6871: "2025-08-04	20250804 02:00-20250804 02:15				GALPW	GALPWV2	10YPT-REN------W	74.7	0.1	__NULL__	trades_..."
+
+[2026-01-23T16:22:54.079+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202508.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-04, 20250804 02:00-20250804 02:15, , , , GALPW, GALPWV2, 10YPT-REN------W, 74.7, 0.1, null, trades_20250804.1).
+CONTEXT:  COPY trades, line 6871: "2025-08-04	20250804 02:00-20250804 02:15				GALPW	GALPWV2	10YPT-REN------W	74.7	0.1	__NULL__	trades_..."
+
+[2026-01-23T16:22:54.313+0000] {trades.py:171} INFO - Extracting trades_20250805.1 from trades_202508.zip
+[2026-01-23T16:22:55.628+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250805.parquet
+[2026-01-23T16:23:01.839+0000] {database.py:186} INFO - Inserted 59818 rows into 'omie.trades'.
+[2026-01-23T16:23:01.843+0000] {trades.py:190} INFO - Processed trades for 20250805
+[2026-01-23T16:23:02.089+0000] {trades.py:171} INFO - Extracting trades_20250806.1 from trades_202508.zip
+[2026-01-23T16:23:02.753+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250806.parquet
+[2026-01-23T16:23:05.972+0000] {database.py:186} INFO - Inserted 32742 rows into 'omie.trades'.
+[2026-01-23T16:23:05.973+0000] {trades.py:190} INFO - Processed trades for 20250806
+[2026-01-23T16:23:06.156+0000] {trades.py:171} INFO - Extracting trades_20250807.1 from trades_202508.zip
+[2026-01-23T16:23:06.830+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250807.parquet
+[2026-01-23T16:23:14.088+0000] {database.py:186} INFO - Inserted 45411 rows into 'omie.trades'.
+[2026-01-23T16:23:14.089+0000] {trades.py:190} INFO - Processed trades for 20250807
+[2026-01-23T16:23:14.242+0000] {trades.py:171} INFO - Extracting trades_20250808.1 from trades_202508.zip
+[2026-01-23T16:23:14.903+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250808.parquet
+[2026-01-23T16:23:20.591+0000] {database.py:186} INFO - Inserted 43740 rows into 'omie.trades'.
+[2026-01-23T16:23:20.592+0000] {trades.py:190} INFO - Processed trades for 20250808
+[2026-01-23T16:23:20.693+0000] {trades.py:171} INFO - Extracting trades_20250809.1 from trades_202508.zip
+[2026-01-23T16:23:21.079+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250809.parquet
+[2026-01-23T16:23:24.189+0000] {database.py:186} INFO - Inserted 40645 rows into 'omie.trades'.
+[2026-01-23T16:23:24.190+0000] {trades.py:190} INFO - Processed trades for 20250809
+[2026-01-23T16:23:24.361+0000] {trades.py:171} INFO - Extracting trades_20250810.1 from trades_202508.zip
+[2026-01-23T16:23:25.301+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250810.parquet
+[2026-01-23T16:23:28.485+0000] {database.py:186} INFO - Inserted 33162 rows into 'omie.trades'.
+[2026-01-23T16:23:28.487+0000] {trades.py:190} INFO - Processed trades for 20250810
+[2026-01-23T16:23:28.664+0000] {trades.py:171} INFO - Extracting trades_20250811.1 from trades_202508.zip
+[2026-01-23T16:23:29.419+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250811.parquet
+[2026-01-23T16:23:32.858+0000] {database.py:186} INFO - Inserted 38303 rows into 'omie.trades'.
+[2026-01-23T16:23:32.859+0000] {trades.py:190} INFO - Processed trades for 20250811
+[2026-01-23T16:23:33.055+0000] {trades.py:171} INFO - Extracting trades_20250812.1 from trades_202508.zip
+[2026-01-23T16:23:33.868+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250812.parquet
+[2026-01-23T16:23:39.868+0000] {database.py:186} INFO - Inserted 45682 rows into 'omie.trades'.
+[2026-01-23T16:23:39.869+0000] {trades.py:190} INFO - Processed trades for 20250812
+[2026-01-23T16:23:39.960+0000] {trades.py:171} INFO - Extracting trades_20250813.1 from trades_202508.zip
+[2026-01-23T16:23:40.491+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250813.parquet
+[2026-01-23T16:23:41.287+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-13, 20250813 17:30-20250813 17:45, FEN, FENC01, 10YES-REE------0, , , , 104.68, 0.3, null, trades_20250813.1).
+CONTEXT:  COPY trades, line 3386: "2025-08-13	20250813 17:30-20250813 17:45	FEN	FENC01	10YES-REE------0				104.68	0.3	__NULL__	trades_2..."
+
+[2026-01-23T16:23:41.288+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202508.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-13, 20250813 17:30-20250813 17:45, FEN, FENC01, 10YES-REE------0, , , , 104.68, 0.3, null, trades_20250813.1).
+CONTEXT:  COPY trades, line 3386: "2025-08-13	20250813 17:30-20250813 17:45	FEN	FENC01	10YES-REE------0				104.68	0.3	__NULL__	trades_2..."
+
+[2026-01-23T16:23:41.428+0000] {trades.py:171} INFO - Extracting trades_20250814.1 from trades_202508.zip
+[2026-01-23T16:23:42.308+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250814.parquet
+[2026-01-23T16:23:49.199+0000] {database.py:186} INFO - Inserted 55350 rows into 'omie.trades'.
+[2026-01-23T16:23:49.200+0000] {trades.py:190} INFO - Processed trades for 20250814
+[2026-01-23T16:23:49.306+0000] {trades.py:171} INFO - Extracting trades_20250815.1 from trades_202508.zip
+[2026-01-23T16:23:51.630+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250815.parquet
+[2026-01-23T16:23:57.566+0000] {database.py:186} INFO - Inserted 41058 rows into 'omie.trades'.
+[2026-01-23T16:23:57.567+0000] {trades.py:190} INFO - Processed trades for 20250815
+[2026-01-23T16:23:57.684+0000] {trades.py:171} INFO - Extracting trades_20250816.1 from trades_202508.zip
+[2026-01-23T16:23:58.442+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250816.parquet
+[2026-01-23T16:23:59.294+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-16, 20250816 02:30-20250816 02:45, DREUA, DREAC01, 10YES-REE------0, GALPW, GALPWV2, 10YPT-REN------W, 102.14, 0.1, null, trades_20250816.1).
+CONTEXT:  COPY trades, line 2357: "2025-08-16	20250816 02:30-20250816 02:45	DREUA	DREAC01	10YES-REE------0	GALPW	GALPWV2	10YPT-REN-----..."
+
+[2026-01-23T16:23:59.296+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202508.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-16, 20250816 02:30-20250816 02:45, DREUA, DREAC01, 10YES-REE------0, GALPW, GALPWV2, 10YPT-REN------W, 102.14, 0.1, null, trades_20250816.1).
+CONTEXT:  COPY trades, line 2357: "2025-08-16	20250816 02:30-20250816 02:45	DREUA	DREAC01	10YES-REE------0	GALPW	GALPWV2	10YPT-REN-----..."
+
+[2026-01-23T16:23:59.640+0000] {trades.py:171} INFO - Extracting trades_20250817.1 from trades_202508.zip
+[2026-01-23T16:24:00.617+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250817.parquet
+[2026-01-23T16:24:01.552+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-17, 20250817 10:30-20250817 10:45, , , , ISMSL, ISMSC01, 10YES-REE------0, 5.4, 0.1, null, trades_20250817.1).
+CONTEXT:  COPY trades, line 2329: "2025-08-17	20250817 10:30-20250817 10:45				ISMSL	ISMSC01	10YES-REE------0	5.4	0.1	__NULL__	trades_2..."
+
+[2026-01-23T16:24:01.554+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202508.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-17, 20250817 10:30-20250817 10:45, , , , ISMSL, ISMSC01, 10YES-REE------0, 5.4, 0.1, null, trades_20250817.1).
+CONTEXT:  COPY trades, line 2329: "2025-08-17	20250817 10:30-20250817 10:45				ISMSL	ISMSC01	10YES-REE------0	5.4	0.1	__NULL__	trades_2..."
+
+[2026-01-23T16:24:01.903+0000] {trades.py:171} INFO - Extracting trades_20250818.1 from trades_202508.zip
+[2026-01-23T16:24:02.825+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250818.parquet
+[2026-01-23T16:24:07.233+0000] {database.py:186} INFO - Inserted 42829 rows into 'omie.trades'.
+[2026-01-23T16:24:07.235+0000] {trades.py:190} INFO - Processed trades for 20250818
+[2026-01-23T16:24:07.402+0000] {trades.py:171} INFO - Extracting trades_20250819.1 from trades_202508.zip
+[2026-01-23T16:24:08.215+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250819.parquet
+[2026-01-23T16:24:09.141+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-19, 20250819 03:00-20250819 03:15, GRTEN, GRTEC01, 10YES-REE------0, , , , 85.25, 0.3, null, trades_20250819.1).
+CONTEXT:  COPY trades, line 2495: "2025-08-19	20250819 03:00-20250819 03:15	GRTEN	GRTEC01	10YES-REE------0				85.25	0.3	__NULL__	trades..."
+
+[2026-01-23T16:24:09.142+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202508.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-19, 20250819 03:00-20250819 03:15, GRTEN, GRTEC01, 10YES-REE------0, , , , 85.25, 0.3, null, trades_20250819.1).
+CONTEXT:  COPY trades, line 2495: "2025-08-19	20250819 03:00-20250819 03:15	GRTEN	GRTEC01	10YES-REE------0				85.25	0.3	__NULL__	trades..."
+
+[2026-01-23T16:24:09.328+0000] {trades.py:171} INFO - Extracting trades_20250820.1 from trades_202508.zip
+[2026-01-23T16:24:10.088+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250820.parquet
+[2026-01-23T16:24:10.832+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-20, 20250820 03:00-20250820 03:15, GALPW, GALPWC2, 10YPT-REN------W, , , , 75.04, 0.1, null, trades_20250820.1).
+CONTEXT:  COPY trades, line 4028: "2025-08-20	20250820 03:00-20250820 03:15	GALPW	GALPWC2	10YPT-REN------W				75.04	0.1	__NULL__	trades..."
+
+[2026-01-23T16:24:10.834+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202508.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-20, 20250820 03:00-20250820 03:15, GALPW, GALPWC2, 10YPT-REN------W, , , , 75.04, 0.1, null, trades_20250820.1).
+CONTEXT:  COPY trades, line 4028: "2025-08-20	20250820 03:00-20250820 03:15	GALPW	GALPWC2	10YPT-REN------W				75.04	0.1	__NULL__	trades..."
+
+[2026-01-23T16:24:11.037+0000] {trades.py:171} INFO - Extracting trades_20250821.1 from trades_202508.zip
+[2026-01-23T16:24:11.683+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250821.parquet
+[2026-01-23T16:24:14.568+0000] {database.py:186} INFO - Inserted 36108 rows into 'omie.trades'.
+[2026-01-23T16:24:14.569+0000] {trades.py:190} INFO - Processed trades for 20250821
+[2026-01-23T16:24:14.763+0000] {trades.py:171} INFO - Extracting trades_20250822.1 from trades_202508.zip
+[2026-01-23T16:24:15.420+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250822.parquet
+[2026-01-23T16:24:18.566+0000] {database.py:186} INFO - Inserted 38124 rows into 'omie.trades'.
+[2026-01-23T16:24:18.567+0000] {trades.py:190} INFO - Processed trades for 20250822
+[2026-01-23T16:24:18.731+0000] {trades.py:171} INFO - Extracting trades_20250823.1 from trades_202508.zip
+[2026-01-23T16:24:19.458+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250823.parquet
+[2026-01-23T16:24:23.603+0000] {database.py:186} INFO - Inserted 45197 rows into 'omie.trades'.
+[2026-01-23T16:24:23.604+0000] {trades.py:190} INFO - Processed trades for 20250823
+[2026-01-23T16:24:23.725+0000] {trades.py:171} INFO - Extracting trades_20250824.1 from trades_202508.zip
+[2026-01-23T16:24:24.306+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250824.parquet
+[2026-01-23T16:24:28.655+0000] {database.py:186} INFO - Inserted 38344 rows into 'omie.trades'.
+[2026-01-23T16:24:28.656+0000] {trades.py:190} INFO - Processed trades for 20250824
+[2026-01-23T16:24:28.782+0000] {trades.py:171} INFO - Extracting trades_20250825.1 from trades_202508.zip
+[2026-01-23T16:24:29.444+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250825.parquet
+[2026-01-23T16:24:36.078+0000] {database.py:186} INFO - Inserted 50078 rows into 'omie.trades'.
+[2026-01-23T16:24:36.079+0000] {trades.py:190} INFO - Processed trades for 20250825
+[2026-01-23T16:24:36.241+0000] {trades.py:171} INFO - Extracting trades_20250826.1 from trades_202508.zip
+[2026-01-23T16:24:37.230+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250826.parquet
+[2026-01-23T16:24:43.059+0000] {database.py:186} INFO - Inserted 45606 rows into 'omie.trades'.
+[2026-01-23T16:24:43.060+0000] {trades.py:190} INFO - Processed trades for 20250826
+[2026-01-23T16:24:43.189+0000] {trades.py:171} INFO - Extracting trades_20250827.1 from trades_202508.zip
+[2026-01-23T16:24:43.680+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250827.parquet
+[2026-01-23T16:24:46.811+0000] {database.py:186} INFO - Inserted 41222 rows into 'omie.trades'.
+[2026-01-23T16:24:46.812+0000] {trades.py:190} INFO - Processed trades for 20250827
+[2026-01-23T16:24:46.929+0000] {trades.py:171} INFO - Extracting trades_20250828.1 from trades_202508.zip
+[2026-01-23T16:24:47.390+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250828.parquet
+[2026-01-23T16:24:50.948+0000] {database.py:186} INFO - Inserted 35921 rows into 'omie.trades'.
+[2026-01-23T16:24:50.953+0000] {trades.py:190} INFO - Processed trades for 20250828
+[2026-01-23T16:24:51.106+0000] {trades.py:171} INFO - Extracting trades_20250829.1 from trades_202508.zip
+[2026-01-23T16:24:51.886+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250829.parquet
+[2026-01-23T16:24:52.595+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-29, 20250829 07:00-20250829 07:15, EFG, EFGVD10, 10YES-REE------0, INARG, INARC01, 10YES-REE------0, 77.46, 0.3, null, trades_20250829.1).
+CONTEXT:  COPY trades, line 1348: "2025-08-29	20250829 07:00-20250829 07:15	EFG	EFGVD10	10YES-REE------0	INARG	INARC01	10YES-REE------0..."
+
+[2026-01-23T16:24:52.596+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202508.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-08-29, 20250829 07:00-20250829 07:15, EFG, EFGVD10, 10YES-REE------0, INARG, INARC01, 10YES-REE------0, 77.46, 0.3, null, trades_20250829.1).
+CONTEXT:  COPY trades, line 1348: "2025-08-29	20250829 07:00-20250829 07:15	EFG	EFGVD10	10YES-REE------0	INARG	INARC01	10YES-REE------0..."
+
+[2026-01-23T16:24:52.732+0000] {trades.py:171} INFO - Extracting trades_20250830.1 from trades_202508.zip
+[2026-01-23T16:24:53.278+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250830.parquet
+[2026-01-23T16:25:01.609+0000] {database.py:186} INFO - Inserted 31548 rows into 'omie.trades'.
+[2026-01-23T16:25:01.611+0000] {trades.py:190} INFO - Processed trades for 20250830
+[2026-01-23T16:25:01.800+0000] {trades.py:171} INFO - Extracting trades_20250831.1 from trades_202508.zip
+[2026-01-23T16:25:02.444+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/08/20250831.parquet
+[2026-01-23T16:25:08.141+0000] {database.py:186} INFO - Inserted 39346 rows into 'omie.trades'.
+[2026-01-23T16:25:08.143+0000] {trades.py:190} INFO - Processed trades for 20250831
+[2026-01-23T16:25:08.653+0000] {trades.py:171} INFO - Extracting trades_20250901.1 from trades_202509.zip
+[2026-01-23T16:25:09.336+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250901.parquet
+[2026-01-23T16:25:14.664+0000] {database.py:186} INFO - Inserted 42345 rows into 'omie.trades'.
+[2026-01-23T16:25:14.697+0000] {trades.py:190} INFO - Processed trades for 20250901
+[2026-01-23T16:25:14.843+0000] {trades.py:171} INFO - Extracting trades_20250902.1 from trades_202509.zip
+[2026-01-23T16:25:15.434+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250902.parquet
+[2026-01-23T16:25:18.708+0000] {database.py:186} INFO - Inserted 39781 rows into 'omie.trades'.
+[2026-01-23T16:25:18.710+0000] {trades.py:190} INFO - Processed trades for 20250902
+[2026-01-23T16:25:18.873+0000] {trades.py:171} INFO - Extracting trades_20250903.1 from trades_202509.zip
+[2026-01-23T16:25:19.488+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250903.parquet
+[2026-01-23T16:25:22.697+0000] {database.py:186} INFO - Inserted 36596 rows into 'omie.trades'.
+[2026-01-23T16:25:22.698+0000] {trades.py:190} INFO - Processed trades for 20250903
+[2026-01-23T16:25:22.955+0000] {trades.py:171} INFO - Extracting trades_20250904.1 from trades_202509.zip
+[2026-01-23T16:25:23.724+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250904.parquet
+[2026-01-23T16:25:27.408+0000] {database.py:186} INFO - Inserted 42509 rows into 'omie.trades'.
+[2026-01-23T16:25:27.409+0000] {trades.py:190} INFO - Processed trades for 20250904
+[2026-01-23T16:25:27.529+0000] {trades.py:171} INFO - Extracting trades_20250905.1 from trades_202509.zip
+[2026-01-23T16:25:28.407+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250905.parquet
+[2026-01-23T16:25:32.448+0000] {database.py:186} INFO - Inserted 45052 rows into 'omie.trades'.
+[2026-01-23T16:25:32.449+0000] {trades.py:190} INFO - Processed trades for 20250905
+[2026-01-23T16:25:32.566+0000] {trades.py:171} INFO - Extracting trades_20250906.1 from trades_202509.zip
+[2026-01-23T16:25:33.004+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250906.parquet
+[2026-01-23T16:25:35.041+0000] {database.py:186} INFO - Inserted 23775 rows into 'omie.trades'.
+[2026-01-23T16:25:35.042+0000] {trades.py:190} INFO - Processed trades for 20250906
+[2026-01-23T16:25:35.154+0000] {trades.py:171} INFO - Extracting trades_20250907.1 from trades_202509.zip
+[2026-01-23T16:25:35.610+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250907.parquet
+[2026-01-23T16:25:40.615+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-09-07, 20250907 03:45-20250907 04:00, NEURO, NEURM09, 10YES-REE------0, , , , 18.83, 0.5, null, trades_20250907.1).
+CONTEXT:  COPY trades, line 3360: "2025-09-07	20250907 03:45-20250907 04:00	NEURO	NEURM09	10YES-REE------0				18.83	0.5	__NULL__	trades..."
+
+[2026-01-23T16:25:40.616+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202509.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-09-07, 20250907 03:45-20250907 04:00, NEURO, NEURM09, 10YES-REE------0, , , , 18.83, 0.5, null, trades_20250907.1).
+CONTEXT:  COPY trades, line 3360: "2025-09-07	20250907 03:45-20250907 04:00	NEURO	NEURM09	10YES-REE------0				18.83	0.5	__NULL__	trades..."
+
+[2026-01-23T16:25:40.693+0000] {trades.py:171} INFO - Extracting trades_20250908.1 from trades_202509.zip
+[2026-01-23T16:25:41.083+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250908.parquet
+[2026-01-23T16:25:44.209+0000] {database.py:186} INFO - Inserted 43949 rows into 'omie.trades'.
+[2026-01-23T16:25:44.210+0000] {trades.py:190} INFO - Processed trades for 20250908
+[2026-01-23T16:25:44.271+0000] {trades.py:171} INFO - Extracting trades_20250909.1 from trades_202509.zip
+[2026-01-23T16:25:44.799+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250909.parquet
+[2026-01-23T16:25:51.908+0000] {database.py:186} INFO - Inserted 51971 rows into 'omie.trades'.
+[2026-01-23T16:25:51.912+0000] {trades.py:190} INFO - Processed trades for 20250909
+[2026-01-23T16:25:52.133+0000] {trades.py:171} INFO - Extracting trades_20250910.1 from trades_202509.zip
+[2026-01-23T16:25:52.882+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250910.parquet
+[2026-01-23T16:25:56.932+0000] {database.py:186} INFO - Inserted 43050 rows into 'omie.trades'.
+[2026-01-23T16:25:56.935+0000] {trades.py:190} INFO - Processed trades for 20250910
+[2026-01-23T16:25:57.037+0000] {trades.py:171} INFO - Extracting trades_20250911.1 from trades_202509.zip
+[2026-01-23T16:25:57.541+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250911.parquet
+[2026-01-23T16:26:00.622+0000] {database.py:186} INFO - Inserted 31175 rows into 'omie.trades'.
+[2026-01-23T16:26:00.624+0000] {trades.py:190} INFO - Processed trades for 20250911
+[2026-01-23T16:26:00.896+0000] {trades.py:171} INFO - Extracting trades_20250912.1 from trades_202509.zip
+[2026-01-23T16:26:01.677+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250912.parquet
+[2026-01-23T16:26:02.299+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-09-12, 20250912 08:00-20250912 08:15, FEN, FENC01, 10YES-REE------0, GALPW, GALPWV2, 10YPT-REN------W, 151.44, 0.1, null, trades_20250912.1).
+CONTEXT:  COPY trades, line 2032: "2025-09-12	20250912 08:00-20250912 08:15	FEN	FENC01	10YES-REE------0	GALPW	GALPWV2	10YPT-REN------W	..."
+
+[2026-01-23T16:26:02.300+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202509.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-09-12, 20250912 08:00-20250912 08:15, FEN, FENC01, 10YES-REE------0, GALPW, GALPWV2, 10YPT-REN------W, 151.44, 0.1, null, trades_20250912.1).
+CONTEXT:  COPY trades, line 2032: "2025-09-12	20250912 08:00-20250912 08:15	FEN	FENC01	10YES-REE------0	GALPW	GALPWV2	10YPT-REN------W	..."
+
+[2026-01-23T16:26:02.447+0000] {trades.py:171} INFO - Extracting trades_20250913.1 from trades_202509.zip
+[2026-01-23T16:26:03.012+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250913.parquet
+[2026-01-23T16:26:06.276+0000] {database.py:186} INFO - Inserted 35113 rows into 'omie.trades'.
+[2026-01-23T16:26:06.283+0000] {trades.py:190} INFO - Processed trades for 20250913
+[2026-01-23T16:26:06.400+0000] {trades.py:171} INFO - Extracting trades_20250914.1 from trades_202509.zip
+[2026-01-23T16:26:06.933+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250914.parquet
+[2026-01-23T16:26:09.995+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-09-14, 20250914 07:45-20250914 08:00, FEN, FENC01, 10YES-REE------0, AME, AMRE003, 10YES-REE------0, 80.19, 0.8, null, trades_20250914.1).
+CONTEXT:  COPY trades, line 1908: "2025-09-14	20250914 07:45-20250914 08:00	FEN	FENC01	10YES-REE------0	AME	AMRE003	10YES-REE------0	80..."
+
+[2026-01-23T16:26:09.996+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202509.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-09-14, 20250914 07:45-20250914 08:00, FEN, FENC01, 10YES-REE------0, AME, AMRE003, 10YES-REE------0, 80.19, 0.8, null, trades_20250914.1).
+CONTEXT:  COPY trades, line 1908: "2025-09-14	20250914 07:45-20250914 08:00	FEN	FENC01	10YES-REE------0	AME	AMRE003	10YES-REE------0	80..."
+
+[2026-01-23T16:26:10.053+0000] {trades.py:171} INFO - Extracting trades_20250915.1 from trades_202509.zip
+[2026-01-23T16:26:10.612+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250915.parquet
+[2026-01-23T16:26:12.534+0000] {database.py:186} INFO - Inserted 20720 rows into 'omie.trades'.
+[2026-01-23T16:26:12.536+0000] {trades.py:190} INFO - Processed trades for 20250915
+[2026-01-23T16:26:12.628+0000] {trades.py:171} INFO - Extracting trades_20250916.1 from trades_202509.zip
+[2026-01-23T16:26:12.949+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250916.parquet
+[2026-01-23T16:26:16.433+0000] {database.py:186} INFO - Inserted 29424 rows into 'omie.trades'.
+[2026-01-23T16:26:16.434+0000] {trades.py:190} INFO - Processed trades for 20250916
+[2026-01-23T16:26:16.529+0000] {trades.py:171} INFO - Extracting trades_20250917.1 from trades_202509.zip
+[2026-01-23T16:26:16.725+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250917.parquet
+[2026-01-23T16:26:18.656+0000] {database.py:186} INFO - Inserted 21880 rows into 'omie.trades'.
+[2026-01-23T16:26:18.658+0000] {trades.py:190} INFO - Processed trades for 20250917
+[2026-01-23T16:26:18.779+0000] {trades.py:171} INFO - Extracting trades_20250918.1 from trades_202509.zip
+[2026-01-23T16:26:19.296+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250918.parquet
+[2026-01-23T16:26:22.779+0000] {database.py:186} INFO - Inserted 37242 rows into 'omie.trades'.
+[2026-01-23T16:26:22.781+0000] {trades.py:190} INFO - Processed trades for 20250918
+[2026-01-23T16:26:22.981+0000] {trades.py:171} INFO - Extracting trades_20250919.1 from trades_202509.zip
+[2026-01-23T16:26:24.852+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250919.parquet
+[2026-01-23T16:26:28.548+0000] {database.py:186} INFO - Inserted 35698 rows into 'omie.trades'.
+[2026-01-23T16:26:28.549+0000] {trades.py:190} INFO - Processed trades for 20250919
+[2026-01-23T16:26:28.683+0000] {trades.py:171} INFO - Extracting trades_20250920.1 from trades_202509.zip
+[2026-01-23T16:26:29.175+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250920.parquet
+[2026-01-23T16:26:32.505+0000] {database.py:186} INFO - Inserted 35439 rows into 'omie.trades'.
+[2026-01-23T16:26:32.506+0000] {trades.py:190} INFO - Processed trades for 20250920
+[2026-01-23T16:26:32.704+0000] {trades.py:171} INFO - Extracting trades_20250921.1 from trades_202509.zip
+[2026-01-23T16:26:33.467+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250921.parquet
+[2026-01-23T16:26:35.942+0000] {database.py:186} INFO - Inserted 33265 rows into 'omie.trades'.
+[2026-01-23T16:26:35.944+0000] {trades.py:190} INFO - Processed trades for 20250921
+[2026-01-23T16:26:36.056+0000] {trades.py:171} INFO - Extracting trades_20250922.1 from trades_202509.zip
+[2026-01-23T16:26:36.597+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250922.parquet
+[2026-01-23T16:26:37.080+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-09-22, 20250922 09:00-20250922 09:15, , , , EDPGM, EGPPVX2, 10YPT-REN------W, 32.81, 4, null, trades_20250922.1).
+CONTEXT:  COPY trades, line 2600: "2025-09-22	20250922 09:00-20250922 09:15				EDPGM	EGPPVX2	10YPT-REN------W	32.81	4.0	__NULL__	trades..."
+
+[2026-01-23T16:26:37.081+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202509.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-09-22, 20250922 09:00-20250922 09:15, , , , EDPGM, EGPPVX2, 10YPT-REN------W, 32.81, 4, null, trades_20250922.1).
+CONTEXT:  COPY trades, line 2600: "2025-09-22	20250922 09:00-20250922 09:15				EDPGM	EGPPVX2	10YPT-REN------W	32.81	4.0	__NULL__	trades..."
+
+[2026-01-23T16:26:37.189+0000] {trades.py:171} INFO - Extracting trades_20250923.1 from trades_202509.zip
+[2026-01-23T16:26:37.572+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250923.parquet
+[2026-01-23T16:26:40.470+0000] {database.py:186} INFO - Inserted 31366 rows into 'omie.trades'.
+[2026-01-23T16:26:40.471+0000] {trades.py:190} INFO - Processed trades for 20250923
+[2026-01-23T16:26:40.557+0000] {trades.py:171} INFO - Extracting trades_20250924.1 from trades_202509.zip
+[2026-01-23T16:26:42.767+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250924.parquet
+[2026-01-23T16:26:47.771+0000] {database.py:186} INFO - Inserted 44342 rows into 'omie.trades'.
+[2026-01-23T16:26:47.772+0000] {trades.py:190} INFO - Processed trades for 20250924
+[2026-01-23T16:26:47.886+0000] {trades.py:171} INFO - Extracting trades_20250925.1 from trades_202509.zip
+[2026-01-23T16:26:48.367+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250925.parquet
+[2026-01-23T16:26:48.954+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-09-25, 20250925 06:00-20250925 06:15, GALPW, GALPWV2, 10YPT-REN------W, SOREX, SORXC01, 10YES-REE------0, 58.28, 0.1, null, trades_20250925.1).
+CONTEXT:  COPY trades, line 2715: "2025-09-25	20250925 06:00-20250925 06:15	GALPW	GALPWV2	10YPT-REN------W	SOREX	SORXC01	10YES-REE-----..."
+
+[2026-01-23T16:26:48.958+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202509.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-09-25, 20250925 06:00-20250925 06:15, GALPW, GALPWV2, 10YPT-REN------W, SOREX, SORXC01, 10YES-REE------0, 58.28, 0.1, null, trades_20250925.1).
+CONTEXT:  COPY trades, line 2715: "2025-09-25	20250925 06:00-20250925 06:15	GALPW	GALPWV2	10YPT-REN------W	SOREX	SORXC01	10YES-REE-----..."
+
+[2026-01-23T16:26:49.162+0000] {trades.py:171} INFO - Extracting trades_20250926.1 from trades_202509.zip
+[2026-01-23T16:26:49.545+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250926.parquet
+[2026-01-23T16:26:51.647+0000] {database.py:186} INFO - Inserted 24658 rows into 'omie.trades'.
+[2026-01-23T16:26:51.648+0000] {trades.py:190} INFO - Processed trades for 20250926
+[2026-01-23T16:26:51.765+0000] {trades.py:171} INFO - Extracting trades_20250927.1 from trades_202509.zip
+[2026-01-23T16:26:52.339+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250927.parquet
+[2026-01-23T16:26:56.801+0000] {database.py:186} INFO - Inserted 37529 rows into 'omie.trades'.
+[2026-01-23T16:26:56.802+0000] {trades.py:190} INFO - Processed trades for 20250927
+[2026-01-23T16:26:56.926+0000] {trades.py:171} INFO - Extracting trades_20250928.1 from trades_202509.zip
+[2026-01-23T16:26:57.570+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250928.parquet
+[2026-01-23T16:26:58.775+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-09-28, 20250928 21:45-20250928 22:00, EGLE, EGLEC01, 10YES-REE------0, VARAE, VARAC01, 10YES-REE------0, 51.49, 0.1, null, trades_20250928.1).
+CONTEXT:  COPY trades, line 2425: "2025-09-28	20250928 21:45-20250928 22:00	EGLE	EGLEC01	10YES-REE------0	VARAE	VARAC01	10YES-REE------..."
+
+[2026-01-23T16:26:58.776+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202509.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-09-28, 20250928 21:45-20250928 22:00, EGLE, EGLEC01, 10YES-REE------0, VARAE, VARAC01, 10YES-REE------0, 51.49, 0.1, null, trades_20250928.1).
+CONTEXT:  COPY trades, line 2425: "2025-09-28	20250928 21:45-20250928 22:00	EGLE	EGLEC01	10YES-REE------0	VARAE	VARAC01	10YES-REE------..."
+
+[2026-01-23T16:26:58.876+0000] {trades.py:171} INFO - Extracting trades_20250929.1 from trades_202509.zip
+[2026-01-23T16:26:59.506+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250929.parquet
+[2026-01-23T16:27:03.579+0000] {database.py:186} INFO - Inserted 46033 rows into 'omie.trades'.
+[2026-01-23T16:27:03.580+0000] {trades.py:190} INFO - Processed trades for 20250929
+[2026-01-23T16:27:03.709+0000] {trades.py:171} INFO - Extracting trades_20250930.1 from trades_202509.zip
+[2026-01-23T16:27:04.349+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/09/20250930.parquet
+[2026-01-23T16:27:07.705+0000] {database.py:186} INFO - Inserted 35408 rows into 'omie.trades'.
+[2026-01-23T16:27:07.706+0000] {trades.py:190} INFO - Processed trades for 20250930
+[2026-01-23T16:27:07.977+0000] {trades.py:171} INFO - Extracting trades_20251001.1 from trades_202510.zip
+[2026-01-23T16:27:08.467+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251001.parquet
+[2026-01-23T16:27:11.118+0000] {database.py:186} INFO - Inserted 30129 rows into 'omie.trades'.
+[2026-01-23T16:27:11.120+0000] {trades.py:190} INFO - Processed trades for 20251001
+[2026-01-23T16:27:11.252+0000] {trades.py:171} INFO - Extracting trades_20251002.1 from trades_202510.zip
+[2026-01-23T16:27:11.918+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251002.parquet
+[2026-01-23T16:27:14.985+0000] {database.py:186} INFO - Inserted 36936 rows into 'omie.trades'.
+[2026-01-23T16:27:14.986+0000] {trades.py:190} INFO - Processed trades for 20251002
+[2026-01-23T16:27:15.109+0000] {trades.py:171} INFO - Extracting trades_20251003.1 from trades_202510.zip
+[2026-01-23T16:27:15.856+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251003.parquet
+[2026-01-23T16:27:18.608+0000] {database.py:186} INFO - Inserted 33798 rows into 'omie.trades'.
+[2026-01-23T16:27:18.610+0000] {trades.py:190} INFO - Processed trades for 20251003
+[2026-01-23T16:27:18.714+0000] {trades.py:171} INFO - Extracting trades_20251004.1 from trades_202510.zip
+[2026-01-23T16:27:19.523+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251004.parquet
+[2026-01-23T16:27:23.048+0000] {database.py:186} INFO - Inserted 45646 rows into 'omie.trades'.
+[2026-01-23T16:27:23.049+0000] {trades.py:190} INFO - Processed trades for 20251004
+[2026-01-23T16:27:23.140+0000] {trades.py:171} INFO - Extracting trades_20251005.1 from trades_202510.zip
+[2026-01-23T16:27:23.692+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251005.parquet
+[2026-01-23T16:27:26.498+0000] {database.py:186} INFO - Inserted 36669 rows into 'omie.trades'.
+[2026-01-23T16:27:26.499+0000] {trades.py:190} INFO - Processed trades for 20251005
+[2026-01-23T16:27:26.588+0000] {trades.py:171} INFO - Extracting trades_20251006.1 from trades_202510.zip
+[2026-01-23T16:27:27.185+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251006.parquet
+[2026-01-23T16:27:30.773+0000] {database.py:186} INFO - Inserted 41898 rows into 'omie.trades'.
+[2026-01-23T16:27:30.774+0000] {trades.py:190} INFO - Processed trades for 20251006
+[2026-01-23T16:27:30.863+0000] {trades.py:171} INFO - Extracting trades_20251007.1 from trades_202510.zip
+[2026-01-23T16:27:31.400+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251007.parquet
+[2026-01-23T16:27:32.148+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-10-07, 20251007 08:00-20251007 08:15, , , , NEURO, NEURM14, 10YES-REE------0, 167.26, 0.7, null, trades_20251007.1).
+CONTEXT:  COPY trades, line 5546: "2025-10-07	20251007 08:00-20251007 08:15				NEURO	NEURM14	10YES-REE------0	167.26	0.7	__NULL__	trade..."
+
+[2026-01-23T16:27:32.149+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202510.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-10-07, 20251007 08:00-20251007 08:15, , , , NEURO, NEURM14, 10YES-REE------0, 167.26, 0.7, null, trades_20251007.1).
+CONTEXT:  COPY trades, line 5546: "2025-10-07	20251007 08:00-20251007 08:15				NEURO	NEURM14	10YES-REE------0	167.26	0.7	__NULL__	trade..."
+
+[2026-01-23T16:27:32.235+0000] {trades.py:171} INFO - Extracting trades_20251008.1 from trades_202510.zip
+[2026-01-23T16:27:32.780+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251008.parquet
+[2026-01-23T16:27:33.321+0000] {database.py:189} ERROR - Error during bulk insert into omie.trades: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-10-08, 20251008 06:00-20251008 06:15, ENUFR, ENUFC01, 10YES-REE------0, GALP, GALPC01, 10YES-REE------0, 99.84, 1.4, null, trades_20251008.1).
+CONTEXT:  COPY trades, line 1903: "2025-10-08	20251008 06:00-20251008 06:15	ENUFR	ENUFC01	10YES-REE------0	GALP	GALPC01	10YES-REE------..."
+
+[2026-01-23T16:27:33.322+0000] {trades.py:194} ERROR - Error processing bronze/omie/trades/2025/trades_202510.zip: null value in column "momento_casacion" of relation "trades" violates not-null constraint
+DETAIL:  Failing row contains (2025-10-08, 20251008 06:00-20251008 06:15, ENUFR, ENUFC01, 10YES-REE------0, GALP, GALPC01, 10YES-REE------0, 99.84, 1.4, null, trades_20251008.1).
+CONTEXT:  COPY trades, line 1903: "2025-10-08	20251008 06:00-20251008 06:15	ENUFR	ENUFC01	10YES-REE------0	GALP	GALPC01	10YES-REE------..."
+
+[2026-01-23T16:27:33.400+0000] {trades.py:171} INFO - Extracting trades_20251009.1 from trades_202510.zip
+[2026-01-23T16:27:33.792+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251009.parquet
+[2026-01-23T16:27:41.261+0000] {database.py:186} INFO - Inserted 33226 rows into 'omie.trades'.
+[2026-01-23T16:27:41.263+0000] {trades.py:190} INFO - Processed trades for 20251009
+[2026-01-23T16:27:41.340+0000] {trades.py:171} INFO - Extracting trades_20251010.1 from trades_202510.zip
+[2026-01-23T16:27:41.752+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251010.parquet
+[2026-01-23T16:27:46.094+0000] {database.py:186} INFO - Inserted 38420 rows into 'omie.trades'.
+[2026-01-23T16:27:46.095+0000] {trades.py:190} INFO - Processed trades for 20251010
+[2026-01-23T16:27:46.187+0000] {trades.py:171} INFO - Extracting trades_20251011.1 from trades_202510.zip
+[2026-01-23T16:27:46.625+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251011.parquet
+[2026-01-23T16:27:52.876+0000] {database.py:186} INFO - Inserted 38792 rows into 'omie.trades'.
+[2026-01-23T16:27:52.877+0000] {trades.py:190} INFO - Processed trades for 20251011
+[2026-01-23T16:27:52.991+0000] {trades.py:171} INFO - Extracting trades_20251012.1 from trades_202510.zip
+[2026-01-23T16:27:53.564+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251012.parquet
+[2026-01-23T16:27:57.631+0000] {database.py:186} INFO - Inserted 38703 rows into 'omie.trades'.
+[2026-01-23T16:27:57.634+0000] {trades.py:190} INFO - Processed trades for 20251012
+[2026-01-23T16:27:57.857+0000] {trades.py:171} INFO - Extracting trades_20251013.1 from trades_202510.zip
+[2026-01-23T16:27:58.594+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251013.parquet
+[2026-01-23T16:28:03.173+0000] {database.py:186} INFO - Inserted 44768 rows into 'omie.trades'.
+[2026-01-23T16:28:03.181+0000] {trades.py:190} INFO - Processed trades for 20251013
+[2026-01-23T16:28:03.401+0000] {trades.py:171} INFO - Extracting trades_20251014.1 from trades_202510.zip
+[2026-01-23T16:28:04.138+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251014.parquet
+[2026-01-23T16:28:07.763+0000] {database.py:186} INFO - Inserted 41719 rows into 'omie.trades'.
+[2026-01-23T16:28:07.765+0000] {trades.py:190} INFO - Processed trades for 20251014
+[2026-01-23T16:28:07.858+0000] {trades.py:171} INFO - Extracting trades_20251015.1 from trades_202510.zip
+[2026-01-23T16:28:08.408+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251015.parquet
+[2026-01-23T16:28:12.660+0000] {database.py:186} INFO - Inserted 31317 rows into 'omie.trades'.
+[2026-01-23T16:28:12.661+0000] {trades.py:190} INFO - Processed trades for 20251015
+[2026-01-23T16:28:12.739+0000] {trades.py:171} INFO - Extracting trades_20251016.1 from trades_202510.zip
+[2026-01-23T16:28:13.272+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251016.parquet
+[2026-01-23T16:28:17.909+0000] {database.py:186} INFO - Inserted 36659 rows into 'omie.trades'.
+[2026-01-23T16:28:17.911+0000] {trades.py:190} INFO - Processed trades for 20251016
+[2026-01-23T16:28:18.020+0000] {trades.py:171} INFO - Extracting trades_20251017.1 from trades_202510.zip
+[2026-01-23T16:28:19.236+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251017.parquet
+[2026-01-23T16:28:22.715+0000] {database.py:186} INFO - Inserted 38025 rows into 'omie.trades'.
+[2026-01-23T16:28:22.716+0000] {trades.py:190} INFO - Processed trades for 20251017
+[2026-01-23T16:28:22.806+0000] {trades.py:171} INFO - Extracting trades_20251018.1 from trades_202510.zip
+[2026-01-23T16:28:23.235+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251018.parquet
+[2026-01-23T16:28:26.977+0000] {database.py:186} INFO - Inserted 37749 rows into 'omie.trades'.
+[2026-01-23T16:28:26.978+0000] {trades.py:190} INFO - Processed trades for 20251018
+[2026-01-23T16:28:27.081+0000] {trades.py:171} INFO - Extracting trades_20251019.1 from trades_202510.zip
+[2026-01-23T16:28:27.656+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251019.parquet
+[2026-01-23T16:28:35.153+0000] {database.py:186} INFO - Inserted 43171 rows into 'omie.trades'.
+[2026-01-23T16:28:35.155+0000] {trades.py:190} INFO - Processed trades for 20251019
+[2026-01-23T16:28:35.277+0000] {trades.py:171} INFO - Extracting trades_20251020.1 from trades_202510.zip
+[2026-01-23T16:28:36.960+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/trades/2025/10/20251020.parquet
+[2026-01-23T16:28:42.039+0000] {database.py:186} INFO - Inserted 59817 rows into 'omie.trades'.
+[2026-01-23T16:28:42.040+0000] {trades.py:190} INFO - Processed trades for 20251020
+[2026-01-23T16:28:43.819+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-01-23T16:28:43.985+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-23T16:28:44.959+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=trades_pipeline, task_id=process_trades, run_id=scheduled__2026-01-22T10:00:00+00:00, execution_date=20260122T100000, start_date=20260123T160953, end_date=20260123T162844
+[2026-01-23T16:28:46.618+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-01-23T16:28:47.722+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-23T16:28:47.797+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
