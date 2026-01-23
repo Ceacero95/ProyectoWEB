@@ -120,9 +120,6 @@ def process_marginalpibc(start_date: datetime, end_date: datetime):
     existing_dates = db_manager.get_existing_dates("marginalpibc", "omie", start_date, end_date)
 
     while current_date <= end_date:
-        if current_date in existing_dates:
-            current_date += timedelta(days=1)
-            continue
 
         year = current_date.strftime("%Y")
         month = current_date.strftime("%m")

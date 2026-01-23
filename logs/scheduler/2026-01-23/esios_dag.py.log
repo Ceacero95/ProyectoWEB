@@ -1195,3 +1195,157 @@
 [2026-01-23T17:47:14.435+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:47:14.425+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2026-01-23T17:47:14.534+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:47:14.533+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
 [2026-01-23T17:47:14.702+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 5.253 seconds
+[2026-01-23T17:47:45.804+0000] {processor.py:161} INFO - Started process (PID=583) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:47:45.806+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:47:45.810+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:47:45.809+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:47:50.399+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:47:50.591+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:47:50.590+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:47:50.716+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:47:50.715+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:47:50.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 5.086 seconds
+[2026-01-23T17:48:22.160+0000] {processor.py:161} INFO - Started process (PID=595) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:48:22.165+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:48:22.169+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:48:22.168+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:48:24.609+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:48:24.735+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:48:24.734+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:48:24.802+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:48:24.797+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:48:24.883+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 2.749 seconds
+[2026-01-23T17:48:55.559+0000] {processor.py:161} INFO - Started process (PID=607) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:48:55.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:48:55.561+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:48:55.560+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:48:55.989+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:48:56.114+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:48:56.114+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:48:56.126+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:48:56.126+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:48:56.155+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.605 seconds
+[2026-01-23T17:49:26.547+0000] {processor.py:161} INFO - Started process (PID=619) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:49:26.549+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:49:26.550+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:49:26.550+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:49:26.969+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:49:27.001+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:49:27.001+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:49:27.017+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:49:27.017+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:49:27.042+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.505 seconds
+[2026-01-23T17:49:57.194+0000] {processor.py:161} INFO - Started process (PID=661) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:49:57.196+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:49:57.198+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:49:57.198+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:49:57.662+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:49:57.706+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:49:57.706+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:49:57.724+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:49:57.724+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:49:57.749+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.567 seconds
+[2026-01-23T17:50:28.011+0000] {processor.py:161} INFO - Started process (PID=703) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:50:28.012+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:50:28.013+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:50:28.013+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:50:28.389+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:50:28.419+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:50:28.418+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:50:28.432+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:50:28.432+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:50:28.460+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.457 seconds
+[2026-01-23T17:50:59.319+0000] {processor.py:161} INFO - Started process (PID=745) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:50:59.320+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:50:59.321+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:50:59.321+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:50:59.731+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:50:59.801+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:50:59.800+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:50:59.827+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:50:59.827+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:50:59.864+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.555 seconds
+[2026-01-23T17:51:30.375+0000] {processor.py:161} INFO - Started process (PID=787) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:51:30.377+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:51:30.379+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:51:30.378+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:51:30.773+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:51:30.802+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:51:30.802+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:51:30.816+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:51:30.816+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:51:30.841+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.475 seconds
+[2026-01-23T17:52:01.216+0000] {processor.py:161} INFO - Started process (PID=829) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:52:01.217+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:52:01.219+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:52:01.218+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:52:01.590+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:52:01.631+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:52:01.630+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:52:01.647+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:52:01.647+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:52:01.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.463 seconds
+[2026-01-23T17:52:31.947+0000] {processor.py:161} INFO - Started process (PID=871) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:52:31.948+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:52:31.950+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:52:31.949+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:52:32.320+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:52:32.349+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:52:32.349+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:52:32.362+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:52:32.362+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:52:32.387+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.450 seconds
+[2026-01-23T17:53:02.842+0000] {processor.py:161} INFO - Started process (PID=913) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:53:02.843+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:53:02.844+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:53:02.844+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:53:03.236+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:53:03.265+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:53:03.264+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:53:03.279+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:53:03.278+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:53:03.301+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.467 seconds
+[2026-01-23T17:53:33.555+0000] {processor.py:161} INFO - Started process (PID=955) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:53:33.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:53:33.557+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:53:33.557+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:53:33.917+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:53:33.958+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:53:33.957+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:53:33.971+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:53:33.971+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:53:33.996+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.448 seconds
+[2026-01-23T17:54:04.353+0000] {processor.py:161} INFO - Started process (PID=997) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:54:04.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:54:04.355+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:54:04.355+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:54:04.726+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:54:04.755+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:54:04.754+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:54:04.767+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:54:04.767+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:54:04.794+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.448 seconds
+[2026-01-23T17:54:35.091+0000] {processor.py:161} INFO - Started process (PID=1039) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:54:35.096+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:54:35.100+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:54:35.099+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:54:35.798+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:54:35.867+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:54:35.867+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:54:35.899+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:54:35.899+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:54:35.938+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.876 seconds
+[2026-01-23T17:55:06.280+0000] {processor.py:161} INFO - Started process (PID=1099) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:55:06.281+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:55:06.282+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:55:06.282+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:55:06.729+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:55:06.775+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:55:06.774+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:55:06.789+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:55:06.789+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:55:06.826+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.555 seconds
+[2026-01-23T17:55:37.052+0000] {processor.py:161} INFO - Started process (PID=1141) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:55:37.054+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:55:37.057+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:55:37.057+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:55:37.505+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:55:37.535+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:55:37.535+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:55:37.548+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:55:37.548+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:55:37.579+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.536 seconds
+[2026-01-23T17:56:08.268+0000] {processor.py:161} INFO - Started process (PID=1183) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:56:08.269+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:56:08.271+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:56:08.270+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:56:08.722+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:56:08.757+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:56:08.757+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:56:08.774+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:56:08.773+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:56:08.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.549 seconds
+[2026-01-23T17:56:38.969+0000] {processor.py:161} INFO - Started process (PID=1225) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:56:38.971+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:56:38.972+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:56:38.971+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:56:39.333+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:56:39.362+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:56:39.362+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:56:39.379+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:56:39.379+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:56:39.413+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.451 seconds
+[2026-01-23T17:57:09.727+0000] {processor.py:161} INFO - Started process (PID=1267) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:57:09.728+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:57:09.729+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:57:09.729+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:57:10.152+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:57:10.195+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:57:10.194+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:57:10.216+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:57:10.216+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:57:10.241+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.522 seconds
+[2026-01-23T17:57:40.482+0000] {processor.py:161} INFO - Started process (PID=1309) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:57:40.484+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:57:40.485+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:57:40.485+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:57:40.835+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:57:40.868+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:57:40.868+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:57:40.881+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:57:40.881+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:57:40.905+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.432 seconds
+[2026-01-23T17:58:11.029+0000] {processor.py:161} INFO - Started process (PID=1351) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:58:11.030+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:58:11.031+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:58:11.031+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:58:11.491+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:58:11.525+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:58:11.525+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:58:11.540+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:58:11.539+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:58:11.562+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.541 seconds
+[2026-01-23T17:58:42.099+0000] {processor.py:161} INFO - Started process (PID=1393) to work on /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:58:42.100+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/esios_dag.py for tasks to queue
+[2026-01-23T17:58:42.101+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:58:42.101+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:58:42.530+0000] {processor.py:840} INFO - DAG(s) 'esios_liquicomun_pipeline' retrieved from /opt/airflow/dags/esios_dag.py
+[2026-01-23T17:58:42.584+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:58:42.583+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-01-23T17:58:42.601+0000] {logging_mixin.py:188} INFO - [2026-01-23T17:58:42.601+0000] {dag.py:3954} INFO - Setting next_dagrun for esios_liquicomun_pipeline to None, run_after=None
+[2026-01-23T17:58:42.637+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/esios_dag.py took 0.547 seconds

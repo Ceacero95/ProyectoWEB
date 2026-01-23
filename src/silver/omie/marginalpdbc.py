@@ -137,11 +137,6 @@ def process_marginalpdbc(start_date: datetime, end_date: datetime):
     existing_dates = db_manager.get_existing_dates("marginalpdbc", "omie", start_date, end_date)
 
     while current_date <= end_date:
-        # Check if already processed
-        if current_date in existing_dates:
-             # logger.debug(f"Skipping {current_date}")
-             current_date += timedelta(days=1)
-             continue
 
         year = current_date.strftime("%Y")
         month = current_date.strftime("%m")
