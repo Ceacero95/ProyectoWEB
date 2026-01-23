@@ -16,6 +16,7 @@ local_data/
 downloads/
 data/
 output/
+logs/
 *.zip
 *.xls
 *.xlsx

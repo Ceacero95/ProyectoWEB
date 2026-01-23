@@ -215,3 +215,108 @@
 [2026-01-23T16:16:04.441+0000] {database.py:186} INFO - Inserted 37026 rows into 'omie.pdbc'.
 [2026-01-23T16:16:04.443+0000] {pdbc.py:160} INFO - Processed pdbc for 20250309
 [2026-01-23T16:16:14.292+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250310.parquet
+[2026-01-23T16:16:24.323+0000] {database.py:186} INFO - Inserted 38048 rows into 'omie.pdbc'.
+[2026-01-23T16:16:24.335+0000] {pdbc.py:160} INFO - Processed pdbc for 20250310
+[2026-01-23T16:16:29.960+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250311.parquet
+[2026-01-23T16:16:44.283+0000] {database.py:186} INFO - Inserted 38550 rows into 'omie.pdbc'.
+[2026-01-23T16:16:44.308+0000] {pdbc.py:160} INFO - Processed pdbc for 20250311
+[2026-01-23T16:16:47.336+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250312.parquet
+[2026-01-23T16:17:07.194+0000] {database.py:186} INFO - Inserted 38960 rows into 'omie.pdbc'.
+[2026-01-23T16:17:07.298+0000] {pdbc.py:160} INFO - Processed pdbc for 20250312
+[2026-01-23T16:17:08.837+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250313.parquet
+[2026-01-23T16:17:11.906+0000] {database.py:186} INFO - Inserted 38859 rows into 'omie.pdbc'.
+[2026-01-23T16:17:11.911+0000] {pdbc.py:160} INFO - Processed pdbc for 20250313
+[2026-01-23T16:17:12.670+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250314.parquet
+[2026-01-23T16:17:18.178+0000] {database.py:186} INFO - Inserted 39370 rows into 'omie.pdbc'.
+[2026-01-23T16:17:18.182+0000] {pdbc.py:160} INFO - Processed pdbc for 20250314
+[2026-01-23T16:17:18.619+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250315.parquet
+[2026-01-23T16:17:35.370+0000] {database.py:186} INFO - Inserted 38180 rows into 'omie.pdbc'.
+[2026-01-23T16:17:35.372+0000] {pdbc.py:160} INFO - Processed pdbc for 20250315
+[2026-01-23T16:17:35.769+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250316.parquet
+[2026-01-23T16:17:38.787+0000] {database.py:186} INFO - Inserted 37813 rows into 'omie.pdbc'.
+[2026-01-23T16:17:38.791+0000] {pdbc.py:160} INFO - Processed pdbc for 20250316
+[2026-01-23T16:17:39.071+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250317.parquet
+[2026-01-23T16:17:41.488+0000] {database.py:186} INFO - Inserted 38356 rows into 'omie.pdbc'.
+[2026-01-23T16:17:41.489+0000] {pdbc.py:160} INFO - Processed pdbc for 20250317
+[2026-01-23T16:17:41.751+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250318.parquet
+[2026-01-23T16:17:45.286+0000] {database.py:186} INFO - Inserted 39249 rows into 'omie.pdbc'.
+[2026-01-23T16:17:45.289+0000] {pdbc.py:160} INFO - Processed pdbc for 20250318
+[2026-01-23T16:17:45.606+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250319.parquet
+[2026-01-23T16:17:51.277+0000] {database.py:186} INFO - Inserted 39202 rows into 'omie.pdbc'.
+[2026-01-23T16:17:51.278+0000] {pdbc.py:160} INFO - Processed pdbc for 20250319
+[2026-01-23T16:17:51.570+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250320.parquet
+[2026-01-23T16:17:53.917+0000] {database.py:186} INFO - Inserted 37065 rows into 'omie.pdbc'.
+[2026-01-23T16:17:53.918+0000] {pdbc.py:160} INFO - Processed pdbc for 20250320
+[2026-01-23T16:17:54.233+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250321.parquet
+[2026-01-23T16:17:57.648+0000] {database.py:186} INFO - Inserted 37750 rows into 'omie.pdbc'.
+[2026-01-23T16:17:57.650+0000] {pdbc.py:160} INFO - Processed pdbc for 20250321
+[2026-01-23T16:17:57.919+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250322.parquet
+[2026-01-23T16:18:02.973+0000] {database.py:186} INFO - Inserted 35359 rows into 'omie.pdbc'.
+[2026-01-23T16:18:02.974+0000] {pdbc.py:160} INFO - Processed pdbc for 20250322
+[2026-01-23T16:18:03.207+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250323.parquet
+[2026-01-23T16:18:07.596+0000] {database.py:186} INFO - Inserted 36060 rows into 'omie.pdbc'.
+[2026-01-23T16:18:07.598+0000] {pdbc.py:160} INFO - Processed pdbc for 20250323
+[2026-01-23T16:18:08.093+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250324.parquet
+[2026-01-23T16:18:12.937+0000] {database.py:186} INFO - Inserted 38771 rows into 'omie.pdbc'.
+[2026-01-23T16:18:12.938+0000] {pdbc.py:160} INFO - Processed pdbc for 20250324
+[2026-01-23T16:18:13.206+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250325.parquet
+[2026-01-23T16:18:19.004+0000] {database.py:186} INFO - Inserted 39053 rows into 'omie.pdbc'.
+[2026-01-23T16:18:19.005+0000] {pdbc.py:160} INFO - Processed pdbc for 20250325
+[2026-01-23T16:18:19.329+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250326.parquet
+[2026-01-23T16:18:23.011+0000] {database.py:186} INFO - Inserted 36740 rows into 'omie.pdbc'.
+[2026-01-23T16:18:23.013+0000] {pdbc.py:160} INFO - Processed pdbc for 20250326
+[2026-01-23T16:18:24.396+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250327.parquet
+[2026-01-23T16:18:27.604+0000] {database.py:186} INFO - Inserted 37739 rows into 'omie.pdbc'.
+[2026-01-23T16:18:27.605+0000] {pdbc.py:160} INFO - Processed pdbc for 20250327
+[2026-01-23T16:18:27.933+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250328.parquet
+[2026-01-23T16:18:33.374+0000] {database.py:186} INFO - Inserted 36062 rows into 'omie.pdbc'.
+[2026-01-23T16:18:33.375+0000] {pdbc.py:160} INFO - Processed pdbc for 20250328
+[2026-01-23T16:18:34.918+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250329.parquet
+[2026-01-23T16:18:37.620+0000] {database.py:186} INFO - Inserted 33454 rows into 'omie.pdbc'.
+[2026-01-23T16:18:37.622+0000] {pdbc.py:160} INFO - Processed pdbc for 20250329
+[2026-01-23T16:18:37.861+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250330.parquet
+[2026-01-23T16:18:40.612+0000] {database.py:186} INFO - Inserted 30042 rows into 'omie.pdbc'.
+[2026-01-23T16:18:40.613+0000] {pdbc.py:160} INFO - Processed pdbc for 20250330
+[2026-01-23T16:18:40.926+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/03/20250331.parquet
+[2026-01-23T16:18:46.407+0000] {database.py:186} INFO - Inserted 35848 rows into 'omie.pdbc'.
+[2026-01-23T16:18:46.411+0000] {pdbc.py:160} INFO - Processed pdbc for 20250331
+[2026-01-23T16:18:47.501+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250401.parquet
+[2026-01-23T16:18:50.280+0000] {database.py:186} INFO - Inserted 37120 rows into 'omie.pdbc'.
+[2026-01-23T16:18:50.281+0000] {pdbc.py:160} INFO - Processed pdbc for 20250401
+[2026-01-23T16:18:50.524+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250402.parquet
+[2026-01-23T16:18:54.233+0000] {database.py:186} INFO - Inserted 38068 rows into 'omie.pdbc'.
+[2026-01-23T16:18:54.235+0000] {pdbc.py:160} INFO - Processed pdbc for 20250402
+[2026-01-23T16:18:54.723+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250403.parquet
+[2026-01-23T16:18:58.797+0000] {database.py:186} INFO - Inserted 39099 rows into 'omie.pdbc'.
+[2026-01-23T16:18:58.800+0000] {pdbc.py:160} INFO - Processed pdbc for 20250403
+[2026-01-23T16:18:59.153+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250404.parquet
+[2026-01-23T16:19:05.620+0000] {database.py:186} INFO - Inserted 38124 rows into 'omie.pdbc'.
+[2026-01-23T16:19:05.621+0000] {pdbc.py:160} INFO - Processed pdbc for 20250404
+[2026-01-23T16:19:05.971+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250405.parquet
+[2026-01-23T16:19:10.337+0000] {database.py:186} INFO - Inserted 35901 rows into 'omie.pdbc'.
+[2026-01-23T16:19:10.338+0000] {pdbc.py:160} INFO - Processed pdbc for 20250405
+[2026-01-23T16:19:10.638+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250406.parquet
+[2026-01-23T16:19:14.454+0000] {database.py:186} INFO - Inserted 34469 rows into 'omie.pdbc'.
+[2026-01-23T16:19:14.456+0000] {pdbc.py:160} INFO - Processed pdbc for 20250406
+[2026-01-23T16:19:14.876+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250407.parquet
+[2026-01-23T16:19:18.813+0000] {database.py:186} INFO - Inserted 38648 rows into 'omie.pdbc'.
+[2026-01-23T16:19:18.814+0000] {pdbc.py:160} INFO - Processed pdbc for 20250407
+[2026-01-23T16:19:19.074+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250408.parquet
+[2026-01-23T16:19:21.958+0000] {database.py:186} INFO - Inserted 36270 rows into 'omie.pdbc'.
+[2026-01-23T16:19:21.960+0000] {pdbc.py:160} INFO - Processed pdbc for 20250408
+[2026-01-23T16:19:22.214+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250409.parquet
+[2026-01-23T16:19:26.897+0000] {database.py:186} INFO - Inserted 37650 rows into 'omie.pdbc'.
+[2026-01-23T16:19:26.906+0000] {pdbc.py:160} INFO - Processed pdbc for 20250409
+[2026-01-23T16:19:27.232+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250410.parquet
+[2026-01-23T16:19:32.001+0000] {database.py:186} INFO - Inserted 38840 rows into 'omie.pdbc'.
+[2026-01-23T16:19:32.002+0000] {pdbc.py:160} INFO - Processed pdbc for 20250410
+[2026-01-23T16:19:32.302+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250411.parquet
+[2026-01-23T16:19:36.400+0000] {database.py:186} INFO - Inserted 39031 rows into 'omie.pdbc'.
+[2026-01-23T16:19:36.418+0000] {pdbc.py:160} INFO - Processed pdbc for 20250411
+[2026-01-23T16:19:36.660+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250412.parquet
+[2026-01-23T16:19:40.549+0000] {database.py:186} INFO - Inserted 37940 rows into 'omie.pdbc'.
+[2026-01-23T16:19:40.550+0000] {pdbc.py:160} INFO - Processed pdbc for 20250412
+[2026-01-23T16:19:40.822+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250413.parquet
+[2026-01-23T16:19:44.492+0000] {database.py:186} INFO - Inserted 36813 rows into 'omie.pdbc'.
+[2026-01-23T16:19:44.493+0000] {pdbc.py:160} INFO - Processed pdbc for 20250413
+[2026-01-23T16:19:44.786+0000] {filesystem.py:48} INFO - Saved file to /opt/***/local_data/silver/omie/pdbc/2025/04/20250414.parquet
