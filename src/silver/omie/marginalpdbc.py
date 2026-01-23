@@ -183,6 +183,10 @@ def process_marginalpdbc(start_date: datetime, end_date: datetime):
                 logger.error(f"Error reading zip {zip_path}: {e}")
 
         # 2. Process Files
+        if not files_to_process:
+             # logger.debug(f"No files found for {today_str} in {daily_path} or zip")
+             pass
+
         for fname, content in files_to_process:
             logger.info(f"Processing Silver for {fname}...")
             
@@ -206,23 +210,25 @@ def process_marginalpdbc(start_date: datetime, end_date: datetime):
                     df.drop_duplicates(subset=pk, keep='last', inplace=True)
                     
                     try:
-                        # Idempotency: Delete existing records for this day (anio, mes, dia)
-                        # We assume the file covers one day or few days.
-                        unique_days = df[['anio', 'mes', 'dia']].drop_duplicates()
+                        # Idempotency & Atomicity: Delete and Insert in SAME transaction
                         engine = get_engine()
                         with engine.begin() as conn:
+                            # 1. Delete existing for these days
+                            unique_days = df[['anio', 'mes', 'dia']].drop_duplicates()
                             for _, row in unique_days.iterrows():
-                                # Safe delete
                                 query = text(f"DELETE FROM omie.marginalpdbc WHERE anio=:anio AND mes=:mes AND dia=:dia")
-                                conn.execute(query, {"anio": int(row['anio']), "mes": int(row['mes']), "dia": int(row['dia'])})
-                                logger.info(f"Deleted existing rows for {row['anio']}-{row['mes']}-{row['dia']} to allow overwrite.")
-                        
-                        db_manager.bulk_insert_df(df, "marginalpdbc", schema="omie", pk_cols=pk)
-                        db_manager.create_indexes("marginalpdbc", ['anio', 'mes', 'dia'], schema="omie")
+                                result = conn.execute(query, {"anio": int(row['anio']), "mes": int(row['mes']), "dia": int(row['dia'])})
+                                logger.info(f"Deleted {result.rowcount} rows for {row['anio']}-{row['mes']}-{row['dia']}")
+
+                            # 2. Insert using standard pandas to_sql (slower but reliable)
+                            logger.info(f"Inserting {len(df)} rows for {fname}")
+                            df.to_sql("marginalpdbc", conn, schema="omie", if_exists='append', index=False)
+                            
+                        logger.info(f"Successfully processed {fname}")
                         
                     except Exception as e:
                         logger.error(f"Error ingesting {fname}: {e}")
-                        # User requested to continue processing if error occurs
+                        # Continue processing other files
                         pass
                         
                 else:

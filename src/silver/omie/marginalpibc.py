@@ -160,14 +160,18 @@ def process_marginalpibc(start_date: datetime, end_date: datetime):
                     df.drop_duplicates(subset=pk, keep='last', inplace=True)
                     
                     try:
-                        # Idempotency: Delete for this day + market
+                        # Idempotency & Atomicity: Delete and Insert in SAME transaction
                         mercado = df['mercado'].iloc[0] # assume 1 file = 1 market
                         engine = get_engine()
                         with engine.begin() as conn:
+                             # 1. Delete
                              q = text("DELETE FROM omie.marginalpibc WHERE anio=:y AND mes=:m AND dia=:d AND mercado=:mk")
                              conn.execute(q, {"y": int(df['anio'].iloc[0]), "m": int(df['mes'].iloc[0]), "d": int(df['dia'].iloc[0]), "mk": int(mercado)})
                              
-                        db_manager.bulk_insert_df(df, "marginalpibc", schema="omie", pk_cols=pk)
+                             # 2. Insert
+                             df.to_sql("marginalpibc", conn, schema="omie", if_exists='append', index=False)
+                        
+                        logger.info(f"Successfully processed {fname}")
                         
                     except Exception as e:
                         logger.error(f"Error ingesting {fname}: {e}")
