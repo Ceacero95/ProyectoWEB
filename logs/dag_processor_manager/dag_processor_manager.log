@@ -11116,3 +11116,173 @@ File Path                                   PID    Runtime      # DAGs    # Erro
 /opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.45s           2026-01-23T18:31:49
 /opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.44s           2026-01-23T18:31:52
 ================================================================================
+[2026-01-23T18:32:45.133+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/trades_dag.py                                      1           0  0.51s           2026-01-23T18:32:35
+/opt/airflow/dags/omie_marginalpdbc_dag.py                           1           0  0.51s           2026-01-23T18:32:37
+/opt/airflow/dags/omie_pdbf_dag.py                                   1           0  0.47s           2026-01-23T18:32:21
+/opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.47s           2026-01-23T18:32:20
+/opt/airflow/dags/omie_marginalpibc_dag.py                           1           0  0.46s           2026-01-23T18:32:20
+/opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.45s           2026-01-23T18:32:23
+/opt/airflow/dags/esios_dag.py                                       1           0  0.44s           2026-01-23T18:32:34
+================================================================================
+[2026-01-23T18:33:15.237+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.59s           2026-01-23T18:32:50
+/opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.57s           2026-01-23T18:32:53
+/opt/airflow/dags/omie_pdbf_dag.py                                   1           0  0.51s           2026-01-23T18:32:52
+/opt/airflow/dags/trades_dag.py                                      1           0  0.50s           2026-01-23T18:33:06
+/opt/airflow/dags/omie_marginalpdbc_dag.py                           1           0  0.49s           2026-01-23T18:32:46
+/opt/airflow/dags/omie_marginalpibc_dag.py                           1           0  0.48s           2026-01-23T18:33:02
+/opt/airflow/dags/esios_dag.py                                       1           0  0.44s           2026-01-23T18:33:05
+================================================================================
+[2026-01-23T18:33:45.274+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/esios_dag.py                                       1           0  0.61s           2026-01-23T18:33:35
+/opt/airflow/dags/omie_marginalpibc_dag.py                           1           0  0.54s           2026-01-23T18:33:34
+/opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.53s           2026-01-23T18:33:25
+/opt/airflow/dags/trades_dag.py                                      1           0  0.51s           2026-01-23T18:33:37
+/opt/airflow/dags/omie_marginalpdbc_dag.py                           1           0  0.47s           2026-01-23T18:33:17
+/opt/airflow/dags/omie_pdbf_dag.py                                   1           0  0.46s           2026-01-23T18:33:22
+/opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.43s           2026-01-23T18:33:21
+================================================================================
+[2026-01-23T18:34:15.575+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/omie_marginalpdbc_dag.py                           1           0  0.64s           2026-01-23T18:33:47
+/opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.55s           2026-01-23T18:33:56
+/opt/airflow/dags/esios_dag.py                                       1           0  0.55s           2026-01-23T18:34:06
+/opt/airflow/dags/trades_dag.py                                      1           0  0.55s           2026-01-23T18:34:07
+/opt/airflow/dags/omie_pdbf_dag.py                                   1           0  0.53s           2026-01-23T18:33:54
+/opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.53s           2026-01-23T18:33:52
+/opt/airflow/dags/omie_marginalpibc_dag.py                           1           0  0.51s           2026-01-23T18:34:04
+================================================================================
+[2026-01-23T18:34:40.669+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-01-23T18:34:40.756+0000] {manager.py:740} INFO - There are 7 files in /opt/airflow/dags
+[2026-01-23T18:34:45.831+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/trades_dag.py                                      1           0  0.59s           2026-01-23T18:34:38
+/opt/airflow/dags/omie_marginalpdbc_dag.py                           1           0  0.56s           2026-01-23T18:34:18
+/opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.53s           2026-01-23T18:34:26
+/opt/airflow/dags/omie_marginalpibc_dag.py                           1           0  0.53s           2026-01-23T18:34:35
+/opt/airflow/dags/omie_pdbf_dag.py                                   1           0  0.52s           2026-01-23T18:34:24
+/opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.52s           2026-01-23T18:34:23
+/opt/airflow/dags/esios_dag.py                                       1           0  0.51s           2026-01-23T18:34:37
+================================================================================
+[2026-01-23T18:35:15.847+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.57s           2026-01-23T18:34:53
+/opt/airflow/dags/omie_pdbf_dag.py                                   1           0  0.56s           2026-01-23T18:34:55
+/opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.53s           2026-01-23T18:34:57
+/opt/airflow/dags/trades_dag.py                                      1           0  0.53s           2026-01-23T18:35:09
+/opt/airflow/dags/omie_marginalpdbc_dag.py                           1           0  0.51s           2026-01-23T18:34:49
+/opt/airflow/dags/omie_marginalpibc_dag.py                           1           0  0.49s           2026-01-23T18:35:06
+/opt/airflow/dags/esios_dag.py                                       1           0  0.44s           2026-01-23T18:35:07
+================================================================================
+[2026-01-23T18:35:46.297+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/trades_dag.py                                      1           0  0.51s           2026-01-23T18:35:40
+/opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.47s           2026-01-23T18:35:27
+/opt/airflow/dags/omie_pdbf_dag.py                                   1           0  0.46s           2026-01-23T18:35:26
+/opt/airflow/dags/omie_marginalpdbc_dag.py                           1           0  0.45s           2026-01-23T18:35:20
+/opt/airflow/dags/omie_marginalpibc_dag.py                           1           0  0.45s           2026-01-23T18:35:36
+/opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.45s           2026-01-23T18:35:24
+/opt/airflow/dags/esios_dag.py                                       1           0  0.44s           2026-01-23T18:35:38
+================================================================================
+[2026-01-23T18:36:16.542+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/trades_dag.py                                      1           0  0.69s           2026-01-23T18:36:11
+/opt/airflow/dags/esios_dag.py                                       1           0  0.57s           2026-01-23T18:36:08
+/opt/airflow/dags/omie_marginalpdbc_dag.py                           1           0  0.51s           2026-01-23T18:35:50
+/opt/airflow/dags/omie_pdbf_dag.py                                   1           0  0.50s           2026-01-23T18:35:57
+/opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.48s           2026-01-23T18:35:58
+/opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.47s           2026-01-23T18:35:55
+/opt/airflow/dags/omie_marginalpibc_dag.py                           1           0  0.45s           2026-01-23T18:36:07
+================================================================================
+[2026-01-23T18:36:47.036+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/trades_dag.py                                      1           0  0.60s           2026-01-23T18:36:42
+/opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.57s           2026-01-23T18:36:26
+/opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.53s           2026-01-23T18:36:29
+/opt/airflow/dags/omie_marginalpibc_dag.py                           1           0  0.52s           2026-01-23T18:36:38
+/opt/airflow/dags/omie_marginalpdbc_dag.py                           1           0  0.51s           2026-01-23T18:36:21
+/opt/airflow/dags/omie_pdbf_dag.py                                   1           0  0.50s           2026-01-23T18:36:28
+/opt/airflow/dags/esios_dag.py                                       1           0  0.50s           2026-01-23T18:36:39
+================================================================================
+[2026-01-23T18:37:17.090+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/omie_marginalpdbc_dag.py                           1           0  0.57s           2026-01-23T18:36:52
+/opt/airflow/dags/trades_dag.py                                      1           0  0.55s           2026-01-23T18:37:14
+/opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.49s           2026-01-23T18:36:56
+/opt/airflow/dags/omie_pdbf_dag.py                                   1           0  0.47s           2026-01-23T18:36:59
+/opt/airflow/dags/omie_marginalpibc_dag.py                           1           0  0.46s           2026-01-23T18:37:08
+/opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.46s           2026-01-23T18:37:00
+/opt/airflow/dags/esios_dag.py                                       1           0  0.45s           2026-01-23T18:37:09
+================================================================================
+[2026-01-23T18:37:47.117+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.53s           2026-01-23T18:37:27
+/opt/airflow/dags/trades_dag.py                                      1           0  0.53s           2026-01-23T18:37:45
+/opt/airflow/dags/omie_marginalpdbc_dag.py                           1           0  0.51s           2026-01-23T18:37:22
+/opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.50s           2026-01-23T18:37:30
+/opt/airflow/dags/omie_pdbf_dag.py                                   1           0  0.49s           2026-01-23T18:37:29
+/opt/airflow/dags/esios_dag.py                                       1           0  0.46s           2026-01-23T18:37:40
+/opt/airflow/dags/omie_marginalpibc_dag.py                           1           0  0.46s           2026-01-23T18:37:39
+================================================================================
+[2026-01-23T18:38:17.326+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/esios_dag.py                                       1           0  0.70s           2026-01-23T18:38:11
+/opt/airflow/dags/trades_dag.py                                      1           0  0.54s           2026-01-23T18:38:16
+/opt/airflow/dags/omie_pdbf_dag.py                                   1           0  0.47s           2026-01-23T18:38:00
+/opt/airflow/dags/omie_pdvd_dag.py                                   1           0  0.47s           2026-01-23T18:37:58
+/opt/airflow/dags/omie_marginalpibc_dag.py                           1           0  0.46s           2026-01-23T18:38:09
+/opt/airflow/dags/omie_marginalpdbc_dag.py                           1           0  0.46s           2026-01-23T18:37:53
+/opt/airflow/dags/omie_pdbc_dag.py                                   1           0  0.44s           2026-01-23T18:38:01
+================================================================================

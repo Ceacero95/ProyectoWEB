@@ -189,8 +189,12 @@ def process_marginalpdbc(start_date: datetime, end_date: datetime):
             df = parse_marginalpdbc_content(content, fname)
             if df is not None and not df.empty:
                 # Save Parquet
+                # Ensure date format is plain YYYY-MM-DD string to avoid timestamp issues in other tools
+                df_parquet = df.copy()
+                df_parquet['fecha'] = df_parquet['fecha'].astype(str)
+                
                 silver_path = f"silver/omie/marginalpdbc/{year}/{month}/{today_str}_{fname}.parquet"
-                storage.save(silver_path, df.to_parquet(index=False))
+                storage.save(silver_path, df_parquet.to_parquet(index=False))
                 
                 # DB Ingest
                 # Schema: omie, Table: marginalpdbc
